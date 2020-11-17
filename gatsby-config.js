@@ -1,4 +1,4 @@
-const blogConfig = require("blog-config")
+const blogConfig = require("./blog-config")
 const { title, description } = blogConfig
 
 module.exports = {
