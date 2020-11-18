@@ -9,6 +9,16 @@ export default ({ data, location }) => {
     <div>
       <h1> {post.frontmatter.title} </h1>
       <h3> {post.frontmatter.description} </h3>
+      <h6>
+        Tags
+        <ul>
+          {post.frontmatter.tags.map((tag, i) => (
+            <Link key={`${tag}-${i}`} to={`/tags/${tag}`}>
+              <li>{tag}</li>
+            </Link>
+          ))}
+        </ul>
+      </h6>
       <section
         dangerouslySetInnerHTML={{ __html: post.html }}
         itemProp="articleBody"
@@ -44,6 +54,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
