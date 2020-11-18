@@ -10,11 +10,11 @@ const Search = ({ data }) => {
     posts.filter(post => {
       const { frontmatter, rawMarkdownBody } = post
       const { title } = frontmatter
-      const lowerValue = query.toLocaleLowerCase()
+      const lowerQuery = query.toLocaleLowerCase()
 
-      if (rawMarkdownBody.toLocaleLowerCase().includes(lowerValue)) return true
+      if (rawMarkdownBody.toLocaleLowerCase().includes(lowerQuery)) return true
 
-      return title.toLocaleLowerCase().includes(lowerValue)
+      return title.toLocaleLowerCase().includes(lowerQuery)
     }),
     [query]
   )
