@@ -1,45 +1,31 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import Layout from "../components/Layout"
+import Article from "../components/Article"
+
 export default ({ data, location }) => {
   const post = data.markdownRemark
   const { previous, next } = data
 
+  const { title, description, date, update, tags } = post.frontmatter
+
   return (
-    <div>
-      <h1> {post.frontmatter.title} </h1>
-      <h3> {post.frontmatter.description} </h3>
-      <h6>
-        Tags
-        <ul>
-          {post.frontmatter.tags.map((tag, i) => (
-            <Link key={`${tag}-${i}`} to={`/tags/${tag}`}>
-              <li>{tag}</li>
-            </Link>
-          ))}
-        </ul>
-      </h6>
-      <p>
-        <small>
-          {post.frontmatter.date}{" "}
-          {post.frontmatter.update && (
-            <>(Updated at {post.frontmatter.update})</>
-          )}
-        </small>
-      </p>
-      <section
-        dangerouslySetInnerHTML={{ __html: post.html }}
-        itemProp="articleBody"
-      />
-      {previous && (
-        <Link to={previous.fields.slug}>
-          previous post ({previous.frontmatter.title})
-        </Link>
-      )}{" "}
-      {next && (
-        <Link to={next.fields.slug}>next post ({next.frontmatter.title})</Link>
-      )}
-    </div>
+    <Layout>
+      <Article>
+        <Article.Header
+          title={title}
+          description={description}
+          date={date}
+          update={update}
+          tags={tags}
+        />
+        <section
+          dangerouslySetInnerHTML={{ __html: post.html }}
+          itemProp="articleBody"
+        />
+      </Article>
+    </Layout>
   )
 }
 
