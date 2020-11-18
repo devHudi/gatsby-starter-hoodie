@@ -19,6 +19,14 @@ export default ({ data, location }) => {
           ))}
         </ul>
       </h6>
+      <p>
+        <small>
+          {post.frontmatter.date}{" "}
+          {post.frontmatter.update && (
+            <>(Updated at {post.frontmatter.update})</>
+          )}
+        </small>
+      </p>
       <section
         dangerouslySetInnerHTML={{ __html: post.html }}
         itemProp="articleBody"
@@ -52,8 +60,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
         description
+        date(formatString: "MMMM DD, YYYY")
+        update(formatString: "MMMM DD, YYYY")
         tags
       }
     }
