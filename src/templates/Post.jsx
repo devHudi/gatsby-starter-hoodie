@@ -20,10 +20,7 @@ export default ({ data, location }) => {
           update={update}
           tags={tags}
         />
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <Article.Body html={post.html} />
       </Article>
     </Layout>
   )
