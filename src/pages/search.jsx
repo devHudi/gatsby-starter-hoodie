@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout from "components/Layout"
 
 const Search = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes

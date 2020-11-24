@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Article from "../components/Article"
+import Layout from "components/Layout"
+import Article from "components/Article"
 
 export default ({ data, location }) => {
   const post = data.markdownRemark

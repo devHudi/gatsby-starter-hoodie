@@ -49,6 +49,7 @@ module.exports = {
         plugins: [],
       },
     },
+    "gatsby-plugin-resolve-src",
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
