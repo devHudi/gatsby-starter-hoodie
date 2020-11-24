@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { title, description, author, links } from "../../../../blog-config"
+import { title, description, author, links } from "../../../../../blog-config"
 
 const BioWrapper = styled.div`
   position: fixed;
