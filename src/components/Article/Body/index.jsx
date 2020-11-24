@@ -7,25 +7,10 @@ import RevealOnScroll from "components/RevealOnScroll"
 
 import Bio from "./Bio"
 import Toc from "./Toc"
+import Article from "./Article"
 
 const Wrapper = styled.div`
   position: relative;
-`
-
-const Article = styled.div`
-  & {
-    line-height: 1.7;
-  }
-
-  & > section > h2 {
-    font-size: 1.8rem;
-    color: #343a40;
-  }
-
-  & > section > p {
-    font-size: 1rem;
-    color: #212529;
-  }
 `
 
 const Body = ({ html }) => {
@@ -49,6 +34,7 @@ const Body = ({ html }) => {
         <Bio revealAt={revealAt} />
         <Toc items={toc} revealAt={revealAt} />
       </RevealOnScroll>
+
       <Article
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}
