@@ -13,7 +13,9 @@ const StyledMarkdown = styled.div`
   & table,
   & blockquote,
   & pre,
-  & img {
+  & img,
+  & .katex-display {
+    margin-top: 0;
     margin-bottom: 1.5rem;
   }
 
