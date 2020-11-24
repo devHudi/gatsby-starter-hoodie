@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
+import Bio from "./Bio"
 import Toc from "./Toc"
 
 const BodyWrapper = styled.div`
@@ -28,6 +29,7 @@ const Body = ({ html }) => {
 
   return (
     <>
+      <Bio />
       <Toc items={toc} />
       <BodyWrapper
         id="article-body"
