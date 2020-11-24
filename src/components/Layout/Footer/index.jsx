@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { author } from "../../../../blog-config"
+import { title } from "../../../../blog-config"
 
 const FooterWrapper = styled.footer`
   margin-top: 2rem;
@@ -13,7 +13,7 @@ const FooterWrapper = styled.footer`
 const Footer = () => {
   return (
     <FooterWrapper>
-      © {author}, Built with Gatsby and Hoodie theme.
+      © {title}, Built with Gatsby and Hoodie theme.
     </FooterWrapper>
   )
 }
