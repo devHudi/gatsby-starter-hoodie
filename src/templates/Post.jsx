@@ -8,18 +8,12 @@ export default ({ data, location }) => {
   const post = data.markdownRemark
   const { previous, next } = data
 
-  const { title, description, date, update, tags } = post.frontmatter
+  const { title, date, update, tags } = post.frontmatter
 
   return (
     <Layout>
       <Article>
-        <Article.Header
-          title={title}
-          description={description}
-          date={date}
-          update={update}
-          tags={tags}
-        />
+        <Article.Header title={title} date={date} update={update} tags={tags} />
         <Article.Body html={post.html} />
       </Article>
     </Layout>
@@ -43,7 +37,6 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        description
         date(formatString: "MMMM DD, YYYY")
         update(formatString: "MMMM DD, YYYY")
         tags
