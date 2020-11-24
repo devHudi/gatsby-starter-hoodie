@@ -56,16 +56,6 @@ const StyledMarkdown = styled.div`
     font-style: italic;
   }
 
-  & a {
-    padding: 0.1rem;
-    color: inherit;
-  }
-
-  & a:hover {
-    background-color: #212529;
-    color: #f8f9fa;
-  }
-
   & blockquote {
     padding: 1.5rem;
     border-left: 5px solid #dee2e6;
