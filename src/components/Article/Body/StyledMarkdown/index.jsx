@@ -111,15 +111,19 @@ const StyledMarkdown = styled.div`
     padding-left: 1.5rem;
   }
 
-  & li {
+  & ol {
+    list-style: decimal;
+  }
+
+  & ul {
     list-style: disc;
   }
 
-  & li > ul > li {
+  & ul ul {
     list-style: circle;
   }
 
-  & li > ul > li ul li {
+  & ul ul ul {
     list-style: square;
   }
 
