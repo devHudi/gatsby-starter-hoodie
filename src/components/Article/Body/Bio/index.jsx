@@ -4,9 +4,14 @@ import styled from "styled-components"
 import { title, description, author, links } from "../../../../../blog-config"
 
 const BioWrapper = styled.div`
-  position: fixed;
-  top: 5rem;
-  left: 2rem;
+  position: absolute;
+  left: -17rem;
+
+  & > div {
+    position: fixed;
+    background-color: #dee2e6;
+    width: 15rem;
+  }
 `
 
 const Title = styled.h1`
@@ -30,14 +35,16 @@ const Bio = () => {
 
   return (
     <BioWrapper>
-      <Title> {title} </Title>
-      <Author> @{author} </Author>
-      <Description>{description}</Description>
-      <ul>
-        {github && <OutLink site="github" link={github} />}
-        {facebook && <OutLink site="facebook" link={facebook} />}
-        {linkedIn && <OutLink site="linkedIn" link={linkedIn} />}
-      </ul>
+      <div>
+        <Title> {title} </Title>
+        <Author> @{author} </Author>
+        <Description>{description}</Description>
+        <ul>
+          {github && <OutLink site="github" link={github} />}
+          {facebook && <OutLink site="facebook" link={facebook} />}
+          {linkedIn && <OutLink site="linkedIn" link={linkedIn} />}
+        </ul>
+      </div>
     </BioWrapper>
   )
 }
