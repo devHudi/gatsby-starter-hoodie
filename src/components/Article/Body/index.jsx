@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
+import useOffsetTop from "hooks/useOffsetTop"
+
+import RevealOnScroll from "components/RevealOnScroll"
+
 import Bio from "./Bio"
 import Toc from "./Toc"
 
-const BodyWrapper = styled.div`
+const Wrapper = styled.div`
+  position: relative;
+`
+
+const Article = styled.div`
+  & {
+    line-height: 1.7;
+  }
+
   & > section > h2 {
     font-size: 1.8rem;
     color: #343a40;
@@ -19,6 +31,8 @@ const BodyWrapper = styled.div`
 const Body = ({ html }) => {
   const [toc, setToc] = useState([])
 
+  const [ref, offsetTop] = useOffsetTop()
+
   useEffect(() => {
     setToc(
       Array.from(
@@ -27,16 +41,21 @@ const Body = ({ html }) => {
     )
   }, [])
 
+  const revealAt = offsetTop
+
   return (
-    <>
-      <Bio />
-      <Toc items={toc} />
-      <BodyWrapper
+    <Wrapper>
+      <RevealOnScroll revealAt={revealAt}>
+        <Bio revealAt={revealAt} />
+        <Toc items={toc} revealAt={revealAt} />
+      </RevealOnScroll>
+      <Article
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}
         itemProp="articleBody"
+        ref={ref}
       />
-    </>
+    </Wrapper>
   )
 }
 
