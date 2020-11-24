@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Article = styled.div`
+const StyledMarkdown = styled.div`
   & {
     line-height: 1.7;
   }
@@ -16,4 +16,4 @@ const Article = styled.div`
   }
 `
 
-export default Article
+export default StyledMarkdown

@@ -7,7 +7,7 @@ import RevealOnScroll from "components/RevealOnScroll"
 
 import Bio from "./Bio"
 import Toc from "./Toc"
-import Article from "./Article"
+import StyledMarkdown from "./StyledMarkdown"
 
 const Wrapper = styled.div`
   position: relative;
@@ -35,7 +35,7 @@ const Body = ({ html }) => {
         <Toc items={toc} revealAt={revealAt} />
       </RevealOnScroll>
 
-      <Article
+      <StyledMarkdown
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}
         itemProp="articleBody"
