@@ -1,27 +1,41 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+
+import useScroll from "hooks/useScroll"
+
+const STICK_OFFSET = 100
 
 const TocWrapper = styled.div`
   position: absolute;
   left: 100%;
 
   & > div {
-    margin-left: 2rem;
-    position: fixed;
-    background-color: #dee2e6;
+    margin-left: 3rem;
+    position: relative;
     width: 15rem;
+    line-height: 1.6;
+    font-size: 0.9rem;
+
+    ${props =>
+      props.stick &&
+      css`
+        position: fixed;
+        top: ${STICK_OFFSET}px;
+      `}
   }
 `
 
 const Title = styled.div``
 
 const Subtitle = styled.div`
-  padding-left: 1rem;
+  padding-left: 0.7rem;
 `
 
-const Toc = ({ items }) => {
+const Toc = ({ items, articleOffset }) => {
+  const { y } = useScroll()
+
   return (
-    <TocWrapper>
+    <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
       <div>
         {items.map(item => {
           if (item.tagName === "H2") return <Title> {item.innerText} </Title>

@@ -32,8 +32,9 @@ const Body = ({ html }) => {
     <Wrapper>
       <RevealOnScroll revealAt={revealAt}>
         <Bio revealAt={revealAt} />
-        <Toc items={toc} revealAt={revealAt} />
       </RevealOnScroll>
+
+      <Toc items={toc} articleOffset={offsetTop} />
 
       <StyledMarkdown
         id="article-body"
