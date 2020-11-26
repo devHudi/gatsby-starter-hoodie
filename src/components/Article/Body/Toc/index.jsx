@@ -47,6 +47,13 @@ const Title = styled.div`
 const Toc = ({ items, articleOffset }) => {
   const { y } = useScroll()
   const [revealAt, setRevealAt] = useState(4000)
+  useEffect(() => {
+    const bioElm = document.getElementById("bio")
+
+    setRevealAt(
+      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height
+    )
+  }, [])
 
   useEffect(() => {
     setRevealAt(document.getElementById("bio").offsetTop - 100)
