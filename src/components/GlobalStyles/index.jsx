@@ -64,15 +64,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Noto Sans KR', sans-serif !important;
   }
 
-  a {
-    padding: 0.1rem 0.3rem;
-    color: #212529;
-  }
-
-  a:hover {
-    background-color: #212529;
-    color: #f8f9fa;
-  }
 `
 
 export default GlobalStyles

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const StyledMarkdown = styled.div`
   & {
@@ -137,6 +138,10 @@ const StyledMarkdown = styled.div`
   & hr {
     border: none;
     border-bottom: 1px solid #dee2e6;
+  }
+
+  & a {
+    ${InvertLinkMixin}
   }
 `
 
