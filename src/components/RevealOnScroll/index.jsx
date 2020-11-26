@@ -16,10 +16,12 @@ const StyledWrapper = styled.div`
     `}
 `
 
-const RevealOnScroll = ({ revealAt, children }) => {
+const RevealOnScroll = ({ revealAt, reverse, children }) => {
   const { y } = useScroll()
 
-  const reveal = y > revealAt
+  let reveal = null
+  if (!reverse) reveal = y > revealAt
+  else reveal = y < revealAt
 
   return <StyledWrapper visible={reveal}>{children}</StyledWrapper>
 }
