@@ -3,9 +3,6 @@ import styled from "styled-components"
 
 import useOffsetTop from "hooks/useOffsetTop"
 
-import RevealOnScroll from "components/RevealOnScroll"
-
-import Bio from "./Bio"
 import Toc from "./Toc"
 import StyledMarkdown from "./StyledMarkdown"
 
@@ -30,10 +27,6 @@ const Body = ({ html }) => {
 
   return (
     <Wrapper>
-      <RevealOnScroll revealAt={revealAt}>
-        <Bio revealAt={revealAt} />
-      </RevealOnScroll>
-
       <Toc items={toc} articleOffset={offsetTop} />
 
       <StyledMarkdown
