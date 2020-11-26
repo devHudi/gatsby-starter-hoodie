@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 
 import { author } from "../../../../blog-config"
 
+import Divider from "components/Divider"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const Title = styled.h1`
@@ -39,12 +40,6 @@ const Tag = styled.span`
   }
 `
 
-const Divider = styled.hr`
-  margin-bottom: 3rem;
-  border: none;
-  border-bottom: 1px solid #dee2e6;
-`
-
 const StyledLink = styled(Link)`
   ${InvertLinkMixin}
 `
@@ -65,7 +60,7 @@ const Header = ({ title, date, update, tags }) => {
         <span>·</span>
         <Date> {date} </Date>
       </Information>
-      <Divider />
+      <Divider mt="0" />
     </>
   )
 }
