@@ -6,6 +6,8 @@ import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa"
 
 import { description, author, links, utterances } from "../../../../blog-config"
 
+import Divider from "components/Divider"
+
 const FooterWrapper = styled.div``
 
 const BioWrapper = styled.div`
@@ -104,6 +106,7 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <Bio />
+      <Divider mt="2rem" />
       <Comment />
     </FooterWrapper>
   )
