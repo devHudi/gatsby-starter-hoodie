@@ -15,6 +15,7 @@ export default ({ data, location }) => {
       <Article>
         <Article.Header title={title} date={date} update={update} tags={tags} />
         <Article.Body html={post.html} />
+        <Article.Footer />
       </Article>
     </Layout>
   )
