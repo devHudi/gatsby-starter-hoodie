@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled, { css } from "styled-components"
 
 import useScroll from "hooks/useScroll"
+
+import RevealOnScroll from "components/RevealOnScroll"
 
 const STICK_OFFSET = 100
 
@@ -33,16 +35,23 @@ const Subtitle = styled.div`
 
 const Toc = ({ items, articleOffset }) => {
   const { y } = useScroll()
+  const [revealAt, setRevealAt] = useState(4000)
+
+  useEffect(() => {
+    setRevealAt(document.getElementById("bio").offsetTop - 100)
+  }, [])
 
   return (
-    <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
-      <div>
-        {items.map(item => {
-          if (item.tagName === "H2") return <Title> {item.innerText} </Title>
-          else return <Subtitle> {item.innerText} </Subtitle>
-        })}
-      </div>
-    </TocWrapper>
+    <RevealOnScroll revealAt={revealAt} reverse>
+      <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
+        <div>
+          {items.map(item => {
+            if (item.tagName === "H2") return <Title> {item.innerText} </Title>
+            else return <Subtitle> {item.innerText} </Subtitle>
+          })}
+        </div>
+      </TocWrapper>
+    </RevealOnScroll>
   )
 }
 
