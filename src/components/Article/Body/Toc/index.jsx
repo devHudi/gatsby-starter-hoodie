@@ -3,6 +3,8 @@ import styled, { css } from "styled-components"
 
 import useScroll from "hooks/useScroll"
 
+import getElementOffset from "utils/getElmentOffset"
+
 import RevealOnScroll from "components/RevealOnScroll"
 
 const STICK_OFFSET = 100
@@ -35,6 +37,7 @@ const Title = styled.div`
   ${props =>
     props.active &&
     css`
+      margin-left: -0.7rem;
       color: #495057;
     `}
 
@@ -46,7 +49,11 @@ const Title = styled.div`
 
 const Toc = ({ items, articleOffset }) => {
   const { y } = useScroll()
+
   const [revealAt, setRevealAt] = useState(4000)
+  const [headers, setHeaders] = useState([])
+  const [active, setActive] = useState(0)
+
   useEffect(() => {
     const bioElm = document.getElementById("bio")
 
@@ -56,15 +63,30 @@ const Toc = ({ items, articleOffset }) => {
   }, [])
 
   useEffect(() => {
-    setRevealAt(document.getElementById("bio").offsetTop - 100)
+    setHeaders(
+      [
+        ...document.querySelectorAll("#article-body > h2, #article-body > h3"),
+      ].map(element => getElementOffset(element).top)
+    )
   }, [])
+
+  useEffect(() => {
+    headers.forEach((header, i) => {
+      if (header - 300 < y) {
+        setActive(i)
+        return
+      }
+    })
+  }, [y])
 
   return (
     <RevealOnScroll revealAt={revealAt} reverse>
       <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
         <div>
-          {items.map(item => (
-            <Title subtitle={item.tagName !== "H2"}> {item.innerText} </Title>
+          {items.map((item, i) => (
+            <Title subtitle={item.tagName === "H3"} active={i === active}>
+              {item.innerText}
+            </Title>
           ))}
         </div>
       </TocWrapper>
