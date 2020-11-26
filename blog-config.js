@@ -9,4 +9,8 @@ module.exports = {
     facebook: null,
     linkedIn: null,
   },
+  utterances: {
+    repo: "devHudi/hudi.blog",
+    type: "pathname",
+  },
 }

@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import ReactUtterences from "react-utterances"
 
 import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa"
 
-import { description, author, links } from "../../../../blog-config"
+import { description, author, links, utterances } from "../../../../blog-config"
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.div``
+
+const BioWrapper = styled.div`
   display: flex;
   align-items: center;
 `
@@ -65,11 +68,11 @@ const Link = ({ link, children }) => {
   )
 }
 
-const Footer = () => {
+const Bio = () => {
   const { github, instagram, facebook, linkedIn } = links
 
   return (
-    <FooterWrapper>
+    <BioWrapper>
       <Profile />
       <div>
         <Author>@{author}</Author>
@@ -89,6 +92,19 @@ const Footer = () => {
           </Link>
         </LinksWrapper>
       </div>
+    </BioWrapper>
+  )
+}
+
+const Comment = () => (
+  <ReactUtterences repo={utterances.repo} type={utterances.type} />
+)
+
+const Footer = () => {
+  return (
+    <FooterWrapper>
+      <Bio />
+      <Comment />
     </FooterWrapper>
   )
 }
