@@ -8,6 +8,7 @@ import StyledMarkdown from "./StyledMarkdown"
 
 const Wrapper = styled.div`
   position: relative;
+  margin-bottom: 7rem;
 `
 
 const Body = ({ html }) => {
