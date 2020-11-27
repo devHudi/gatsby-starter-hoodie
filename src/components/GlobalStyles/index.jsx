@@ -12,6 +12,9 @@ import notoSansKrV13Latin700_2 from "fonts/noto-sans-kr-v13-latin-700.woff2"
 import notoSansKrV13Latin900 from "fonts/noto-sans-kr-v13-latin-900.woff"
 import notoSansKrV13Latin900_2 from "fonts/noto-sans-kr-v13-latin-900.woff2"
 
+import sourceCodePro700 from "fonts/source-code-pro-v13-latin-700.woff"
+import sourceCodePro700_2 from "fonts/source-code-pro-v13-latin-700.woff2"
+
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Noto Sans KR';
@@ -58,10 +61,19 @@ const GlobalStyles = createGlobalStyle`
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: local('Source Code Pro'),
+    url(${sourceCodePro700}) format('woff'),
+    url(${sourceCodePro700_2}) format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+
   ${reset}
 
   body {
-    font-family: 'Noto Sans KR', sans-serif !important;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 
 `
