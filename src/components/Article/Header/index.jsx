@@ -57,8 +57,7 @@ const Header = ({ title, date, update, tags }) => {
       <Title> {title} </Title>
       <Information>
         <Author> @{author} </Author>
-        <span>·</span>
-        <Date> {date} </Date>
+        <Date>· {date} </Date>
       </Information>
       <Divider mt="0" />
     </>
