@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import styled, { css } from "styled-components"
 
+import { animateScroll } from "react-scroll"
+
 import useScroll from "hooks/useScroll"
 
 import getElementOffset from "utils/getElmentOffset"
@@ -79,12 +81,20 @@ const Toc = ({ items, articleOffset }) => {
     })
   }, [y])
 
+  const handleClickTitle = index => {
+    animateScroll.scrollTo(headers[index] - 100)
+  }
+
   return (
     <RevealOnScroll revealAt={revealAt} reverse>
       <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
         <div>
           {items.map((item, i) => (
-            <Title subtitle={item.tagName === "H3"} active={i === active}>
+            <Title
+              subtitle={item.tagName === "H3"}
+              active={i === active}
+              onClick={() => handleClickTitle(i)}
+            >
               {item.innerText}
             </Title>
           ))}
