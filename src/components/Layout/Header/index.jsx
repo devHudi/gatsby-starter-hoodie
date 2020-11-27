@@ -13,6 +13,7 @@ const HeaderWrapper = styled.header`
   font-weight: bold;
   background-color: #ffffff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  z-index: 999;
 `
 
 const Inner = styled.div`
