@@ -5,11 +5,12 @@ import { Link } from "gatsby"
 const TagListWrapper = styled.div`
   margin-bottom: 1rem;
   word-break: break-all;
-  line-height: 2.7;
 
   & a {
-    padding: 0.3rem 0.7rem;
+    display: inline-block;
+    padding: 0.6rem 0.7rem;
     margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
     border-radius: 50px;
     background-color: #f1f3f5;
     text-decoration: none;
