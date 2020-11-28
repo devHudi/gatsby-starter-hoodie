@@ -4,8 +4,7 @@ import styled from "styled-components"
 
 const Divider = styled.hr`
   margin-top: ${props => props.mt};
-  margin-bottom: ${props => props.mt};
-  margin-bottom: 3rem;
+  margin-bottom: ${props => props.mb};
   border: none;
   border-bottom: 1px solid #dee2e6;
 `
