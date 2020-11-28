@@ -28,6 +28,11 @@ const Title = styled.span`
   font-family: "Source Code Pro", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+
+  & > a {
+    text-decoration: none;
+    color: inherit;
+  }
 `
 
 const Menu = styled.div`
@@ -60,7 +65,9 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <Inner>
-        <Title>{title}</Title>
+        <Title>
+          <Link to="/">{title}</Link>
+        </Title>
         <Menu>
           <Link to="#">
             {/* to be developed */}
