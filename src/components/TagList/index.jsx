@@ -30,7 +30,7 @@ const TagList = ({ tagList, count }) => {
     return (
       <TagListWrapper>
         {tagList.map((tag, i) => (
-          <Link to={`/tags/${kebabCase(tag)}`}>#{kebabCase(tag)}</Link>
+          <Link to={`/tags/${kebabCase(tag)}`}>{kebabCase(tag)}</Link>
         ))}
       </TagListWrapper>
     )
@@ -40,7 +40,7 @@ const TagList = ({ tagList, count }) => {
     <TagListWrapper>
       {tagList.map((tag, i) => (
         <Link to={`/tags/${kebabCase(tag.fieldValue)}`}>
-          #{kebabCase(tag.fieldValue)} ({tag.totalCount})
+          {kebabCase(tag.fieldValue)} ({tag.totalCount})
         </Link>
       ))}
     </TagListWrapper>
