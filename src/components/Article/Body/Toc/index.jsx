@@ -19,7 +19,6 @@ const TocWrapper = styled.div`
     margin-left: 4rem;
     position: relative;
     width: 15rem;
-    line-height: 1.9;
 
     ${props =>
       props.stick &&
@@ -31,9 +30,11 @@ const TocWrapper = styled.div`
 `
 
 const Title = styled.div`
+  margin-bottom: 0.5rem;
+  padding-left: ${props => (props.subtitle ? 1.2 : 0)}rem;
   font-size: 0.9rem;
   color: #adb5bd;
-  padding-left: ${props => (props.subtitle ? 0.7 : 0)}rem;
+  line-height: 1.3;
   transition: all 0.2s;
 
   ${props =>
