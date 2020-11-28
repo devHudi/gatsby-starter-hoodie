@@ -1,8 +1,15 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import styled from "styled-components"
+import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
+import Bio from "components/Bio"
 import PostList from "components/PostList"
+import Divider from "components/Divider"
+
+const Space = styled.div`
+  height: 3rem;
+`
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -20,6 +27,9 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout>
+      <Space />
+      <Bio />
+      <Divider />
       <PostList postList={posts} />
     </Layout>
   )
