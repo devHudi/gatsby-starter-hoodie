@@ -1,7 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 import { title } from "../../../../blog-config"
+
+import { FaSun, FaMoon, FaTags, FaSearch } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -15,17 +18,62 @@ const HeaderWrapper = styled.header`
 `
 
 const Inner = styled.div`
+  display: flex;
+  justify-content: space-between;
   margin: 0 64px;
+`
+
+const Title = styled.span`
   letter-spacing: -1px;
   font-family: "Source Code Pro", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 `
 
+const Menu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & svg path {
+    fill: #868e96;
+    transition: fill 0.3s;
+  }
+
+  & a:hover svg path {
+    fill: #212529;
+  }
+`
+
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Inner>{title}</Inner>
+      <Inner>
+        <Title>{title}</Title>
+        <Menu>
+          <Link to="#">
+            {/* to be developed */}
+            <FaMoon />
+          </Link>
+          <Link to="/tags">
+            <FaTags />
+          </Link>
+          <Link to="/search">
+            <FaSearch />
+          </Link>
+        </Menu>
+      </Inner>
     </HeaderWrapper>
   )
 }
