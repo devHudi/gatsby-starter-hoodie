@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import kebabCase from "lodash/kebabCase"
 import { Link } from "gatsby"
 
 const TagListWrapper = styled.div`
@@ -24,11 +25,23 @@ const TagListWrapper = styled.div`
   }
 `
 
-const TagList = ({ tagList }) => {
+const TagList = ({ tagList, count }) => {
+  if (!count) {
+    return (
+      <TagListWrapper>
+        {tagList.map((tag, i) => (
+          <Link to={`/tags/${kebabCase(tag)}`}>#{kebabCase(tag)}</Link>
+        ))}
+      </TagListWrapper>
+    )
+  }
+
   return (
     <TagListWrapper>
       {tagList.map((tag, i) => (
-        <Link to={`/tags/${tag}`}>#{tag}</Link>
+        <Link to={`/tags/${kebabCase(tag.fieldValue)}`}>
+          #{kebabCase(tag.fieldValue)} ({tag.totalCount})
+        </Link>
       ))}
     </TagListWrapper>
   )
