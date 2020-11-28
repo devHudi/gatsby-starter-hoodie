@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 import Divider from "components/Divider"
+import TagList from "components/TagList"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const PostListWrapper = styled.div``
@@ -85,11 +86,7 @@ const PostList = ({ postList }) => {
               </Title>
               <Date>{date}</Date>
               <Excerpt>{excerpt}</Excerpt>
-              <Tags>
-                {tags.map((tag, i) => (
-                  <Link to={`/tags/${tag}`}>#{tag}</Link>
-                ))}
-              </Tags>
+              <TagList tagList={tags} />
             </PostWrapper>
 
             {postList.length - 1 !== i && <Divider mt="3rem" mb="2rem" />}
