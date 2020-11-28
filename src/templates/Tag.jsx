@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import kebabCase from "lodash/kebabCase"
 
 import { Link, graphql } from "gatsby"
 
@@ -20,7 +21,7 @@ const Tags = ({ pageContext, data }) => {
   return (
     <Layout>
       <Header>
-        #{tag} 에 해당하는 글이 {totalCount}개 있습니다.
+        #{kebabCase(tag)} 에 해당하는 글이 {totalCount}개 있습니다.
       </Header>
 
       <PostList postList={posts} />
