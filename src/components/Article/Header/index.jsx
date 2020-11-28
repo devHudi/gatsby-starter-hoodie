@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import { author } from "../../../../blog-config"
 
 import Divider from "components/Divider"
+import TagList from "components/TagList"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const Title = styled.h1`
@@ -47,18 +48,12 @@ const StyledLink = styled(Link)`
 const Header = ({ title, date, update, tags }) => {
   return (
     <>
-      <TagsWrapper>
-        {tags.map((tag, i) => (
-          <Tag>
-            <StyledLink to={`/tags/${tag}`}>#{tag}</StyledLink>
-          </Tag>
-        ))}
-      </TagsWrapper>
       <Title> {title} </Title>
       <Information>
         <Author> @{author} </Author>
         <Date>· {date} </Date>
       </Information>
+      <TagList tagList={tags} />
       <Divider mt="0" />
     </>
   )
