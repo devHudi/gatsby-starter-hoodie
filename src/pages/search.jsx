@@ -1,7 +1,10 @@
 import React, { useState, useCallback } from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
+import PostList from "components/PostList"
+import TextField from "components/TextField"
+import VerticalSpace from "components/VerticalSpace"
 
 const Search = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -23,24 +26,12 @@ const Search = ({ data }) => {
 
   return (
     <Layout>
-      <input
-        type="text"
+      <TextField
         onChange={e => setQuery(e.target.value)}
-        placeholder="input keyword here"
+        placeholder="검색어"
       />
-      {filteredPosts.map(post => (
-        <Link key={post.title} to={post.fields.slug}>
-          <div>
-            <h2>{post.frontmatter.title}</h2>
-            <p>{post.excerpt}</p>
-            <p>
-              {post.frontmatter.tags.map(tag => (
-                <span>#{tag} </span>
-              ))}
-            </p>
-          </div>
-        </Link>
-      ))}
+      <VerticalSpace size={2} />
+      <PostList postList={filteredPosts} />
     </Layout>
   )
 }
