@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const postTemplate = require.resolve(`./src/templates/Post.jsx`)
-  const tagTemplate = require.resolve(`./src/templates/Tag.jsx`)
+  const tagTemplate = require.resolve(`./src/pages/tags.jsx`)
 
   const result = await graphql(`
     {
@@ -54,18 +54,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
-
-  const tags = result.data.tagsGroup.group
-
-  tags.forEach(tag => {
-    createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
