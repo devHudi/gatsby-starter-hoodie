@@ -29,7 +29,7 @@ const TocWrapper = styled.div`
   }
 `
 
-const Title = styled.div`
+const ParagraphTitle = styled.div`
   margin-bottom: 0.5rem;
   padding-left: ${props => (props.subtitle ? 1.2 : 0)}rem;
   font-size: 0.9rem;
@@ -91,13 +91,13 @@ const Toc = ({ items, articleOffset }) => {
       <TocWrapper stick={y > articleOffset - STICK_OFFSET}>
         <div>
           {items.map((item, i) => (
-            <Title
+            <ParagraphTitle
               subtitle={item.tagName === "H3"}
               active={i === active}
               onClick={() => handleClickTitle(i)}
             >
               {item.innerText}
-            </Title>
+            </ParagraphTitle>
           ))}
         </div>
       </TocWrapper>

@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 import { Link } from "gatsby"
 
+import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
@@ -18,23 +19,6 @@ const PostWrapper = styled.div`
   &:hover {
     /* top: -10px; */
     /* left: 15px; */
-  }
-`
-
-const Title = styled.h1`
-  margin-bottom: 1.5rem;
-  line-height: 1.3;
-  font-size: 2.1rem;
-  font-weight: 700;
-
-  & > a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.2s;
-  }
-
-  & > a:hover {
-    color: #495057;
   }
 `
 
@@ -81,7 +65,7 @@ const PostList = ({ postList }) => {
         return (
           <>
             <PostWrapper>
-              <Title>
+              <Title size="bg">
                 <Link to={slug}>{title}</Link>
               </Title>
               <Date>{date}</Date>

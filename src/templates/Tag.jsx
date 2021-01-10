@@ -5,13 +5,8 @@ import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 
 import Layout from "components/Layout"
+import Title from "components/Title"
 import PostList from "components/PostList"
-
-const Header = styled.h1`
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-`
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext
@@ -20,9 +15,9 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <Header>
+      <Title size="sm">
         #{kebabCase(tag)} 에 해당하는 글이 {totalCount}개 있습니다.
-      </Header>
+      </Title>
 
       <PostList postList={posts} />
 

@@ -8,7 +8,7 @@ import Divider from "components/Divider"
 import TagList from "components/TagList"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
-const Title = styled.h1`
+const ArticleTitle = styled.h1`
   margin-bottom: 1.6rem;
   line-height: 1.2;
   font-size: 2.8rem;
@@ -48,7 +48,7 @@ const StyledLink = styled(Link)`
 const Header = ({ title, date, update, tags }) => {
   return (
     <>
-      <Title> {title} </Title>
+      <ArticleTitle> {title} </ArticleTitle>
       <Information>
         <Author> @{author} </Author>
         <Date>· {date} </Date>

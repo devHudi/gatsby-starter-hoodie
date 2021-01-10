@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
+import Title from "components/Title"
 import TagList from "components/TagList"
 
 const TagsPage = ({ data }) => {
@@ -15,6 +16,7 @@ const TagsPage = ({ data }) => {
   return (
     <Layout>
       <Helmet title={title} />
+      <Title size="sm"> 총 {tags.length}개의 태그가 존재합니다. </Title>
       <TagList tagList={tags} count />
     </Layout>
   )

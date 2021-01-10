@@ -23,7 +23,7 @@ const Inner = styled.div`
   margin: 0 64px;
 `
 
-const Title = styled.span`
+const BlogTitle = styled.span`
   letter-spacing: -1px;
   font-family: "Source Code Pro", sans-serif;
   font-weight: 700;
@@ -65,9 +65,9 @@ const Header = () => {
   return (
     <HeaderWrapper>
       <Inner>
-        <Title>
+        <BlogTitle>
           <Link to="/">{title}</Link>
-        </Title>
+        </BlogTitle>
         <Menu>
           <Link to="#">
             {/* to be developed */}
