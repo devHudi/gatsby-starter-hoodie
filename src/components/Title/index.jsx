@@ -6,6 +6,7 @@ const Wrapper = styled.h1`
   font-size: ${props => props.size};
   font-weight: 700;
   line-height: 1.3;
+  color: ${props => props.theme.colors.text};
 
   & > a {
     text-decoration: none;
@@ -14,7 +15,7 @@ const Wrapper = styled.h1`
   }
 
   & > a:hover {
-    color: #495057;
+    color: ${props => props.theme.colors.secondaryText};
   }
 `
 

@@ -4,7 +4,7 @@ import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 const StyledMarkdown = styled.div`
   & {
     font-size: 1.1rem;
-    color: #212529;
+    color: ${props => props.theme.colors.text};
     line-height: 1.6;
   }
 
@@ -59,8 +59,8 @@ const StyledMarkdown = styled.div`
 
   & blockquote {
     padding: 1.5rem;
-    border-left: 5px solid #dee2e6;
-    background-color: #f1f3f5;
+    border-left: 5px solid ${props => props.theme.colors.border};
+    background-color: ${props => props.theme.colors.background};
   }
 
   & blockquote blockquote {
@@ -72,13 +72,13 @@ const StyledMarkdown = styled.div`
   }
 
   & th {
-    border-bottom: 2px solid #ced4da;
+    border-bottom: 2px solid ${props => props.theme.colors.border};
     font-weight: 700;
   }
 
   & td {
-    border-top: 1px solid #ced4da;
-    border-bottom: 1px solid #ced4da;
+    border-top: 1px solid ${props => props.theme.colors.border};
+    border-bottom: 1px solid ${props => props.theme.colors.border};
   }
 
   & td,
@@ -91,7 +91,7 @@ const StyledMarkdown = styled.div`
   }
 
   & tr:nth-child(even) {
-    background-color: #f1f3f5;
+    background-color: ${props => props.theme.colors.background};
   }
 
   & tr:last-child td {
@@ -101,10 +101,10 @@ const StyledMarkdown = styled.div`
   & :not(pre) > code {
     padding: 0.15rem 0.2rem;
     border-radius: 0;
-    background-color: #e9ecef;
+    background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-size: 1.1rem;
     font-weight: 700;
-    color: #212529;
+    color: ${props => props.theme.colors.text};
   }
 
   & ul,
@@ -137,7 +137,7 @@ const StyledMarkdown = styled.div`
 
   & hr {
     border: none;
-    border-bottom: 1px solid #dee2e6;
+    border-bottom: 1px solid ${props => props.theme.colors.border};
   }
 
   & a {

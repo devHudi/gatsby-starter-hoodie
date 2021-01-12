@@ -6,8 +6,9 @@ import { title } from "../../../../blog-config"
 const FooterWrapper = styled.footer`
   margin-top: 2rem;
   padding: 1rem;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid ${props => props.theme.colors.divider};
   text-align: center;
+  color: ${props => props.theme.colors.text};
 `
 
 const Footer = () => {

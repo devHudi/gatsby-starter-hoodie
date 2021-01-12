@@ -25,14 +25,14 @@ const Author = styled.div`
   margin-bottom: 0.3rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #212529;
+  color: ${props => props.theme.colors.text};
 `
 
 const Description = styled.div`
   margin-bottom: 0.7rem;
   line-height: 1.5;
   font-size: 1rem;
-  color: #343a40;
+  color: ${props => props.theme.colors.secondaryText};
 `
 
 const LinksWrapper = styled.div`
@@ -47,12 +47,12 @@ const LinksWrapper = styled.div`
   }
 
   & svg path {
-    fill: #868e96;
+    fill: ${props => props.theme.colors.icon};
     transition: fill 0.3s;
   }
 
   & a:hover svg path {
-    fill: #212529;
+    fill: ${props => props.theme.colors.text};
   }
 `
 

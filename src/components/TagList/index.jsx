@@ -14,24 +14,32 @@ const TagLink = styled.a`
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 50px;
-  background-color: ${props => (props.selected ? "#495057" : "#f1f3f5")};
-  color: ${props => (props.selected ? "#f8f9fa" : "#495057")};
+  background-color: ${props =>
+    props.selected
+      ? props.theme.colors.selectedTagBackground
+      : props.theme.colors.tagBackground};
+  color: ${props =>
+    props.selected
+      ? props.theme.colors.selectedTagText
+      : props.theme.colors.tagText};
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.2s;
 
   &:hover {
-    background-color: ${props => (props.selected ? "#343a40" : "#dee2e6")};
-    /* color: #495057; */
+    background-color: ${props =>
+      props.selected
+        ? props.theme.colors.hoveredSelectedTagBackground
+        : props.theme.colors.hoveredTagBackground};
   }
 `
 
-const TagList = ({ tagList, count, selected, onClick }) => {
+const TagList = ({ tagList, count, selected }) => {
   if (!count) {
     return (
       <TagListWrapper>
         {tagList.map((tag, i) => (
-          <Link to={`/tags?q=${kebabCase(tag)}`}>
+          <Link to={`/tags?q=${tag}`}>
             <TagLink>{kebabCase(tag)}</TagLink>
           </Link>
         ))}

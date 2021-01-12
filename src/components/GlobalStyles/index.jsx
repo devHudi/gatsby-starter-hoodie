@@ -74,6 +74,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Noto Sans KR', sans-serif;
+    background: ${props => props.theme.colors.bodyBackground};
   }
 
 `

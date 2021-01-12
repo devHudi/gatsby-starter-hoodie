@@ -13,6 +13,7 @@ const ArticleTitle = styled.h1`
   line-height: 1.2;
   font-size: 2.8rem;
   font-weight: 700;
+  color: ${props => props.theme.colors.text};
 `
 
 const Information = styled.div`
@@ -22,11 +23,12 @@ const Information = styled.div`
 
 const Author = styled.span`
   font-weight: 700;
+  color: ${props => props.theme.colors.text};
 `
 
 const Date = styled.span`
   font-weight: 300;
-  color: #868e96;
+  color: ${props => props.theme.colors.secondaryText};
 `
 
 const TagsWrapper = styled.div`

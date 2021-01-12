@@ -33,7 +33,7 @@ const ParagraphTitle = styled.div`
   margin-bottom: 0.5rem;
   padding-left: ${props => (props.subtitle ? 1.2 : 0)}rem;
   font-size: 0.9rem;
-  color: #adb5bd;
+  color: ${props => props.theme.colors.mutedText};
   line-height: 1.3;
   transition: all 0.2s;
 
@@ -41,11 +41,11 @@ const ParagraphTitle = styled.div`
     props.active &&
     css`
       margin-left: -0.7rem;
-      color: #495057;
+      color: ${props => props.theme.colors.secondaryText};
     `}
 
   &:hover {
-    color: #212529;
+    color: ${props => props.theme.colors.text};
     cursor: pointer;
   }
 `

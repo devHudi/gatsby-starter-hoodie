@@ -25,33 +25,14 @@ const PostWrapper = styled.div`
 const Date = styled.p`
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #868e96;
+  color: ${props => props.theme.colors.tertiaryText};
 `
 
 const Excerpt = styled.p`
   margin-bottom: 2rem;
   line-height: 1.7;
   font-size: 1rem;
-  color: #495057;
-`
-
-const Tags = styled.div`
-  margin-bottom: 1rem;
-
-  & a {
-    padding: 0.3rem 0.7rem;
-    margin-right: 0.5rem;
-    border-radius: 50px;
-    background-color: #f1f3f5;
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #495057;
-    transition: all 0.2s;
-  }
-
-  & a:hover {
-    background-color: #dee2e6;
-  }
+  color: ${props => props.theme.colors.secondaryText};
 `
 
 const PostList = ({ postList }) => {
