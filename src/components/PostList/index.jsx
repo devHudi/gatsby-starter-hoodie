@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import styled from "styled-components"
+import _ from "lodash"
 
 import { Link } from "gatsby"
 
@@ -35,10 +36,47 @@ const Excerpt = styled.p`
   color: ${props => props.theme.colors.secondaryText};
 `
 
+const checkIsScrollAtBottom = () => {
+  const windowHeight =
+    "innerHeight" in window
+      ? window.innerHeight
+      : document.documentElement.offsetHeight
+  const body = document.body
+  const html = document.documentElement
+  const docHeight = Math.max(
+    body.scrollHeight,
+    body.offsetHeight,
+    html.clientHeight,
+    html.scrollHeight,
+    html.offsetHeight
+  )
+  const windowBottom = windowHeight + window.pageYOffset
+
+  return windowBottom >= docHeight
+}
+
 const PostList = ({ postList }) => {
+  const [postCount, setPostCount] = useState(10)
+
+  const handleMoreLoad = _.throttle(() => {
+    if (checkIsScrollAtBottom()) setPostCount(postCount + 10)
+  }, 250)
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleMoreLoad)
+
+    return () => {
+      window.removeEventListener("scroll", handleMoreLoad)
+    }
+  }, [postCount])
+
+  useEffect(() => {
+    setPostCount(10)
+  }, [postList])
+
   return (
     <PostListWrapper>
-      {postList.map((post, i) => {
+      {postList.slice(0, postCount).map((post, i) => {
         const { title, date, tags } = post.frontmatter
         const { excerpt } = post
         const { slug } = post.fields
