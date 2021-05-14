@@ -5,16 +5,26 @@ import { title } from "../../../../blog-config"
 
 const FooterWrapper = styled.footer`
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 2.5rem 0;
   border-top: 1px solid ${props => props.theme.colors.divider};
   text-align: center;
-  color: ${props => props.theme.colors.text};
+  font-size: 11pt;
+  font-weight: lighter;
+  color: ${props => props.theme.colors.secondaryText};
+
+  & > a {
+    color: ${props => props.theme.colors.text};
+  }
 `
 
 const Footer = () => {
   return (
     <FooterWrapper>
-      © {title}, Built with Gatsby and Hoodie theme.
+      © {title}, Built with Gatsby and{" "}
+      <a href="https://github.com/devHudi/Hoodie" target="blank">
+        Hoodie
+      </a>{" "}
+      theme.
     </FooterWrapper>
   )
 }
