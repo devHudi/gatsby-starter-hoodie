@@ -6,10 +6,27 @@ import Article from "components/Article"
 
 export default ({ data, location }) => {
   const post = data.markdownRemark
-  const { previous, next } = data
+  const { previous, next, seriesList } = data
 
-  const { title, date, update, tags } = post.frontmatter
-  const { readingTime } = post.fields
+  const { title, date, update, tags, series } = post.frontmatter
+  const { slug, readingTime } = post.fields
+
+  let filteredSeries = []
+  if (series !== null) {
+    filteredSeries = seriesList.edges.map(seriesPost => {
+      if (seriesPost.node.id === post.id) {
+        return {
+          ...seriesPost.node,
+          currentPost: true,
+        }
+      } else {
+        return {
+          ...seriesPost.node,
+          currentPost: false,
+        }
+      }
+    })
+  }
 
   return (
     <Layout>
@@ -21,6 +38,9 @@ export default ({ data, location }) => {
           tags={tags}
           minToRead={Math.round(readingTime.minutes)}
         />
+        {filteredSeries.length > 0 && (
+          <Article.Series header={series} series={filteredSeries} />
+        )}
         <Article.Body html={post.html} />
         <Article.Footer />
       </Article>
@@ -31,6 +51,7 @@ export default ({ data, location }) => {
 export const pageQuery = graphql`
   query BlogPostBySlug(
     $id: String!
+    $series: String
     $previousPostId: String
     $nextPostId: String
   ) {
@@ -48,10 +69,27 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         update(formatString: "MMMM DD, YYYY")
         tags
+        series
       }
       fields {
         readingTime {
           minutes
+        }
+      }
+    }
+    seriesList: allMarkdownRemark(
+      sort: { order: ASC, fields: [frontmatter___date] }
+      filter: { frontmatter: { series: { eq: $series } } }
+    ) {
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
         }
       }
     }

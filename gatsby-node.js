@@ -18,6 +18,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           fields {
             slug
           }
+          frontmatter {
+            series
+          }
         }
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {
@@ -48,6 +51,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: postTemplate,
         context: {
           id: post.id,
+          series: post.frontmatter.series,
           previousPostId,
           nextPostId,
         },
