@@ -47,13 +47,14 @@ const StyledLink = styled(Link)`
   ${InvertLinkMixin}
 `
 
-const Header = ({ title, date, update, tags }) => {
+const Header = ({ title, date, update, tags, minToRead }) => {
   return (
     <>
       <ArticleTitle> {title} </ArticleTitle>
       <Information>
         <Author> @{author} </Author>
         <Date>· {date} </Date>
+        <Date>· 읽는 데 {minToRead}분 </Date>
       </Information>
       <TagList tagList={tags} />
       <Divider mt="0" />

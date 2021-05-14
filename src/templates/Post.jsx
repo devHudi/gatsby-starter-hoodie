@@ -9,11 +9,18 @@ export default ({ data, location }) => {
   const { previous, next } = data
 
   const { title, date, update, tags } = post.frontmatter
+  const { readingTime } = post.fields
 
   return (
     <Layout>
       <Article>
-        <Article.Header title={title} date={date} update={update} tags={tags} />
+        <Article.Header
+          title={title}
+          date={date}
+          update={update}
+          tags={tags}
+          minToRead={Math.round(readingTime.minutes)}
+        />
         <Article.Body html={post.html} />
         <Article.Footer />
       </Article>
@@ -41,6 +48,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         update(formatString: "MMMM DD, YYYY")
         tags
+      }
+      fields {
+        readingTime {
+          minutes
+        }
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
