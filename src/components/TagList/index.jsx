@@ -34,13 +34,17 @@ const TagLink = styled.a`
   }
 `
 
+const spaceToDash = text => {
+  return text.replace(/\s+/g, "-")
+}
+
 const TagList = ({ tagList, count, selected }) => {
   if (!count) {
     return (
       <TagListWrapper>
         {tagList.map((tag, i) => (
           <Link to={`/tags?q=${tag}`}>
-            <TagLink>{kebabCase(tag)}</TagLink>
+            <TagLink>{spaceToDash(tag)}</TagLink>
           </Link>
         ))}
       </TagListWrapper>
@@ -56,7 +60,7 @@ const TagList = ({ tagList, count, selected }) => {
           }
         >
           <TagLink selected={tag.fieldValue === selected}>
-            {kebabCase(tag.fieldValue)} ({tag.totalCount})
+            {spaceToDash(tag.fieldValue)} ({tag.totalCount})
           </TagLink>
         </Link>
       ))}
