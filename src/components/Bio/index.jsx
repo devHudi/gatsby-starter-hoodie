@@ -1,7 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 
-import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa"
+import {
+  FaGithub,
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaLink,
+} from "react-icons/fa"
 
 import { description, author, links } from "../../../blog-config"
 
@@ -66,7 +72,7 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const { github, instagram, facebook, linkedIn } = links
+  const { github, instagram, facebook, linkedIn, etc } = links
 
   return (
     <BioWrapper id="bio">
@@ -86,6 +92,9 @@ const Bio = () => {
           </Link>
           <Link link={linkedIn}>
             <FaLinkedin />
+          </Link>
+          <Link link={etc}>
+            <FaLink />
           </Link>
         </LinksWrapper>
       </div>
