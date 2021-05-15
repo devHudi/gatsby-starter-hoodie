@@ -10,10 +10,15 @@ import Body from "./Body"
 import Footer from "./Footer"
 
 const Layout = ({ children }) => {
-  const isSystemDarkMode = window.matchMedia("(prefers-color-scheme: dark)")
-    .matches
+  let isSystemDarkMode = null
+  if (typeof window !== "undefined") {
+    isSystemDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  }
 
-  const localTheme = localStorage.getItem("theme")
+  let localTheme = null
+  if (typeof localStorage !== "undefined") {
+    localTheme = localStorage.getItem("theme")
+  }
 
   const [themeMode, setThemeMode] = useState(
     localTheme ? localTheme : isSystemDarkMode ? "dark" : "light"
