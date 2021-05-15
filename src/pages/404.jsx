@@ -24,6 +24,10 @@ const NotFound = styled.div`
     font-weight: lighter;
     font-size: 1.9rem;
   }
+
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 `
 
 const NotFoundPage = () => (
