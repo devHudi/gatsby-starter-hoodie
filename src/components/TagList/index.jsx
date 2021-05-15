@@ -8,7 +8,7 @@ const TagListWrapper = styled.div`
   word-break: break-all;
 `
 
-const TagLink = styled.a`
+const TagLink = styled.div`
   display: inline-block;
   padding: 0.6rem 0.7rem;
   margin-right: 0.5rem;
@@ -45,7 +45,7 @@ const TagList = ({ tagList, count, selected }) => {
     return (
       <TagListWrapper>
         {tagList.map((tag, i) => (
-          <Link to={`/tags?q=${tag}`}>
+          <Link key={JSON.stringify({ tag, i })} to={`/tags?q=${tag}`}>
             <TagLink>{spaceToDash(tag)}</TagLink>
           </Link>
         ))}
@@ -57,6 +57,7 @@ const TagList = ({ tagList, count, selected }) => {
     <TagListWrapper>
       {tagList.map((tag, i) => (
         <Link
+          key={JSON.stringify({ tag, i })}
           to={
             selected === tag.fieldValue ? "/tags" : `/tags?q=${tag.fieldValue}`
           }
