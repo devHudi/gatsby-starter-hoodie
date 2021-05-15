@@ -75,6 +75,14 @@ module.exports = {
         gfm: true,
         plugins: [
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              loading: "lazy",
+              wrapperStyle: "margin-bottom: 1rem; max-width: 100%;",
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
