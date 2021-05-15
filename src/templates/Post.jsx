@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import Article from "components/Article"
@@ -9,7 +9,7 @@ export default ({ data, location }) => {
   const { previous, next, seriesList } = data
 
   const { title, date, update, tags, series } = post.frontmatter
-  const { slug, readingTime } = post.fields
+  const { readingTime } = post.fields
 
   let filteredSeries = []
   if (series !== null) {
