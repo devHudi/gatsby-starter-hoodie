@@ -56,7 +56,7 @@ const Header = ({ title, date, update, tags, minToRead }) => {
         <Date>· {date} </Date>
         <Date>· 읽는 데 {minToRead}분 </Date>
       </Information>
-      <TagList tagList={tags} />
+      {tags && <TagList tagList={tags} />}
       <Divider mt="0" />
     </>
   )

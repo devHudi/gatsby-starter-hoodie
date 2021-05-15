@@ -39,6 +39,8 @@ const spaceToDash = text => {
 }
 
 const TagList = ({ tagList, count, selected }) => {
+  if (!tagList) return null
+
   if (!count) {
     return (
       <TagListWrapper>
