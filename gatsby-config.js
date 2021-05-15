@@ -10,6 +10,20 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-react-redux`,
+      options: {
+        pathToCreateStoreModule: "./src/reducers/createStore",
+        serialize: {
+          space: 0,
+          isJSON: true,
+          unsafe: false,
+          ignoreFunction: true,
+        },
+        cleanupOnClient: true,
+        windowKey: "__PRELOADED_STATE__",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
