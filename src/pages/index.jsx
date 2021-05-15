@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
@@ -7,12 +8,13 @@ import Bio from "components/Bio"
 import PostList from "components/PostList"
 import Divider from "components/Divider"
 
+import { title, description, siteUrl } from "../../blog-config"
+
 const Space = styled.div`
   height: 3rem;
 `
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
@@ -27,6 +29,15 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content={title} />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+      </Helmet>
       <Space />
       <Bio />
       <Divider />

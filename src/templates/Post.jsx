@@ -1,15 +1,18 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import Article from "components/Article"
 
+import { siteUrl } from "../../blog-config"
+
 export default ({ data, location }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
 
-  const { title, date, update, tags, series } = post.frontmatter
-  const { readingTime } = post.fields
+  const { title, description, date, update, tags, series } = post.frontmatter
+  const { readingTime, slug } = post.fields
 
   let filteredSeries = []
   if (series !== null) {
@@ -30,6 +33,16 @@ export default ({ data, location }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+        <meta property="og:url" content={`${siteUrl}/${slug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+      </Helmet>
       <Article>
         <Article.Header
           title={title}
@@ -72,6 +85,7 @@ export const pageQuery = graphql`
         series
       }
       fields {
+        slug
         readingTime {
           minutes
         }

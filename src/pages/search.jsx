@@ -1,10 +1,13 @@
 import React, { useState, useCallback } from "react"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import PostList from "components/PostList"
 import TextField from "components/TextField"
 import VerticalSpace from "components/VerticalSpace"
+
+import { title, description, siteUrl } from "../../blog-config"
 
 const Search = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -26,6 +29,15 @@ const Search = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content={title} />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+      </Helmet>
       <TextField
         onChange={e => setQuery(e.target.value)}
         placeholder="Enter your search keyword"

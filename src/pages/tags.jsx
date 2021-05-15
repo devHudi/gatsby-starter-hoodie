@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
+import { Helmet } from "react-helmet"
 import filter from "lodash/filter"
 
-import { Helmet } from "react-helmet"
 import { graphql, navigate } from "gatsby"
 
 import queryString from "query-string"
@@ -12,8 +12,9 @@ import TagList from "components/TagList"
 import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
 
+import { title, description, siteUrl } from "../../blog-config"
+
 const TagsPage = ({ data }) => {
-  const { title } = data.site.siteMetadata
   const tags = data.allMarkdownRemark.group
   const posts = data.allMarkdownRemark.nodes
 
@@ -43,7 +44,15 @@ const TagsPage = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title={title} />
+      <Helmet>
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:title" content={title} />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+      </Helmet>
 
       {selected ? (
         <Title size="sm">
