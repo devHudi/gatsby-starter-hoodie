@@ -22,6 +22,7 @@ export const light = {
     seriesBackground: "#f1f3f5",
     tagText: "#495057",
     selectedTagText: "#f8f9fa",
+    spinner: "#495057",
   },
 }
 
@@ -49,5 +50,6 @@ export const dark = {
     seriesBackground: "#343a40",
     tagText: "#e9ecef",
     selectedTagText: "#212529",
+    spinner: "#f1f3f5",
   },
 }
