@@ -9,6 +9,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    "gatsby-plugin-styled-components",
     "gatsby-remark-reading-time",
     `gatsby-plugin-react-helmet`,
     {
