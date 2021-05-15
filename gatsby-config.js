@@ -88,29 +88,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-resolve-src`,
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        output: `/sitemap.xml`,
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-            
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-          }
-        `,
-      },
-    },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-feed`,
       options: {
