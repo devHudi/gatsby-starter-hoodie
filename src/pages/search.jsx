@@ -28,7 +28,7 @@ const Search = ({ data }) => {
     <Layout>
       <TextField
         onChange={e => setQuery(e.target.value)}
-        placeholder="검색어"
+        placeholder="Enter your search keyword"
       />
       <VerticalSpace size={2} />
       <PostList postList={filteredPosts} />

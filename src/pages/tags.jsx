@@ -47,10 +47,13 @@ const TagsPage = ({ data }) => {
 
       {selected ? (
         <Title size="sm">
-          #{selected} 에 해당하는 글이 총 {filteredPosts.length}개가 있습니다.
+          There are {filteredPosts.length} post{filteredPosts.length > 1 && "s"}{" "}
+          that match #{selected}.
         </Title>
       ) : (
-        <Title size="sm"> 총 {tags.length}개의 태그가 존재합니다. </Title>
+        <Title size="sm">
+          There are {tags.length} tag{tags.length > 1 && "s"}.
+        </Title>
       )}
 
       <TagList

@@ -1,7 +1,6 @@
 module.exports = {
-  title: "Hudi.blog",
-  description:
-    "소프트웨어 개발자 Hudi 입니다. 현재는 Front-end 기술과 Cloud 기술에 관심이 많아 공부 중 입니다.",
+  title: "Hoodie.gatsby",
+  description: "Hello :) I'm Hudi who developed Hoodie theme.",
   author: "Hudi",
   siteUrl: "https://hudi.blog",
   links: {
