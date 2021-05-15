@@ -7,19 +7,20 @@ import { Link } from "gatsby"
 import Title from "components/Title"
 import Divider from "components/Divider"
 import TagList from "components/TagList"
-import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
-const PostListWrapper = styled.div``
+const PostListWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
+`
 
 const PostWrapper = styled.div`
   position: relative;
   top: 0;
-  /* left: 0; */
   transition: all 0.5s;
 
-  &:hover {
-    /* top: -10px; */
-    /* left: 15px; */
+  @media (max-width: 768px) {
+    padding: 0 5px;
   }
 `
 

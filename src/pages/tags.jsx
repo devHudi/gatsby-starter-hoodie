@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import styled from "styled-components"
 import SEO from "components/SEO"
 import filter from "lodash/filter"
 
@@ -13,6 +14,12 @@ import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
+
+const TagListWrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
 
 const TagsPage = ({ data }) => {
   const tags = data.allMarkdownRemark.group
@@ -46,29 +53,31 @@ const TagsPage = ({ data }) => {
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
 
-      {selected ? (
-        <Title size="sm">
-          There are {filteredPosts.length} post{filteredPosts.length > 1 && "s"}{" "}
-          that match #{selected}.
-        </Title>
-      ) : (
-        <Title size="sm">
-          There are {tags.length} tag{tags.length > 1 && "s"}.
-        </Title>
-      )}
+      <TagListWrapper>
+        {selected ? (
+          <Title size="sm">
+            There are {filteredPosts.length} post
+            {filteredPosts.length > 1 && "s"} that match #{selected}.
+          </Title>
+        ) : (
+          <Title size="sm">
+            There are {tags.length} tag{tags.length > 1 && "s"}.
+          </Title>
+        )}
 
-      <TagList
-        count
-        tagList={tags}
-        selected={selected}
-        onClick={tag => {
-          console.log(tag, selected)
-          if (tag === selected) {
-            navigate("/tags")
-            alert("zz")
-          } else setSelected(tag)
-        }}
-      />
+        <TagList
+          count
+          tagList={tags}
+          selected={selected}
+          onClick={tag => {
+            console.log(tag, selected)
+            if (tag === selected) {
+              navigate("/tags")
+              alert("zz")
+            } else setSelected(tag)
+          }}
+        />
+      </TagListWrapper>
 
       <VerticleSpace size={2} />
 

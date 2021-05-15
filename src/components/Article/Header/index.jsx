@@ -8,6 +8,12 @@ import Divider from "components/Divider"
 import TagList from "components/TagList"
 import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
+const Wrapper = styled.div`
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
+
 const ArticleTitle = styled.h1`
   margin-bottom: 1.6rem;
   line-height: 1.2;
@@ -31,25 +37,9 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const TagsWrapper = styled.div`
-  margin-bottom: 0.3rem;
-`
-
-const Tag = styled.span`
-  margin-right: 0.3rem;
-
-  & > a {
-    text-decoration: none;
-  }
-`
-
-const StyledLink = styled(Link)`
-  ${InvertLinkMixin}
-`
-
 const Header = ({ title, date, update, tags, minToRead }) => {
   return (
-    <>
+    <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>
       <Information>
         <Author> @{author} </Author>
@@ -58,7 +48,7 @@ const Header = ({ title, date, update, tags, minToRead }) => {
       </Information>
       {tags && <TagList tagList={tags} />}
       <Divider mt="0" />
-    </>
+    </Wrapper>
   )
 }
 

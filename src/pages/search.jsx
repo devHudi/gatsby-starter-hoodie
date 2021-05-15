@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react"
+import styled from "styled-components"
 import SEO from "components/SEO"
 import { graphql } from "gatsby"
 
@@ -8,6 +9,13 @@ import TextField from "components/TextField"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
+
+const SearchWrapper = styled.div`
+  margin-top: 15px;
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+`
 
 const Search = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes
@@ -30,10 +38,12 @@ const Search = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
-      <TextField
-        onChange={e => setQuery(e.target.value)}
-        placeholder="Enter your search keyword"
-      />
+      <SearchWrapper>
+        <TextField
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Enter your search keyword"
+        />
+      </SearchWrapper>
       <VerticalSpace size={2} />
       <PostList postList={filteredPosts} />
     </Layout>

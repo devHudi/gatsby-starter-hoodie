@@ -14,6 +14,10 @@ import { description, author, links } from "../../../blog-config"
 const BioWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
 `
 
 const Profile = styled.div`

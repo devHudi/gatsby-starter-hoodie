@@ -13,6 +13,7 @@ const STICK_OFFSET = 100
 
 const TocWrapper = styled.div`
   position: absolute;
+  opacity: 1;
   left: 100%;
 
   & > div {
@@ -26,6 +27,10 @@ const TocWrapper = styled.div`
         position: fixed;
         top: ${STICK_OFFSET}px;
       `}
+  }
+
+  @media (max-width: 1300px) {
+    display: None;
   }
 `
 

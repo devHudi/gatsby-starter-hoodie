@@ -10,23 +10,30 @@ import { FaSun, FaMoon, FaTags, FaSearch } from "react-icons/fa"
 const HeaderWrapper = styled.header`
   display: block;
   position: fixed;
-  top: 0;
   top: ${props => (props.isHidden ? -60 : 0)}px;
   left: 0;
+  right: 0;
   padding: 1rem;
-  width: 100%;
   background-color: ${props => props.theme.colors.headerBackground};
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
-  opacity: ${props => (props.isHidden ? 0.5 : 1)};
+  opacity: ${props => (props.isHidden ? 0 : 1)};
   transition: top 0.5s, opacity 0.5s;
   z-index: 999;
+
+  @media (max-width: 768px) {
+    padding: 1rem 0;
+  }
 `
 
 const Inner = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 64px;
+
+  @media (max-width: 768px) {
+    margin: 0 15px;
+  }
 `
 
 const BlogTitle = styled.span`
@@ -52,10 +59,6 @@ const Menu = styled.div`
     height: 1.2rem;
     margin-right: 1rem;
     cursor: pointer;
-  }
-
-  &:last-child {
-    margin-right: 0;
   }
 
   & svg path {
@@ -141,7 +144,7 @@ const Header = ({ toggleTheme }) => {
             <FaTags />
           </Link>
           <Link to="/search">
-            <FaSearch />
+            <FaSearch style={{ marginRight: 0 }} />
           </Link>
         </Menu>
       </Inner>
