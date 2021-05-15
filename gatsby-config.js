@@ -9,6 +9,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    `gatsby-plugin-robots-txt`,
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
