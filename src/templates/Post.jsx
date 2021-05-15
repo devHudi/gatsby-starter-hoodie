@@ -1,5 +1,5 @@
 import React from "react"
-import { Helmet } from "react-helmet"
+import SEO from "components/SEO"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
@@ -33,16 +33,7 @@ export default ({ data, location }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        {description && <meta name="description" content={description} />}
-        <meta property="og:url" content={`${siteUrl}/${slug}`} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
-        {description && (
-          <meta property="og:description" content={description} />
-        )}
-      </Helmet>
+      <SEO title={title} description={description} url={`${siteUrl}${slug}`} />
       <Article>
         <Article.Header
           title={title}

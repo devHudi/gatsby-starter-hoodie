@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Helmet } from "react-helmet"
+import SEO from "components/SEO"
 import filter from "lodash/filter"
 
 import { graphql, navigate } from "gatsby"
@@ -44,15 +44,7 @@ const TagsPage = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        {description && <meta name="description" content={description} />}
-        <meta property="og:url" content={siteUrl} />
-        <meta property="og:title" content={title} />
-        {description && (
-          <meta property="og:description" content={description} />
-        )}
-      </Helmet>
+      <SEO title={title} description={description} url={siteUrl} />
 
       {selected ? (
         <Title size="sm">

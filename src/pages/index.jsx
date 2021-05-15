@@ -1,9 +1,9 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
+import SEO from "components/SEO"
 import Bio from "components/Bio"
 import PostList from "components/PostList"
 import Divider from "components/Divider"
@@ -29,15 +29,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{title}</title>
-        {description && <meta name="description" content={description} />}
-        <meta property="og:url" content={siteUrl} />
-        <meta property="og:title" content={title} />
-        {description && (
-          <meta property="og:description" content={description} />
-        )}
-      </Helmet>
+      <SEO title={title} description={description} url={siteUrl} />
       <Space />
       <Bio />
       <Divider />
