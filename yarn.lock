@@ -6219,6 +6219,11 @@ gatsby-plugin-feed@^2.7.0:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
+gatsby-plugin-google-fonts@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
+  integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
+
 gatsby-plugin-manifest@^2.5.2:
   version "2.12.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.12.1.tgz#d92f23d2d17d3c69445ef7b7842e5441e8dd785e"
