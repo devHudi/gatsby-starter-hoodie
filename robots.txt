@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://hudi.blog/sitemap/sitemap-index.xml
-Host: https://hudi.blog
+Sitemap: https://devhudi.github.io/sitemap/sitemap-index.xml
+Host: https://devhudi.github.io
