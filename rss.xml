@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 14:09:57 GMT</lastBuildDate><item><title><![CDATA[🤩 4. Other tips]]></title><description><![CDATA[How to change the favicon? The favicon is located in . If you replace that image, the favicon will change. If you want to change the name of…]]></description><link>https://devhudi.github.io/Hoodie/other-tips/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/other-tips/</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How to change the favicon?&lt;/h2&gt;
+&lt;p&gt;The favicon is located in &lt;code class=&quot;language-text&quot;&gt;src/images/gatsby-icons.png&lt;/code&gt;. If you replace that image, the favicon will change.&lt;/p&gt;
+&lt;p&gt;If you want to change the name of the favicon, change the &lt;code class=&quot;language-text&quot;&gt;icon&lt;/code&gt; property of &lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-manifest&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Utterance is not working properly.&lt;/h2&gt;
+&lt;p&gt;In the http environment, utterance may not work properly. Host your blog with https.&lt;/p&gt;
+&lt;h2&gt;Do you have another question?&lt;/h2&gt;
+&lt;p&gt;Please comment on this article or &lt;a href=&quot;https://github.com/devHudi/Hoodie/issues&quot;&gt;open an issue&lt;/a&gt; in the Hoodie repository. Your participation advances Hoodie. Thank you 😎.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[1. Add a post You can add posts by creating a new markdown document in the  path. 1-1. Post file structure There are two ways to add a new…]]></description><link>https://devhudi.github.io/Hoodie/writing-guide/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Add a post&lt;/h2&gt;
+&lt;p&gt;You can add posts by creating a new markdown document in the &lt;code class=&quot;language-text&quot;&gt;contents/post&lt;/code&gt; path.&lt;/p&gt;
+&lt;h3&gt;1-1. Post file structure&lt;/h3&gt;
+&lt;p&gt;There are two ways to add a new document. The first is to create a markdown file for a single document without a directory. If you are writing about JavaScript, you can create a &lt;code class=&quot;language-text&quot;&gt;about-javascript.md&lt;/code&gt; file in the &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;The second is to create a directory and create an &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt; file in it. This method is useful when the document contains several additional files such as picture files.&lt;/p&gt;
+&lt;p&gt;Each file name or directory name becomes a unique address of the document and can be accessed as follows. &lt;code class=&quot;language-text&quot;&gt;https://siteURL/about-javascript&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;1-2. Frontmatter&lt;/h3&gt;
+&lt;p&gt;The Markdown document you create contains the document&apos;s metadata called frontmatter.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
+title: &amp;quot;🤔 3. Writing Guide&amp;quot;
+description: &amp;quot;How to write and add a post?&amp;quot;
+date: 2021-05-03
+update: 2021-05-03
+tags:
+  - hoodie
+  - writing-guide
+series: &amp;quot;Getting started your blog with Hoodie&amp;quot;
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Above is the frontmatter of the document you are currently reading. Among them, title and date are required. It is recommended to enclose the string with spaces in quotation marks.&lt;/p&gt;
+&lt;h3&gt;1-3. Writing markdown&lt;/h3&gt;
+&lt;p&gt;If you have written a Frontmatter, you can write your markdown document under it. Hoodie supports most Markdown syntax. To learn more about Markdown syntax, see the &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt; documentation on GitHub.&lt;/p&gt;
+&lt;h2&gt;2. Syntax Highlighting &amp;#x26; Katex&lt;/h2&gt;
+&lt;h3&gt;2-1. Syntax Highlighting&lt;/h3&gt;
+&lt;p&gt;Syntax highlighting based on Prism.JS is supported.&lt;/p&gt;
+&lt;h4&gt;Examples&lt;/h4&gt;
+&lt;p&gt;Javascript&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It supports a wider variety of other languages. Check it out on the &lt;a href=&quot;https://prismjs.com/&quot;&gt;Prism.js website&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;2-2. Katex&lt;/h3&gt;
+&lt;p&gt;It supports Katex syntax, you can easily express complex formulas.&lt;/p&gt;
+&lt;h4&gt;Inline mode&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;E = m c^{2}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8141079999999999em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8141079999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;Block mode&lt;/h4&gt;
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∞&lt;/mi&gt;&lt;/msubsup&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\int_{0}^{\infty} f(x) dx&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.326242em;vertical-align:-0.9119499999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;&lt;span class=&quot;mop op-symbol large-op&quot; style=&quot;margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;&quot;&gt;∫&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.414292em;&quot;&gt;&lt;span style=&quot;top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.8129000000000004em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;∞&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.9119499999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10764em;&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;h2&gt;3. Add images to a post&lt;/h2&gt;
+&lt;p&gt;You can easily embed images using relative paths. It is easy to manage documents containing images by creating a directory.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;sample image&quot;
+        title=&quot;sample image&quot;
+        src=&quot;/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg&quot;
+        srcset=&quot;/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/ca928/sample-image.jpg 148w,
+/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/278fa/sample-image.jpg 295w,
+/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg 590w,
+/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/b4485/sample-image.jpg 885w,
+/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/096b1/sample-image.jpg 1180w,
+/Hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg 1920w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Images are loaded with Lazy Loading, so you can secure fast document loading speed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ The extension of the file must be set to lowercase.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;4. Tagging&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/Hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 18.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;tag example&quot;
+        title=&quot;tag example&quot;
+        src=&quot;/Hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg&quot;
+        srcset=&quot;/Hoodie/static/82ce4bec7f5360eef32a473171b181af/ca928/tag-example.jpg 148w,
+/Hoodie/static/82ce4bec7f5360eef32a473171b181af/278fa/tag-example.jpg 295w,
+/Hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg 590w,
+/Hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg 737w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can classify and search documents by tag set in Frontmatter. All tags you set can be viewed and searched in &lt;code class=&quot;language-text&quot;&gt;https://siteUrl/tags&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;5. Series&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 16.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;series example&quot;
+        title=&quot;series example&quot;
+        src=&quot;/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg&quot;
+        srcset=&quot;/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/ca928/series-example.jpg 148w,
+/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/278fa/series-example.jpg 295w,
+/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg 590w,
+/Hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg 677w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can publish multiple related documents in a series. The series set in Frontmatter is grouped together and shown at the top of the document. This can be useful for serialized documents with an order. Series documents are displayed in ascending order of creation date.&lt;/p&gt;
+&lt;p&gt;The current document is also set in a series called &lt;code class=&quot;language-text&quot;&gt;Getting started your blog with Hoodie&lt;/code&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting started your blog with Hoodie by following steps below. It's very easy 😉. 1. Create a Gatsby site Make sure you have node.js…]]></description><link>https://devhudi.github.io/Hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Getting started your blog with Hoodie by following steps below. It&apos;s very easy 😉.&lt;/p&gt;
+&lt;h2&gt;1. Create a Gatsby site&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; installed on your computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2. Start dev server&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
+$ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can access to your blog at localhost:8000.&lt;/p&gt;
+&lt;h2&gt;3. Create your own Github repository&lt;/h2&gt;
+&lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.&lt;/p&gt;
+&lt;p&gt;If you don&apos;t know how to create a GitHub repository, follow the &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;official GitHub documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Add remote repository&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;4. Write blog-config.js&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoodie.gatsby&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello :) I&apos;m Hudi who developed Hoodie theme.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hudi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://hudi.blog&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  links&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    github&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://github.com/devHudi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    facebook&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.facebook.com/profile.php?id=100057724153835&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    instagram&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.instagram.com/dawn_fromeast/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    etc&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.notion.so/Hudi-s-R-sum-0c1d1a1b35284d1eaf05c5bfac4a3cad&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  utterances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;devHudi/Hoodie&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;pathname&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hoodie provides a configuration file called &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt;. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.&lt;/p&gt;
+&lt;p&gt;Configure &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; to suit your blog. However, it is recommended not to modify &lt;code class=&quot;language-text&quot;&gt;utterances.type&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;5. Add your content&lt;/h2&gt;
+&lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/Hoodie/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
+&lt;h2&gt;6. Deploy your blog&lt;/h2&gt;
+&lt;h3&gt;6-1 via Netlify&lt;/h3&gt;
+&lt;p&gt;Follow the Connecting to Netlify steps in &lt;a href=&quot;https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/&quot;&gt;A Step-by-Step Guide: Gatsby on Netlify&lt;/a&gt;. It&apos;s not difficult.&lt;/p&gt;
+&lt;p&gt;If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.&lt;/p&gt;
+&lt;h3&gt;6-2. via Github Pages&lt;/h3&gt;
+&lt;h4&gt;Case 1&lt;/h4&gt;
+&lt;p&gt;If the repository name is the same as your GitHub name (if your GitHub page URL is &lt;code class=&quot;language-text&quot;&gt;https://{YOUR_GITHUB_NAME}.github.io&lt;/code&gt;) run the following command to deploy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Case 2&lt;/h4&gt;
+&lt;p&gt;If the repository name is different from your GitHub name (if your GitHub page URL is &lt;code class=&quot;language-text&quot;&gt;https://{YOUR_GITHUB_NAME}.github.io/{YOUR_REPOSITORY_NAME}&lt;/code&gt;) run the following command to deploy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh-prefix-paths&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the above case, you need to change &lt;code class=&quot;language-text&quot;&gt;pathPrefix&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; to your repository name.&lt;/p&gt;
+&lt;h3&gt;6-3. other platforms&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can build the gatsby website with the command above. The build output is created in the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory. Deploy the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory using the command for the platform you want to deploy.&lt;/p&gt;
+&lt;h2&gt;7. Cutomize&lt;/h2&gt;
+&lt;h3&gt;Project Structure&lt;/h3&gt;
+&lt;p&gt;You can customize your own Hoodie by referring to the following file structure 🙊.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
+├── contents
+│   └── posts // your articles are here
+├── public // build outputs are here
+└── src
+    ├── assets
+    │   └── theme // theme config is here
+    ├── components
+    │   └── Article
+    │       └── Body
+    │           └── StyledMarkdown
+    │               └── index.jsx // markdown styles are here
+    │   ...
+    ├── fonts // webfonts are here
+    ├── hooks
+    ├── images
+    ├── pages // page components are here
+    ├── reducers
+    ├── templates // post components are here
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎇 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://devhudi.github.io/Hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
+&lt;p&gt;Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
+&lt;p&gt;Start your blog with a neatly designed Hoodie that supports dark mode.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;Code Highlighting&lt;/li&gt;
+&lt;li&gt;Katex Syntax&lt;/li&gt;
+&lt;li&gt;Dark Mode (Responsive to the settings of the OS)&lt;/li&gt;
+&lt;li&gt;Tag Categoriazation&lt;/li&gt;
+&lt;li&gt;Series Categorization&lt;/li&gt;
+&lt;li&gt;Responsive Web&lt;/li&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;li&gt;Utterance (Comment widget)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Let&apos;s get started&lt;/h2&gt;
+&lt;p&gt;Follow the &lt;a href=&quot;/Hoodie/quick-start&quot;&gt;Quick Start&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
