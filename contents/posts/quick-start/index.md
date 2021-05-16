@@ -37,6 +37,7 @@ If you don't know how to create a GitHub repository, follow the [official GitHub
 ### Add remote repository
 
 ```
+$ git init
 $ git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}
 ```
 
