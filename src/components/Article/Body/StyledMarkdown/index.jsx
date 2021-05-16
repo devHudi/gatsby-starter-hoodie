@@ -42,6 +42,8 @@ const StyledMarkdown = styled.div`
   }
 
   & h4 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.1rem;
   }
 
