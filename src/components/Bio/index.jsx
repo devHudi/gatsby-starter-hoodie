@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
+import ProfileImage from "images/profile.png"
+
 import {
   FaGithub,
   FaFacebook,
@@ -26,7 +28,7 @@ const Profile = styled.div`
   width: 8rem;
   height: 8rem;
   border-radius: 999px;
-  background-image: url("https://media.vlpt.us/profiles/cdhnet98/thumbnails/1537611812.205.png?w=240");
+  background-image: url(${ProfileImage});
   background-size: cover;
   background-position: center;
 `

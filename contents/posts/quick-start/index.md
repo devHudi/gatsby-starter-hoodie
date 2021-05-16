@@ -66,6 +66,10 @@ Hoodie provides a configuration file called `blog-config.js`. In this file, you 
 
 Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
 
+### Change profile image
+
+Replace `src/images/profile.png` with the image you want. To change the image file name, you need to change the source code of `src/components/Bio.jsx`.
+
 ## 5. Add your content
 
 Markdown content is in `contents/posts`. You can write and add your articles like the sample posts here. [Click here](/writing-guide) to see the detail writing guide.
