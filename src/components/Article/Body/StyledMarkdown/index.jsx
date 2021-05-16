@@ -30,7 +30,9 @@ const StyledMarkdown = styled.div`
   }
 
   & h2 {
-    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
   }
 
   & h3 {
