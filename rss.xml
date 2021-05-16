@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://hudi.blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 04:47:29 GMT</lastBuildDate><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[hi]]></description><link>https://hudi.blog/writing-guide/</link><guid isPermaLink="false">https://hudi.blog/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;hi&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting Started 1. Create a Gatsby site Make sure you have node.js installed on your computer. or if you use  , 2. Start dev server Now you…]]></description><link>https://hudi.blog/quick-start/</link><guid isPermaLink="false">https://hudi.blog/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Getting Started&lt;/h2&gt;
+&lt;h3&gt;1. Create a Gatsby site&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; installed on your computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;or if you use &lt;code class=&quot;language-text&quot;&gt;gatsby-cli&lt;/code&gt; ,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;2. Start dev server&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
+npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can access to your blog at localhost:8000.&lt;/p&gt;
+&lt;h3&gt;3. Create your own Github repository&lt;/h3&gt;
+&lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages, the Github Repository is a necessary.&lt;/p&gt;
+&lt;p&gt;If you don&apos;t know how to create a GitHub repository, follow the &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;official GitHub documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;4. Write blog-config.js&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoodie.gatsby&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello :) I&apos;m Hudi who developed Hoodie theme.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hudi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://hudi.blog&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  links&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    github&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://github.com/devHudi&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    facebook&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.facebook.com/profile.php?id=100057724153835&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    instagram&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.instagram.com/dawn_fromeast/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    etc&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.notion.so/Hudi-s-R-sum-0c1d1a1b35284d1eaf05c5bfac4a3cad&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  utterances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;devHudi/Hoodie&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;pathname&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hoodie provides a configuration file called &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt;. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.&lt;/p&gt;
+&lt;p&gt;Configure &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; to suit your blog. However, it is recommended not to modify &lt;code class=&quot;language-text&quot;&gt;utterances.type&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;5. Add your content&lt;/h3&gt;
+&lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
+&lt;h3&gt;6. Deploy your blog&lt;/h3&gt;
+&lt;h3&gt;7. Cutomize&lt;/h3&gt;
+&lt;h4&gt;Project Structure&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
+├── contents
+│   └── posts // your articles are here
+├── public // build outputs are here
+└── src
+    ├── assets
+    │   └── theme // theme config is here
+    ├── components
+    │   └── Article
+    │       └── Body
+    │           └── StyledMarkdown
+    │               └── index.jsx // markdown styles are here
+    │   ...
+    ├── fonts // webfonts are here
+    ├── hooks
+    ├── images
+    ├── pages // page components are here
+    ├── reducers
+    ├── templates // post components are here
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎆 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://hudi.blog/about-booide/</link><guid isPermaLink="false">https://hudi.blog/about-booide/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
+&lt;p&gt;Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
+&lt;p&gt;Start your blog with a neatly designed Hoodie that supports dark mode.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;Code Highlighting&lt;/li&gt;
+&lt;li&gt;Katex Syntax&lt;/li&gt;
+&lt;li&gt;Dark Mode (Responsive to the settings of the OS)&lt;/li&gt;
+&lt;li&gt;Tag Categoriazation&lt;/li&gt;
+&lt;li&gt;Series Categorization&lt;/li&gt;
+&lt;li&gt;Responsive Web&lt;/li&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;li&gt;Utterance (Comment widget)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Let&apos;s get started&lt;/h2&gt;
+&lt;p&gt;Follow the &lt;a href=&quot;/quick-start&quot;&gt;Quick Start&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>

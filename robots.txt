@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://hudi.blog/sitemap/sitemap-index.xml
+Host: https://hudi.blog
