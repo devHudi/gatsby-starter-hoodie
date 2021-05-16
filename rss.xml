@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 10:52:22 GMT</lastBuildDate><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[1. Add a post You can add posts by creating a new markdown document in the  path. 1-1. Post file structure There are two ways to add a new…]]></description><link>https://devhudi.github.io/Hoodie/writing-guide/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Add a post&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 12:28:03 GMT</lastBuildDate><item><title><![CDATA[🤩 4. Other tips]]></title><description><![CDATA[How to change the favicon? The favicon is located in . If you replace that image, the favicon will change. If you want to change the name of…]]></description><link>https://devhudi.github.io/Hoodie/other-tips/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/other-tips/</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How to change the favicon?&lt;/h2&gt;
+&lt;p&gt;The favicon is located in &lt;code class=&quot;language-text&quot;&gt;src/images/gatsby-icons.png&lt;/code&gt;. If you replace that image, the favicon will change.&lt;/p&gt;
+&lt;p&gt;If you want to change the name of the favicon, change the &lt;code class=&quot;language-text&quot;&gt;icon&lt;/code&gt; property of &lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-manifest&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Do you have another question?&lt;/h2&gt;
+&lt;p&gt;Please comment on this article or &lt;a href=&quot;https://github.com/devHudi/Hoodie/issues&quot;&gt;open an issue&lt;/a&gt; in the Hoodie repository. Your participation advances Hoodie. Thank you 😎.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[1. Add a post You can add posts by creating a new markdown document in the  path. 1-1. Post file structure There are two ways to add a new…]]></description><link>https://devhudi.github.io/Hoodie/writing-guide/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Add a post&lt;/h2&gt;
 &lt;p&gt;You can add posts by creating a new markdown document in the &lt;code class=&quot;language-text&quot;&gt;contents/post&lt;/code&gt; path.&lt;/p&gt;
 &lt;h3&gt;1-1. Post file structure&lt;/h3&gt;
 &lt;p&gt;There are two ways to add a new document. The first is to create a markdown file for a single document without a directory. If you are writing about JavaScript, you can create a &lt;code class=&quot;language-text&quot;&gt;about-javascript.md&lt;/code&gt; file in the &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt; directory.&lt;/p&gt;
@@ -142,17 +146,15 @@ series: &amp;quot;Getting started your blog with Hoodie&amp;quot;
 &lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; installed on your computer.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;or if you use &lt;code class=&quot;language-text&quot;&gt;gatsby-cli&lt;/code&gt; ,&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;2. Start dev server&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
-npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+$ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now you can access to your blog at localhost:8000.&lt;/p&gt;
 &lt;h2&gt;3. Create your own Github repository&lt;/h2&gt;
-&lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages, the Github Repository is a necessary.&lt;/p&gt;
+&lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.&lt;/p&gt;
 &lt;p&gt;If you don&apos;t know how to create a GitHub repository, follow the &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;official GitHub documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Add remote repository&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/devHudi/test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;4. Write blog-config.js&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoodie.gatsby&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -175,14 +177,23 @@ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;5. Add your content&lt;/h2&gt;
 &lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/Hoodie/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
 &lt;h2&gt;6. Deploy your blog&lt;/h2&gt;
-&lt;h3&gt;6-1. via Github Pages&lt;/h3&gt;
-&lt;p&gt;yarn deploy-gh 실행
-blog-config.js 에서 prefix-path 수정 (별개 레포시)
-package.json 에서 deploy-gh 를 아래와 같이 수정&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;6-2. via Netlify&lt;/h3&gt;
+&lt;h3&gt;6-1 via Netlify&lt;/h3&gt;
+&lt;p&gt;Follow the Connecting to Netlify steps in &lt;a href=&quot;https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/&quot;&gt;A Step-by-Step Guide: Gatsby on Netlify&lt;/a&gt;. It&apos;s not difficult.&lt;/p&gt;
+&lt;p&gt;If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.&lt;/p&gt;
+&lt;h3&gt;6-2. via Github Pages&lt;/h3&gt;
+&lt;h4&gt;Case 1&lt;/h4&gt;
+&lt;p&gt;If the repository name is the same as your GitHub name (if your GitHub page URL is &lt;code class=&quot;language-text&quot;&gt;https://{YOUR_GITHUB_NAME}.github.io&lt;/code&gt;) run the following command to deploy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Case 2&lt;/h4&gt;
+&lt;p&gt;If the repository name is different from your GitHub name (if your GitHub page URL is &lt;code class=&quot;language-text&quot;&gt;https://{YOUR_GITHUB_NAME}.github.io/{YOUR_REPOSITORY_NAME}&lt;/code&gt;) run the following command to deploy.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh-prefix-paths&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the above case, you need to change &lt;code class=&quot;language-text&quot;&gt;pathPrefix&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; to your repository name.&lt;/p&gt;
+&lt;h3&gt;6-3. other platforms&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can build the gatsby website with the command above. The build output is created in the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory. Deploy the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory using the command for the platform you want to deploy.&lt;/p&gt;
 &lt;h2&gt;7. Cutomize&lt;/h2&gt;
 &lt;h3&gt;Project Structure&lt;/h3&gt;
+&lt;p&gt;You can customize your own Hoodie by referring to the following file structure 🙊.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
 ├── contents
 │   └── posts // your articles are here
@@ -202,7 +213,7 @@ package.json 에서 deploy-gh 를 아래와 같이 수정&lt;/p&gt;
     ├── pages // page components are here
     ├── reducers
     ├── templates // post components are here
-    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎆 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://devhudi.github.io/Hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎇 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://devhudi.github.io/Hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
 &lt;p&gt;Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
 &lt;p&gt;Start your blog with a neatly designed Hoodie that supports dark mode.&lt;/p&gt;
 &lt;h2&gt;Features&lt;/h2&gt;
