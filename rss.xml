@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 05:26:46 GMT</lastBuildDate><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[hi]]></description><link>https://devhudi.github.io/Hoodie/writing-guide/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;hi&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting Started 1. Create a Gatsby site Make sure you have node.js installed on your computer. or if you use  , 2. Start dev server Now you…]]></description><link>https://devhudi.github.io/Hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Getting Started&lt;/h2&gt;
-&lt;h3&gt;1. Create a Gatsby site&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 08:23:31 GMT</lastBuildDate><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting started your blog with Hoodie by following steps below. It's very easy 😉. 1. Create a Gatsby site Make sure you have node.js…]]></description><link>https://devhudi.github.io/Hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Getting started your blog with Hoodie by following steps below. It&apos;s very easy 😉.&lt;/p&gt;
+&lt;h2&gt;1. Create a Gatsby site&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; installed on your computer.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;or if you use &lt;code class=&quot;language-text&quot;&gt;gatsby-cli&lt;/code&gt; ,&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;2. Start dev server&lt;/h3&gt;
+&lt;h2&gt;2. Start dev server&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
 npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now you can access to your blog at localhost:8000.&lt;/p&gt;
-&lt;h3&gt;3. Create your own Github repository&lt;/h3&gt;
+&lt;h2&gt;3. Create your own Github repository&lt;/h2&gt;
 &lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages, the Github Repository is a necessary.&lt;/p&gt;
 &lt;p&gt;If you don&apos;t know how to create a GitHub repository, follow the &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;official GitHub documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h4&gt;Add remote repository&lt;/h4&gt;
+&lt;h3&gt;Add remote repository&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/devHudi/test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;4. Write blog-config.js&lt;/h3&gt;
+&lt;h2&gt;4. Write blog-config.js&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hoodie.gatsby&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello :) I&apos;m Hudi who developed Hoodie theme.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -34,14 +34,16 @@ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Hoodie provides a configuration file called &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt;. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.&lt;/p&gt;
 &lt;p&gt;Configure &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; to suit your blog. However, it is recommended not to modify &lt;code class=&quot;language-text&quot;&gt;utterances.type&lt;/code&gt;.&lt;/p&gt;
-&lt;h3&gt;5. Add your content&lt;/h3&gt;
-&lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/Hoodie/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
-&lt;h3&gt;6. Deploy your blog&lt;/h3&gt;
-&lt;h4&gt;6-1. Github Pages&lt;/h4&gt;
-&lt;p&gt;blog-config.js 에서 prefix-path 수정 (별개 레포시)
-yarn deploy-gh 실행&lt;/p&gt;
-&lt;h3&gt;7. Cutomize&lt;/h3&gt;
-&lt;h4&gt;Project Structure&lt;/h4&gt;
+&lt;h2&gt;5. Add your content&lt;/h2&gt;
+&lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
+&lt;h2&gt;6. Deploy your blog&lt;/h2&gt;
+&lt;h3&gt;6-1. Github Pages&lt;/h3&gt;
+&lt;p&gt;yarn deploy-gh 실행
+blog-config.js 에서 prefix-path 수정 (별개 레포시)
+package.json 에서 deploy-gh 를 아래와 같이 수정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;7. Cutomize&lt;/h2&gt;
+&lt;h3&gt;Project Structure&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
 ├── contents
 │   └── posts // your articles are here
@@ -61,20 +63,52 @@ yarn deploy-gh 실행&lt;/p&gt;
     ├── pages // page components are here
     ├── reducers
     ├── templates // post components are here
-    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎆 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://devhudi.github.io/Hoodie/about-booide/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/about-booide/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
-&lt;p&gt;Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
-&lt;p&gt;Start your blog with a neatly designed Hoodie that supports dark mode.&lt;/p&gt;
-&lt;h2&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Markdown&lt;/li&gt;
-&lt;li&gt;Code Highlighting&lt;/li&gt;
-&lt;li&gt;Katex Syntax&lt;/li&gt;
-&lt;li&gt;Dark Mode (Responsive to the settings of the OS)&lt;/li&gt;
-&lt;li&gt;Tag Categoriazation&lt;/li&gt;
-&lt;li&gt;Series Categorization&lt;/li&gt;
-&lt;li&gt;Responsive Web&lt;/li&gt;
-&lt;li&gt;SEO&lt;/li&gt;
-&lt;li&gt;Utterance (Comment widget)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Let&apos;s get started&lt;/h2&gt;
-&lt;p&gt;Follow the &lt;a href=&quot;/Hoodie/quick-start&quot;&gt;Quick Start&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Lorem Ipsum]]></title><description><![CDATA[Tum ore nata Lorem markdownum frontem; qui et quae una perpetuo luctus. Liber non venit
+nubilus ineamus soror. Leves nec, te cur, et laurea…]]></description><link>https://devhudi.github.io/Hoodie/loremipsum/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/loremipsum/</guid><pubDate>Fri, 04 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Tum ore nata&lt;/h2&gt;
+&lt;p&gt;Lorem markdownum frontem; qui et quae &lt;em&gt;una&lt;/em&gt; perpetuo luctus. Liber non venit
+nubilus ineamus soror. Leves nec, te cur, et laurea Troas tacita et misistis
+discussa. Nostros indiciine te deorum; suis meritumque Oenopiam, in nives &lt;a href=&quot;http://infelix.net/&quot;&gt;undis
+mihi&lt;/a&gt; inhibere referens nempe.&lt;/p&gt;
+&lt;p&gt;Et haurit Terea sontem &lt;strong&gt;meum&lt;/strong&gt;; vix se Aeoliden fecit Agenorides ad amplexa
+magis, sic, a. Populus ferro vos &lt;strong&gt;praecutiunt memor&lt;/strong&gt; praetentaque, gaudia
+iussisque, valido. Luctus quendam cui dixit texerat pectoribusque parentis
+muros, via Dianae? Hoc qui sua iuvenem quoque falsaque nititur nectar. Ad quam
+tamen tu silva spectant solus Argolicosque resectas?&lt;/p&gt;
+&lt;h3&gt;Ne procorum vagos&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Exercita generoso&lt;/em&gt; axis memorant velles carbasa vulgus. Modo vesti ut,
+nulloque: nec tela modo indelebile lumina; sua sua tellusque fundere pronus
+dextra sub. Prima dedit felix genus isdem, ab illa malorum utere prorae
+praeponere. Tosti Aethalion intrare. Graias quo atria dixit Deiphobum elisi arma
+sic reliquit, soceri illi retinet.&lt;/p&gt;
+&lt;h2&gt;Omnibus quo vindicta canat&lt;/h2&gt;
+&lt;p&gt;Exoratis marmoreum genibus adducitque infelix unco satis, inscribenda moneo,
+quaeque alto. Pluribus luna succedat rogant &lt;strong&gt;submergere&lt;/strong&gt; nostris Iason
+exsaturanda illa infelix inmenso, operis.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Onusque locum exemplo, &lt;em&gt;unda Iuppiter tali&lt;/em&gt; facerent, montis modo cacumine
+subit facientibus donec, uno urbi et Colchi? Inter devolvunt sine, nata moenia
+caelo sed coniunx surgunt quarum &lt;em&gt;et fratres&lt;/em&gt; tantus imago. Ad Ceyce
+reseratis; quae fuit est, nec sit. &lt;a href=&quot;http://semper.io/nec-ponunt.html&quot;&gt;Tenus&lt;/a&gt;
+vetantis vestrum praestantes, ambo vela: dum replet carpsit fluminis, feremus
+sociosque Demoleon. Flebile vivere periuria rostro &lt;strong&gt;disiecit erit est&lt;/strong&gt; nec
+pudor dolore caespite visaeque gurgite mentis dentibus &lt;strong&gt;solacia&lt;/strong&gt; dei medio
+illud leto.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Palus totumque exploratis ad grege effundit&lt;/h2&gt;
+&lt;p&gt;Ille hunc, &lt;a href=&quot;http://suam-vestes.com/ingenium-placuit&quot;&gt;quo&lt;/a&gt; vestibus haesissem
+ultricibus pilas praeduraque, nisi nactusque feruntur magni insistere.
+Terribilesque Liber suarum venae gravitas. Est ad viseret cur iugis cum vultus
+reformatus quas. Terruit ullam.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Saxea in crura granum praefixaque fugae. Veniret laetabile utrumque ortus
+laetissimus Pelea emerguntque finis quinque, est.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Adspexit os&lt;/h2&gt;
+&lt;p&gt;Sustulit fastigiaque placeat contigerant latentia supplex sibila. Opaci nova
+piget atque gravis avidum; opem &lt;a href=&quot;http://exponitiacentes.io/venerat&quot;&gt;levatum&lt;/a&gt;:
+et. Vivit contulerant Aegaeo flamma est
+&lt;a href=&quot;http://est-edidit.org/genua-sensit&quot;&gt;petis&lt;/a&gt; volucres obvertere verterit sorores
+unde.&lt;/p&gt;
+&lt;p&gt;Coeptis voce nullisque ille, sibi Hersilie, Promethides invide duri Deoida cum
+dabatur saepius habentia, quoque vota fratrique. Ambagibus eluditque vidit
+dolet.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[C]]></title><description><![CDATA[It's C post]]></description><link>https://devhudi.github.io/Hoodie/c/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/c/</guid><pubDate>Wed, 06 May 2015 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It&apos;s C post&lt;/p&gt;</content:encoded></item><item><title><![CDATA[B]]></title><description><![CDATA[It's B post]]></description><link>https://devhudi.github.io/Hoodie/b/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/b/</guid><pubDate>Tue, 05 May 2015 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It&apos;s B post&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A]]></title><description><![CDATA[It's A post]]></description><link>https://devhudi.github.io/Hoodie/a/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/a/</guid><pubDate>Mon, 04 May 2015 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It&apos;s A post&lt;/p&gt;</content:encoded></item></channel></rss>
