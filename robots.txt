@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://devhudi.github.io/Hoodie/sitemap/sitemap-index.xml
-Host: https://devhudi.github.io
