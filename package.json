@@ -7,6 +7,7 @@
   "dependencies": {
     "gatsby": "^2.25.3",
     "gatsby-image": "^2.4.21",
+    "gatsby-plugin-catch-links": "^3.5.0",
     "gatsby-plugin-feed": "^2.7.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.5.2",
