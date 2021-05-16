@@ -1,5 +1,5 @@
 ---
-title: "🤩 4. Other tips"
+title: "🤩 4. Other Tips"
 description:
 date: 2021-05-04
 update: 2021-05-04
