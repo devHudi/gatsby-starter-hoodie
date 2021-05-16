@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 08:27:05 GMT</lastBuildDate><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting started your blog with Hoodie by following steps below. It's very easy 😉. 1. Create a Gatsby site Make sure you have node.js…]]></description><link>https://devhudi.github.io/Hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Getting started your blog with Hoodie by following steps below. It&apos;s very easy 😉.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of Hoodie.gatsby]]></title><description><![CDATA[Hello :) I'm Hudi who developed Hoodie theme.]]></description><link>https://devhudi.github.io/Hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 May 2021 09:30:52 GMT</lastBuildDate><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting started your blog with Hoodie by following steps below. It's very easy 😉. 1. Create a Gatsby site Make sure you have node.js…]]></description><link>https://devhudi.github.io/Hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Getting started your blog with Hoodie by following steps below. It&apos;s very easy 😉.&lt;/p&gt;
 &lt;h2&gt;1. Create a Gatsby site&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; installed on your computer.&lt;/p&gt;
@@ -37,11 +37,12 @@ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;5. Add your content&lt;/h2&gt;
 &lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/Hoodie/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
 &lt;h2&gt;6. Deploy your blog&lt;/h2&gt;
-&lt;h3&gt;6-1. Github Pages&lt;/h3&gt;
+&lt;h3&gt;6-1. via Github Pages&lt;/h3&gt;
 &lt;p&gt;yarn deploy-gh 실행
 blog-config.js 에서 prefix-path 수정 (별개 레포시)
 package.json 에서 deploy-gh 를 아래와 같이 수정&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;6-2. via Netlify&lt;/h3&gt;
 &lt;h2&gt;7. Cutomize&lt;/h2&gt;
 &lt;h3&gt;Project Structure&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
@@ -63,7 +64,23 @@ package.json 에서 deploy-gh 를 아래와 같이 수정&lt;/p&gt;
     ├── pages // page components are here
     ├── reducers
     ├── templates // post components are here
-    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Lorem Ipsum]]></title><description><![CDATA[Tum ore nata Lorem markdownum frontem; qui et quae una perpetuo luctus. Liber non venit
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎆 1. About Hoodie]]></title><description><![CDATA[About Hoodie Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and…]]></description><link>https://devhudi.github.io/Hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About Hoodie&lt;/h2&gt;
+&lt;p&gt;Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
+&lt;p&gt;Start your blog with a neatly designed Hoodie that supports dark mode.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Markdown&lt;/li&gt;
+&lt;li&gt;Code Highlighting&lt;/li&gt;
+&lt;li&gt;Katex Syntax&lt;/li&gt;
+&lt;li&gt;Dark Mode (Responsive to the settings of the OS)&lt;/li&gt;
+&lt;li&gt;Tag Categoriazation&lt;/li&gt;
+&lt;li&gt;Series Categorization&lt;/li&gt;
+&lt;li&gt;Responsive Web&lt;/li&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;li&gt;Utterance (Comment widget)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Let&apos;s get started&lt;/h2&gt;
+&lt;p&gt;Follow the &lt;a href=&quot;/Hoodie/quick-start&quot;&gt;Quick Start&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lorem Ipsum]]></title><description><![CDATA[Tum ore nata Lorem markdownum frontem; qui et quae una perpetuo luctus. Liber non venit
 nubilus ineamus soror. Leves nec, te cur, et laurea…]]></description><link>https://devhudi.github.io/Hoodie/loremipsum/</link><guid isPermaLink="false">https://devhudi.github.io/Hoodie/loremipsum/</guid><pubDate>Fri, 04 Sep 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;Tum ore nata&lt;/h2&gt;
 &lt;p&gt;Lorem markdownum frontem; qui et quae &lt;em&gt;una&lt;/em&gt; perpetuo luctus. Liber non venit
 nubilus ineamus soror. Leves nec, te cur, et laurea Troas tacita et misistis
