@@ -13,7 +13,7 @@ Getting started your blog with Hoodie by following steps below. It's very easy ð
 
 ## 1. Create a Gatsby site
 
-> Make sure you have **node.js** installed on your computer.
+> Make sure you have **node.js** and **gatsby-cli** installed on your computer.
 
 ```
 $ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie
@@ -82,7 +82,7 @@ If you connect the github repository using Netlify, it is automatically distribu
 
 #### Case 1
 
-If the repository name is the same as your GitHub name (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io`) run the following command to deploy.
+If the repository name contains .github.io (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io`) run the following command to deploy.
 
 ```
 $ npm run deploy-gh
