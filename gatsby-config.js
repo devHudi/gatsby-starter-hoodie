@@ -81,6 +81,7 @@ module.exports = {
               maxWidth: 590,
               loading: "lazy",
               wrapperStyle: "margin-bottom: 1rem; max-width: 100%;",
+              quality: 100,
             },
           },
           {
