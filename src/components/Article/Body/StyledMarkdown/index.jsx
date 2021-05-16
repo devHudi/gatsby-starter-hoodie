@@ -100,12 +100,11 @@ const StyledMarkdown = styled.div`
     border-bottom: none;
   }
 
-  & :not(pre) > code {
-    padding: 0.15rem 0.2rem;
-    border-radius: 0;
+  & p > code.language-text {
+    padding: 0.1rem 0.3rem;
+    font-size: 0.9rem;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: bold;
     color: ${props => props.theme.colors.text};
   }
 
