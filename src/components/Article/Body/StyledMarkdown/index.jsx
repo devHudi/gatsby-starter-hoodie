@@ -34,19 +34,21 @@ const StyledMarkdown = styled.div`
   }
 
   & h3 {
-    font-size: 1.6rem;
-  }
-
-  & h4 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
     font-size: 1.4rem;
   }
 
+  & h4 {
+    font-size: 1.1rem;
+  }
+
   & h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   & h6 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   & strong {
