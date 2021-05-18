@@ -6,7 +6,7 @@ update: 2021-05-04
 tags:
   - hoodie
   - other-tips
-series: "Getting started your blog with Hoodie"
+series: "Getting started your blog with gatsby-starter-hoodie"
 ---
 
 ## How to change the favicon?
@@ -21,4 +21,4 @@ In the http environment, utterance may not work properly. Host your blog with ht
 
 ## Do you have another question?
 
-Please comment on this article or [open an issue](https://github.com/devHudi/Hoodie/issues) in the Hoodie repository. Your participation advances Hoodie. Thank you 😎.
+Please comment on this article or [open an issue](https://github.com/devHudi/gatsby-starter-hoodie/issues) in the gatsby-starter-hoodie repository. Your participation advances gatsby-starter-hoodie. Thank you 😎.

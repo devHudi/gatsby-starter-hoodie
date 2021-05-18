@@ -1,8 +1,8 @@
 {
   "name": "gatsby-starter-hoodie",
   "private": false,
-  "description": "Hoodie is a gatsby theme developed for developers to write tech blogs.",
-  "homepage": "https://devhudi.github.io/Hoodie/",
+  "description": "gatsby-starter-hoodie is a gatsby theme developed for developers to write tech blogs.",
+  "homepage": "https://devhudi.github.io/gatsby-starter-hoodie/",
   "version": "0.1.0",
   "author": "Hudi",
   "dependencies": {
@@ -68,9 +68,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devHudi/Hoodie"
+    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
   },
   "bugs": {
-    "url": "https://github.com/devHudi/Hoodie"
+    "url": "https://github.com/devHudi/gatsby-starter-hoodie"
   }
 }

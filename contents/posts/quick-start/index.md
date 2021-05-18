@@ -6,17 +6,17 @@ update: 2021-05-02
 tags:
   - hoodie
   - quick-start
-series: "Getting started your blog with Hoodie"
+series: "Getting started your blog with gatsby-starter-hoodie"
 ---
 
-Getting started your blog with Hoodie by following steps below. It's very easy 😉.
+Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
 
 ## 1. Create a Gatsby site
 
 > Make sure you have **node.js** and **gatsby-cli** installed on your computer.
 
 ```
-$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie
+$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
 ```
 
 ## 2. Start dev server
@@ -62,7 +62,7 @@ module.exports = {
 }
 ```
 
-Hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.
+gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.
 
 Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
 
@@ -114,7 +114,7 @@ You can build the gatsby website with the command above. The build output is cre
 
 ### Project Structure
 
-You can customize your own Hoodie by referring to the following file structure 🙊.
+You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.
 
 ```
 ├── node_modules

@@ -1,10 +1,10 @@
-# Hoodie
+# gatsby-starter-hoodie
 
-## 🚀 About Hoodie
+## 🚀 About gatsby-starter-hoodie
 
-Hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
+gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
 
-Start your blog with a neatly designed Hoodie that supports dark mode.
+Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
 
 ## Features
 
@@ -18,14 +18,14 @@ Start your blog with a neatly designed Hoodie that supports dark mode.
 - SEO
 - Utterance (Comment widget)
 
-Getting started your blog with Hoodie by following steps below. It's very easy 😉.
+Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
 
 ## 1. Create a Gatsby site
 
 > Make sure you have **node.js** installed on your computer.
 
 ```
-$ npx gatsby new my-hoodie-blog https://github.com/devHudi/Hoodie
+$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
 ```
 
 ## 2. Start dev server
@@ -53,8 +53,8 @@ git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAM
 
 ```javascript
 module.exports = {
-  title: "Hoodie.gatsby",
-  description: "Hello :) I'm Hudi who developed Hoodie theme.",
+  title: "hoodie",
+  description: "Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.",
   author: "Hudi",
   siteUrl: "https://hudi.blog",
   links: {
@@ -64,13 +64,13 @@ module.exports = {
     etc: "https://www.notion.so/Hudi-s-R-sum-0c1d1a1b35284d1eaf05c5bfac4a3cad",
   },
   utterances: {
-    repo: "devHudi/Hoodie",
+    repo: "devHudi/gatsby-starter-hoodie",
     type: "pathname",
   },
 }
 ```
 
-Hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.
+gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.
 
 Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
 
@@ -118,7 +118,7 @@ You can build the gatsby website with the command above. The build output is cre
 
 ### Project Structure
 
-You can customize your own Hoodie by referring to the following file structure 🙊.
+You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.
 
 ```
 ├── node_modules
