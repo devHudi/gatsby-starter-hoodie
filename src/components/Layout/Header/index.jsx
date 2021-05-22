@@ -72,23 +72,28 @@ const Menu = styled.div`
 `
 
 const ToggleWrapper = styled.div`
+  position: relative;
   width: 1.2rem;
-  height: 1.4rem;
+  height: 20px;
   margin-right: 1rem;
   overflow: hidden;
   box-sizing: border-box;
 `
 
 const IconRail = styled.div`
-  margin-top: ${props => (props.theme === "light" ? "-1.4rem" : "0")};
-  transition: margin-top 0.4s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40px;
+  top: ${props => (props.theme === "light" ? "-20px" : "0")};
+  transition: top 0.4s;
 
   & > svg {
     transition: opacity 0.25s;
   }
 
   & > svg:first-child {
-    margin-bottom: 0.2rem;
     opacity: ${props => (props.theme === "light" ? 0 : 1)};
   }
 
