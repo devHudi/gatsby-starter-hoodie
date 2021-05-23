@@ -1,8 +1,14 @@
-# gatsby-starter-hoodie
+<h1 align="center">
+    Hoodie
+</h1>
 
-[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
+<h4 align="center">
+  A gatsby theme developed for developers to write tech blogs.
+</h4>
 
 ## 🚀 About gatsby-starter-hoodie
+
+[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
 
 gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
 
