@@ -88,6 +88,8 @@ Markdown content is in `contents/posts`. You can write and add your articles. [C
 
 ### 6-1 via Netlify
 
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/alxshelepenok/gatsby-starter-lumen" target="_blank"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
 Follow the Connecting to Netlify steps in [A Step-by-Step Guide: Gatsby on Netlify](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/). It's not difficult.
 
 If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.
