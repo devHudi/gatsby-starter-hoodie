@@ -6,6 +6,10 @@ gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gats
 
 다크모드를 지원하는 깔끔한 디자인의 gatsby-starter-hoodie 로 여러분의 블로그를 시작하세요.
 
+## 데모 보기
+
+[https://devHudi.github.io/gatsby-starter-hoodie](https://devHudi.github.io/gatsby-starter-hoodie)
+
 ## 주요 기능
 
 - 마크다운

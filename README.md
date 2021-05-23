@@ -8,6 +8,10 @@ gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown
 
 Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
 
+## Live Demo
+
+[https://devHudi.github.io/gatsby-starter-hoodie](https://devHudi.github.io/gatsby-starter-hoodie)
+
 ## Features
 
 - Markdown
