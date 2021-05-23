@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of hoodie]]></title><description><![CDATA[Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 May 2021 02:22:20 GMT</lastBuildDate><item><title><![CDATA[🤩 4. Other Tips]]></title><description><![CDATA[How to change the favicon? The favicon is located in . If you replace that image, the favicon will change. If you want to change the name of…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How to change the favicon?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of hoodie]]></title><description><![CDATA[Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 May 2021 04:05:31 GMT</lastBuildDate><item><title><![CDATA[🤩 4. Other Tips]]></title><description><![CDATA[How to change the favicon? The favicon is located in . If you replace that image, the favicon will change. If you want to change the name of…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How to change the favicon?&lt;/h2&gt;
 &lt;p&gt;The favicon is located in &lt;code class=&quot;language-text&quot;&gt;src/images/gatsby-icons.png&lt;/code&gt;. If you replace that image, the favicon will change.&lt;/p&gt;
 &lt;p&gt;If you want to change the name of the favicon, change the &lt;code class=&quot;language-text&quot;&gt;icon&lt;/code&gt; property of &lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-manifest&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;.&lt;/p&gt;
 &lt;h2&gt;Utterance is not working properly.&lt;/h2&gt;
@@ -44,7 +44,7 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
 &lt;p&gt;You can easily embed images using relative paths. It is easy to manage documents containing images by creating a directory.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -55,20 +55,20 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 61.1764705882353%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sample image&quot;
         title=&quot;sample image&quot;
-        src=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/ca928/sample-image.jpg 148w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/278fa/sample-image.jpg 295w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg 590w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/b4485/sample-image.jpg 885w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/096b1/sample-image.jpg 1180w,
+        src=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/0b705/sample-image.jpg 170w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/31389/sample-image.jpg 340w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg 680w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/29373/sample-image.jpg 1020w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/232dc/sample-image.jpg 1360w,
 /gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -81,7 +81,7 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
 &lt;h2&gt;4. Tagging&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -92,18 +92,18 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 18.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 18.823529411764707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;tag example&quot;
         title=&quot;tag example&quot;
-        src=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/ca928/tag-example.jpg 148w,
-/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/278fa/tag-example.jpg 295w,
-/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg 590w,
+        src=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/0b705/tag-example.jpg 170w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/31389/tag-example.jpg 340w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg 680w,
 /gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg 737w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -113,7 +113,7 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
 &lt;h2&gt;5. Series&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 677px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -124,18 +124,17 @@ series: &amp;quot;Getting started your blog with gatsby-starter-hoodie&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 16.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 17.058823529411764%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;series example&quot;
         title=&quot;series example&quot;
-        src=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/ca928/series-example.jpg 148w,
-/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/278fa/series-example.jpg 295w,
-/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg 590w,
+        src=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/0b705/series-example.jpg 170w,
+/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/31389/series-example.jpg 340w,
 /gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg 677w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 677px) 100vw, 677px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -280,7 +279,7 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
 &lt;p&gt;상대경로를 이용하여 쉽게 이미지를 추가할 수 있습니다. 디렉토리를 생성하고 그 안에 &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt; 를 추가하여, 글을 추가하는 방법으로 작성해야 이미지 관리가 쉽습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -291,20 +290,20 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 60.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 61.1764705882353%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;sample image&quot;
         title=&quot;sample image&quot;
-        src=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/ca928/sample-image.jpg 148w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/278fa/sample-image.jpg 295w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/8a7c7/sample-image.jpg 590w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/b4485/sample-image.jpg 885w,
-/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/096b1/sample-image.jpg 1180w,
+        src=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/0b705/sample-image.jpg 170w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/31389/sample-image.jpg 340w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg 680w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/29373/sample-image.jpg 1020w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/232dc/sample-image.jpg 1360w,
 /gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg 1920w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -317,7 +316,7 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
 &lt;h2&gt;4. 태그&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -328,18 +327,18 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 18.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 18.823529411764707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;tag example&quot;
         title=&quot;tag example&quot;
-        src=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/ca928/tag-example.jpg 148w,
-/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/278fa/tag-example.jpg 295w,
-/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/8a7c7/tag-example.jpg 590w,
+        src=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/0b705/tag-example.jpg 170w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/31389/tag-example.jpg 340w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg 680w,
 /gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg 737w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 680px) 100vw, 680px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
@@ -349,7 +348,7 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
 &lt;h2&gt;5. 시리즈&lt;/h2&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; margin-bottom: 1rem; max-width: 100%;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 677px; margin-bottom: 1rem;&quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -360,18 +359,17 @@ series: &amp;quot;gatsby-starter-hoodie 로 블로그 시작하기&amp;quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 16.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 17.058823529411764%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;series example&quot;
         title=&quot;series example&quot;
-        src=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg&quot;
-        srcset=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/ca928/series-example.jpg 148w,
-/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/278fa/series-example.jpg 295w,
-/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/8a7c7/series-example.jpg 590w,
+        src=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg&quot;
+        srcset=&quot;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/0b705/series-example.jpg 170w,
+/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/31389/series-example.jpg 340w,
 /gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg 677w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        sizes=&quot;(max-width: 677px) 100vw, 677px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
