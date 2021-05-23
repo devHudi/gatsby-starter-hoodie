@@ -86,7 +86,7 @@ If you connect the github repository using Netlify, it is automatically distribu
 
 #### Case 1
 
-If the repository name contains .github.io (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io`) run the following command to deploy.
+If the repository name is in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
 
 ```
 $ npm run deploy-gh
@@ -94,7 +94,7 @@ $ npm run deploy-gh
 
 #### Case 2
 
-If the repository name is different from your GitHub name (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io/{YOUR_REPOSITORY_NAME}`) run the following command to deploy.
+If the repository name is not in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
 
 ```
 $ npm run deploy-gh-prefix-paths

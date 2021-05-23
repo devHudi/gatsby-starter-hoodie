@@ -1,5 +1,7 @@
 # gatsby-starter-hoodie
 
+[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
+
 ## 🚀 About gatsby-starter-hoodie
 
 gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
@@ -22,7 +24,7 @@ Getting started your blog with gatsby-starter-hoodie by following steps below. I
 
 ## 1. Create a Gatsby site
 
-> Make sure you have **node.js** installed on your computer.
+> Make sure you have **node.js** and **gatsby-cli** installed on your computer.
 
 ```
 $ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie
@@ -53,30 +55,30 @@ git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAM
 
 ```javascript
 module.exports = {
-  title: "hoodie",
-  description: "Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.",
-  author: "Hudi",
-  siteUrl: "https://hudi.blog",
+  title: "MY BLOG",
+  description: "Hello, This is my blog",
+  author: "YOUR NAME",
+  siteUrl: "https://myblog.com",
   links: {
-    github: "https://github.com/devHudi",
-    facebook: "https://www.facebook.com/profile.php?id=100057724153835",
-    instagram: "https://www.instagram.com/dawn_fromeast/",
-    etc: "https://www.notion.so/Hudi-s-R-sum-0c1d1a1b35284d1eaf05c5bfac4a3cad",
+    github: "https://github.com",
+    facebook: "https://www.facebook.com",
+    instagram: "https://www.instagram.com",
+    etc: "https://www.google.com/",
   },
   utterances: {
-    repo: "devHudi/gatsby-starter-hoodie",
+    repo: "{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}",
     type: "pathname",
   },
 }
 ```
 
-gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.
+gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance.
 
 Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
 
 ## 5. Add your content
 
-Markdown content is in `contents/posts`. You can write and add your articles like the sample posts here. [Click here](/writing-guide) to see the detail writing guide.
+Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://devHudi.github.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
 
 ## 6. Deploy your blog
 
@@ -90,7 +92,7 @@ If you connect the github repository using Netlify, it is automatically distribu
 
 #### Case 1
 
-If the repository name is the same as your GitHub name (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io`) run the following command to deploy.
+If the repository name is in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
 
 ```
 $ npm run deploy-gh
@@ -98,7 +100,7 @@ $ npm run deploy-gh
 
 #### Case 2
 
-If the repository name is different from your GitHub name (if your GitHub page URL is `https://{YOUR_GITHUB_NAME}.github.io/{YOUR_REPOSITORY_NAME}`) run the following command to deploy.
+If the repository name is not in the form of `{YOUR_GITHUB_NAME} .github.io`, run it below.
 
 ```
 $ npm run deploy-gh-prefix-paths
