@@ -171,10 +171,10 @@ $ git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_N
 <p>If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.</p>
 <h3>6-2. via Github Pages</h3>
 <h4>Case 1</h4>
-<p>If the repository name contains .github.io (if your GitHub page URL is <code class="language-text">https://{YOUR_GITHUB_NAME}.github.io</code>) run the following command to deploy.</p>
+<p>If the repository name is in the form of <code class="language-text">{YOUR_GITHUB_NAME} .github.io</code>, run it below.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ npm run deploy-gh</code></pre></div>
 <h4>Case 2</h4>
-<p>If the repository name is different from your GitHub name (if your GitHub page URL is <code class="language-text">https://{YOUR_GITHUB_NAME}.github.io/{YOUR_REPOSITORY_NAME}</code>) run the following command to deploy.</p>
+<p>If the repository name is not in the form of <code class="language-text">{YOUR_GITHUB_NAME} .github.io</code>, run it below.</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">$ npm run deploy-gh-prefix-paths</code></pre></div>
 <p>In the above case, you need to change <code class="language-text">pathPrefix</code> in <code class="language-text">gatsby-config.js</code> to your repository name.</p>
 <h3>6-3. other platforms</h3>
