@@ -6,6 +6,8 @@
   A gatsby theme developed for developers to write tech blogs.
 </h4>
 
+![](preview.gif)
+
 ## 🚀 About gatsby-starter-hoodie
 
 [한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
