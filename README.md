@@ -16,6 +16,8 @@ gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown
 
 Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.
 
+This project inspired by [velog](https://velog.io).
+
 ## [Live Demo](https://devHudi.github.io/gatsby-starter-hoodie)
 
 ## Features
