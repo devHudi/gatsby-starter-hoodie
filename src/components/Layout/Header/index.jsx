@@ -55,9 +55,9 @@ const Menu = styled.div`
   align-items: center;
 
   & svg {
-    width: 1.2rem;
-    height: 1.2rem;
-    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
     cursor: pointer;
   }
 
@@ -72,10 +72,10 @@ const Menu = styled.div`
 `
 
 const ToggleWrapper = styled.div`
-  position: relative;
-  width: 1.2rem;
-  height: 20px;
-  margin-right: 1rem;
+  /* position: relative; */
+  width: 20px;
+  height: 24px;
+  margin-right: 15px;
   overflow: hidden;
   box-sizing: border-box;
 `
@@ -86,7 +86,7 @@ const IconRail = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 40px;
-  top: ${props => (props.theme === "light" ? "-20px" : "0")};
+  top: ${props => (props.theme === "light" ? "-3px" : "16px")};
   transition: top 0.4s;
 
   & > svg {
@@ -144,7 +144,6 @@ const Header = ({ toggleTheme }) => {
               <FaMoon onClick={toggleTheme} />
             </IconRail>
           </ToggleWrapper>
-
           <Link to="/tags">
             <FaTags />
           </Link>
