@@ -80,7 +80,7 @@ const Series = ({ header, series }) => {
 
   return (
     <SeriesWrapper>
-      <SeriesHeader>{header}</SeriesHeader>
+      <SeriesHeader>SERIES: {header}</SeriesHeader>
       <ul>
         {filteredPosts.map(post => (
           <Post currentPost={post.currentPost}>
