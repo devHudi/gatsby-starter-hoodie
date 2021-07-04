@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState, useMemo } from "react"
+import _ from "lodash"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
@@ -45,18 +46,58 @@ const Post = styled.li`
   }
 `
 
+const ViewMore = styled.div`
+  font-size: 0.9rem;
+  text-align: center;
+  color: ${props => props.theme.colors.tertiaryText};
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: ${props => props.theme.colors.text};
+  }
+`
+
 const Series = ({ header, series }) => {
+  const [fold, setFold] = useState(true)
+
+  const filteredPosts = useMemo(() => {
+    if (series.length < 5) return series
+    if (!fold) return series
+
+    const currentPostIdx = _.findIndex(series, { currentPost: true })
+
+    if (currentPostIdx < 2) return series.slice(0, 5)
+    if (series.length - currentPostIdx - 1 < 2)
+      return series.slice(series.length - 5, series.length)
+
+    return series.slice(currentPostIdx - 2, currentPostIdx + 3)
+  }, [series, fold])
+
+  const showViewButton = useMemo(() => {
+    return series.length > 5
+  }, [series])
+
   return (
     <SeriesWrapper>
       <SeriesHeader>{header}</SeriesHeader>
       <ul>
-        {series.map(post => (
+        {filteredPosts.map(post => (
           <Post currentPost={post.currentPost}>
             <Link to={post.fields.slug}>{post.frontmatter.title}</Link>{" "}
             {post.currentPost && <AiOutlineArrowLeft />}{" "}
           </Post>
         ))}
       </ul>
+      {showViewButton && (
+        <ViewMore
+          onClick={() => {
+            setFold(!fold)
+          }}
+        >
+          {fold ? "View More" : "View Less"}
+        </ViewMore>
+      )}
     </SeriesWrapper>
   )
 }
