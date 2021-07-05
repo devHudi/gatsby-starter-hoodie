@@ -60,8 +60,9 @@ const PostList = ({ postList }) => {
   const [postCount, setPostCount] = useState(10)
 
   const handleMoreLoad = _.throttle(() => {
-    if (checkIsScrollAtBottom() && postCount < postList.length)
-      setPostCount(postCount + 10)
+    if (checkIsScrollAtBottom() && postCount < postList.length) {
+      setTimeout(() => setPostCount(postCount + 10), 300)
+    }
   }, 250)
 
   useEffect(() => {
