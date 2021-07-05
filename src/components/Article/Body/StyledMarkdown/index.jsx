@@ -109,7 +109,8 @@ const StyledMarkdown = styled.div`
     border-bottom: none;
   }
 
-  & p > code.language-text {
+  & p > code.language-text,
+  & li > code.language-text {
     padding: 0.1rem 0.3rem;
     font-size: 0.9rem;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
