@@ -60,7 +60,8 @@ const PostList = ({ postList }) => {
   const [postCount, setPostCount] = useState(10)
 
   const handleMoreLoad = _.throttle(() => {
-    if (checkIsScrollAtBottom()) setPostCount(postCount + 10)
+    if (checkIsScrollAtBottom() && postCount < postList.length)
+      setPostCount(postCount + 10)
   }, 250)
 
   useEffect(() => {
@@ -93,7 +94,9 @@ const PostList = ({ postList }) => {
               <TagList tagList={tags} />
             </PostWrapper>
 
-            {postList.length - 1 !== i && <Divider mt="3rem" mb="2rem" />}
+            {postCount - 1 !== i && postList.length - 1 !== i && (
+              <Divider mt="3rem" mb="2rem" />
+            )}
           </>
         )
       })}
