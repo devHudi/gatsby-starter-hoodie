@@ -46,7 +46,7 @@ export default ({ data, location }) => {
           <Article.Series header={series} series={filteredSeries} />
         )}
         <Article.Body html={post.html} />
-        <Article.Footer />
+        <Article.Footer previous={previous} next={next} />
       </Article>
     </Layout>
   )
