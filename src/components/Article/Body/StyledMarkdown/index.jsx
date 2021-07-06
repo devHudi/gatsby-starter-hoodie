@@ -120,7 +120,7 @@ const StyledMarkdown = styled.div`
 
   & ul,
   & ol {
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
 
   & ol {
@@ -141,6 +141,10 @@ const StyledMarkdown = styled.div`
 
   & li {
     margin-bottom: 0.8rem;
+  }
+
+  & li p {
+    margin-top: 0.5rem;
   }
 
   & img {
