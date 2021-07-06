@@ -139,6 +139,10 @@ const StyledMarkdown = styled.div`
     list-style: square;
   }
 
+  & li {
+    margin-bottom: 0.8rem;
+  }
+
   & img {
     display: block;
     margin-left: auto;
