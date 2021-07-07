@@ -5,6 +5,7 @@ import ProfileImage from "images/profile.png"
 
 import {
   FaGithub,
+  FaKaggle,
   FaFacebook,
   FaLinkedin,
   FaInstagram,
@@ -78,7 +79,7 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const { github, instagram, facebook, linkedIn, etc } = links
+  const { github, kaggle, instagram, facebook, linkedIn, etc } = links
 
   return (
     <BioWrapper id="bio">
@@ -89,6 +90,9 @@ const Bio = () => {
         <LinksWrapper>
           <Link link={github}>
             <FaGithub />
+          </Link>
+          <Link link={kaggle}>
+            <FaKaggle />
           </Link>
           <Link link={instagram}>
             <FaInstagram />
