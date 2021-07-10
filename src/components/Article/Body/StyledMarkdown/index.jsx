@@ -147,6 +147,10 @@ const StyledMarkdown = styled.div`
     margin-top: 0.5rem;
   }
 
+  & pre > code {
+    font-size: 0.9rem;
+  }
+
   & img {
     display: block;
     margin-left: auto;
