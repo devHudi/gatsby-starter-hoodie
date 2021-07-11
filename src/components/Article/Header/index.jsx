@@ -6,7 +6,6 @@ import { author } from "../../../../blog-config"
 
 import Divider from "components/Divider"
 import TagList from "components/TagList"
-import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const Wrapper = styled.div`
   @media (max-width: 768px) {

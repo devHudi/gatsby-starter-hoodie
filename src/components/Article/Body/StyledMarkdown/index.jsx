@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import InvertLinkMixin from "components/Mixins/InvertLinkMixin"
 
 const StyledMarkdown = styled.div`
   & {
@@ -164,7 +163,13 @@ const StyledMarkdown = styled.div`
   }
 
   & a {
-    ${InvertLinkMixin}
+    padding: 0.1rem 0;
+    color: ${props => props.theme.colors.text};
+  }
+
+  & a:hover {
+    background-color: ${props => props.theme.colors.text};
+    color: ${props => props.theme.colors.hoveredLinkText};
   }
 `
 
