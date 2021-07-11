@@ -107,7 +107,7 @@ const Header = ({ toggleTheme }) => {
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
 
-  const detectScrollDirection = e => {
+  const detectScrollDirection = () => {
     if (scrollY >= window.scrollY) {
       // scroll up
       setHidden(false)

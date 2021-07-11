@@ -97,6 +97,7 @@ const Toc = ({ items, articleOffset }) => {
         <div>
           {items.map((item, i) => (
             <ParagraphTitle
+              key={i}
               subtitle={item.tagName === "H3"}
               active={i === active}
               onClick={() => handleClickTitle(i)}

@@ -7,7 +7,7 @@ import Article from "components/Article"
 
 import { siteUrl } from "../../blog-config"
 
-export default ({ data, location }) => {
+const Post = ({ data }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
 
@@ -51,6 +51,8 @@ export default ({ data, location }) => {
     </Layout>
   )
 }
+
+export default Post
 
 export const pageQuery = graphql`
   query BlogPostBySlug(

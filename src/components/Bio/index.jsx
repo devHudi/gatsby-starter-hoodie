@@ -72,7 +72,7 @@ const LinksWrapper = styled.div`
 const Link = ({ link, children }) => {
   if (!link) return null
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       {children}
     </a>
   )

@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import kebabCase from "lodash/kebabCase"
 import { Link } from "gatsby"
 
 const TagListWrapper = styled.div`

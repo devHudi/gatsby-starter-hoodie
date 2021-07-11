@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 import { author } from "../../../../blog-config"
 
@@ -36,7 +35,7 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const Header = ({ title, date, update, tags, minToRead }) => {
+const Header = ({ title, date, tags, minToRead }) => {
   return (
     <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>

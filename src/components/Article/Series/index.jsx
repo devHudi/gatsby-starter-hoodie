@@ -82,8 +82,8 @@ const Series = ({ header, series }) => {
     <SeriesWrapper>
       <SeriesHeader>SERIES: {header}</SeriesHeader>
       <ul>
-        {filteredPosts.map(post => (
-          <Post currentPost={post.currentPost}>
+        {filteredPosts.map((post, i) => (
+          <Post currentPost={post.currentPost} key={i}>
             <Link to={post.fields.slug}>{post.frontmatter.title}</Link>{" "}
             {post.currentPost && <AiOutlineArrowLeft />}{" "}
           </Post>
