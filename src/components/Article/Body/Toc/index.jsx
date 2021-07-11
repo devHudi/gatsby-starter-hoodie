@@ -45,7 +45,7 @@ const ParagraphTitle = styled.div`
   ${props =>
     props.active &&
     css`
-      margin-left: -0.7rem;
+      transform: translate(-0.7rem, 0);
       color: ${props => props.theme.colors.secondaryText};
     `}
 
