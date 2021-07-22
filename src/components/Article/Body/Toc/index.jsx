@@ -17,9 +17,23 @@ const TocWrapper = styled.div`
   left: 100%;
 
   & > div {
-    margin-left: 4rem;
+    padding-left: 1rem;
+    margin-left: 3rem;
     position: relative;
     width: 15rem;
+    max-height: 70%;
+    overflow-y: auto;
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${props => props.theme.colors.tocScrollTrack};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${props => props.theme.colors.tocScrollHandle};
+    }
 
     ${props =>
       props.stick &&

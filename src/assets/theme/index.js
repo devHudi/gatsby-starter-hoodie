@@ -25,6 +25,8 @@ export const light = {
     tagText: "#495057",
     selectedTagText: "#f8f9fa",
     spinner: "#495057",
+    tocScrollTrack: "#f1f3f5",
+    tocScrollHandle: "#ced4da",
   },
 }
 
@@ -55,5 +57,7 @@ export const dark = {
     tagText: "#e9ecef",
     selectedTagText: "#212529",
     spinner: "#f1f3f5",
+    tocScrollTrack: "#343a40",
+    tocScrollHandle: "#868e96",
   },
 }
