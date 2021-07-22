@@ -7,6 +7,7 @@ import Divider from "components/Divider"
 import TagList from "components/TagList"
 
 const Wrapper = styled.div`
+  margin-top: 2rem;
   @media (max-width: 768px) {
     padding: 0 15px;
   }
