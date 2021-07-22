@@ -112,6 +112,10 @@ const StyledMarkdown = styled.div`
     border-bottom: none;
   }
 
+  & p > code {
+    word-break: break-all;
+  }
+
   & p > code.language-text,
   & li > code.language-text {
     padding: 0.1rem 0.3rem;
