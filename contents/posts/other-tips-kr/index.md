@@ -19,6 +19,14 @@ series: "gatsby-starter-hoodie 로 블로그 시작하기"
 
 http 환경에서는 Utterance 가 제대로 작동하지 않을 수 있습니다. 여러분의 웹사이트를 https 환경으로 제공하세요.
 
+## OG Image 를 설정하고 싶어요.
+
+`src/components/SEO/index.jsx` 에서 `<Helmet> </Helmet>` 사이에 다음 코드를 추가하세요.
+
+```jsx
+<meta property="og:image" content={"YOUR_OG_IMAGE_URL"} />
+```
+
 ## 다른 질문이 있으신가요?
 
 이 문서에 댓글을 달거나 gatsby-starter-hoodie 레포지토리에 [이슈를 열어주세요](https://github.com/devHudi/gatsby-starter-hoodie/issues). 여러분의 참여가 gatsby-starter-hoodie 를 더욱 발전시킵니다. 감사해요 😎.

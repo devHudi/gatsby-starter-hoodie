@@ -19,6 +19,14 @@ If you want to change the name of the favicon, change the `icon` property of `ga
 
 In the http environment, utterance may not work properly. Host your blog with https.
 
+## How to set OG Image?
+
+Add the following code between `<Helmet> </Helmet>` in `src/components/SEO/index.jsx` :
+
+```jsx
+<meta property="og:image" content={"YOUR_OG_IMAGE_URL"} />
+```
+
 ## Do you have another question?
 
 Please comment on this article or [open an issue](https://github.com/devHudi/gatsby-starter-hoodie/issues) in the gatsby-starter-hoodie repository. Your participation advances gatsby-starter-hoodie. Thank you 😎.
