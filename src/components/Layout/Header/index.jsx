@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 import { title } from "../../../../blog-config"
 
-import { FaSun, FaMoon, FaTags, FaSearch } from "react-icons/fa"
+import { FaSun, FaMoon, FaTags, FaRss, FaSearch } from "react-icons/fa"
 
 const HeaderWrapper = styled.header`
   display: block;
@@ -146,6 +146,9 @@ const Header = ({ toggleTheme }) => {
           </ToggleWrapper>
           <Link to="/tags">
             <FaTags />
+          </Link>
+          <Link to="/rss.xml">
+            <FaRss />
           </Link>
           <Link to="/search">
             <FaSearch style={{ marginRight: 0 }} />
