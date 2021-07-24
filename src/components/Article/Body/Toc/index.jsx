@@ -28,11 +28,11 @@ const TocWrapper = styled.div`
       width: 5px;
     }
     ::-webkit-scrollbar-track {
-      background: ${props => props.theme.colors.tocScrollTrack};
+      background: ${props => props.theme.colors.scrollTrack};
     }
 
     ::-webkit-scrollbar-thumb {
-      background: ${props => props.theme.colors.tocScrollHandle};
+      background: ${props => props.theme.colors.scrollHandle};
     }
 
     ${props =>

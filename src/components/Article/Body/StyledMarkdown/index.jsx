@@ -154,6 +154,19 @@ const StyledMarkdown = styled.div`
     margin-top: 0.5rem;
   }
 
+  & pre {
+    ::-webkit-scrollbar {
+      height: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${props => props.theme.colors.scrollTrack};
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: ${props => props.theme.colors.scrollHandle};
+    }
+  }
+
   & pre > code {
     font-size: 0.9rem;
   }
