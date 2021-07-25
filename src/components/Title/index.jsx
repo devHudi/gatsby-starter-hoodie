@@ -7,6 +7,7 @@ const Wrapper = styled.h1`
   font-weight: 700;
   line-height: 1.3;
   color: ${props => props.theme.colors.text};
+  word-break: break-all;
 
   & > a {
     text-decoration: none;
