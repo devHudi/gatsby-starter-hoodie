@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import _ from "lodash"
 import styled from "styled-components"
 import SEO from "components/SEO"
 import filter from "lodash/filter"
@@ -22,7 +23,7 @@ const TagListWrapper = styled.div`
 `
 
 const TagsPage = ({ data }) => {
-  const tags = data.allMarkdownRemark.group
+  const tags = _.sortBy(data.allMarkdownRemark.group, ["totalCount"]).reverse()
   const posts = data.allMarkdownRemark.nodes
 
   const [selected, setSelected] = useState()
