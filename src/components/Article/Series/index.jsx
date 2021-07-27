@@ -23,9 +23,7 @@ const SeriesHeader = styled.h2`
   }
 `
 
-const PostWrapper = styled.ul`
-  margin-bottom: 15px;
-`
+const PostWrapper = styled.ul``
 
 const Post = styled.li`
   position: relative;
@@ -56,6 +54,7 @@ const Post = styled.li`
 `
 
 const ViewMore = styled.div`
+  margin-top: 15px;
   font-size: 0.9rem;
   text-align: center;
   color: ${props => props.theme.colors.tertiaryText};
