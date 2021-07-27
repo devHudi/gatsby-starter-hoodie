@@ -23,7 +23,7 @@ const SeriesHeader = styled.h2`
   }
 `
 
-const PostWrapper = styled.ui`
+const PostWrapper = styled.ul`
   margin-bottom: 15px;
 `
 
