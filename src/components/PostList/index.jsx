@@ -35,6 +35,7 @@ const Excerpt = styled.p`
   line-height: 1.7;
   font-size: 1rem;
   color: ${props => props.theme.colors.secondaryText};
+  word-break: break-all;
 `
 
 const checkIsScrollAtBottom = () => {
