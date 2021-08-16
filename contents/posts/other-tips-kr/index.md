@@ -21,11 +21,7 @@ http 환경에서는 Utterance 가 제대로 작동하지 않을 수 있습니�
 
 ## OG Image 를 설정하고 싶어요.
 
-`src/components/SEO/index.jsx` 에서 `<Helmet> </Helmet>` 사이에 다음 코드를 추가하세요.
-
-```jsx
-<meta property="og:image" content={"YOUR_OG_IMAGE_URL"} />
-```
+`/static` 디렉토리의 `og-image.png` 파일을 여러분이 원하는 이미지 파일로 대체하세요.
 
 ## 다른 질문이 있으신가요?
 

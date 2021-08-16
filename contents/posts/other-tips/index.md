@@ -21,11 +21,7 @@ In the http environment, utterance may not work properly. Host your blog with ht
 
 ## How to set OG Image?
 
-Add the following code between `<Helmet> </Helmet>` in `src/components/SEO/index.jsx` :
-
-```jsx
-<meta property="og:image" content={"YOUR_OG_IMAGE_URL"} />
-```
+Replace the `og-image.png` file in the `/static` directory with your own image file.
 
 ## Do you have another question?
 
