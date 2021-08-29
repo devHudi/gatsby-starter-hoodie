@@ -72,7 +72,7 @@ const PostList = ({ postList }) => {
     return () => {
       window.removeEventListener("scroll", handleMoreLoad)
     }
-  }, [postCount])
+  }, [postCount, postList])
 
   useEffect(() => {
     setPostCount(10)
