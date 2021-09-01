@@ -52,7 +52,8 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-theme"
+    "gatsby-theme",
+    "gatsby-starter"
   ],
   "license": "MIT",
   "main": "n/a",
