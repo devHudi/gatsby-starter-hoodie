@@ -121,6 +121,9 @@ module.exports = {
               strict: `ignore`,
             },
           },
+          {
+            resolve: "gatsby-remark-static-images",
+          },
         ],
       },
     },
