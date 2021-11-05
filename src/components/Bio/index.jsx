@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaLink,
+  FaEnvelope,
 } from "react-icons/fa"
 
 import { description, author, links } from "../../../blog-config"
@@ -79,7 +80,7 @@ const Link = ({ link, children }) => {
 }
 
 const Bio = () => {
-  const { github, kaggle, instagram, facebook, linkedIn, etc } = links
+  const { github, kaggle, instagram, facebook, linkedIn, email, etc } = links
 
   return (
     <BioWrapper id="bio">
@@ -102,6 +103,9 @@ const Bio = () => {
           </Link>
           <Link link={linkedIn}>
             <FaLinkedin />
+          </Link>
+          <Link link={email}>
+            <FaEnvelope />
           </Link>
           <Link link={etc}>
             <FaLink />
