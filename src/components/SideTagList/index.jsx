@@ -28,8 +28,6 @@ const Title = styled.div`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const TagList = styled.ul``
-
 const Tag = styled.li`
   margin-bottom: 16px;
   color: ${props => props.theme.colors.tertiaryText};
@@ -51,8 +49,10 @@ const SideTagList = ({ tags, postCount }) => {
     <RelativeWrapper>
       <Wrapper>
         <Title>TAG LIST</Title>
-        <TagList>
-          <Tag>all ({postCount})</Tag>
+        <ul>
+          <Tag>
+            <Link to="/tags">all ({postCount})</Link>
+          </Tag>
           {_.map(tags, tag => (
             <Tag>
               <Link to={`/tags?q=${tag.fieldValue}`}>
@@ -60,7 +60,7 @@ const SideTagList = ({ tags, postCount }) => {
               </Link>
             </Tag>
           ))}
-        </TagList>
+        </ul>
       </Wrapper>
     </RelativeWrapper>
   )
