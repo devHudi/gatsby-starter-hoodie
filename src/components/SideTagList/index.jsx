@@ -14,7 +14,6 @@ const Wrapper = styled.aside`
   width: 200px;
   height: 100px;
   font-size: 16px;
-  color: ${props => props.theme.colors.tertiaryText};
   opacity: 1;
   transition: opacity 0.3s;
 
@@ -26,12 +25,14 @@ const Wrapper = styled.aside`
 const Title = styled.div`
   margin-bottom: 25px;
   font-weight: bold;
+  color: ${props => props.theme.colors.secondaryText};
 `
 
 const TagList = styled.ul``
 
 const Tag = styled.li`
   margin-bottom: 16px;
+  color: ${props => props.theme.colors.tertiaryText};
   cursor: pointer;
   transition: color 0.3s;
 
