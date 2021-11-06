@@ -67,7 +67,11 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "deploy-gh": "gatsby build && gh-pages -d public",
-    "deploy-gh-prefix-paths": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy-gh-prefix-paths": "gatsby build --prefix-paths && gh-pages -d public",
+    "check:lint": "eslint . --ext .js,.jsx",
+    "fix:lint": "eslint . --fix --ext .js,.jsx",
+    "check:prettier": "prettier -c .",
+    "fix:prettier": "prettier -c --write ."
   },
   "repository": {
     "type": "git",
