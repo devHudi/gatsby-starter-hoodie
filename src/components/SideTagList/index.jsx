@@ -14,11 +14,9 @@ const Wrapper = styled.aside`
   width: 200px;
   height: 100px;
   font-size: 16px;
-  opacity: 1;
-  transition: opacity 0.3s;
 
   @media (max-width: 1300px) {
-    opacity: 0;
+    display: none;
   }
 `
 
