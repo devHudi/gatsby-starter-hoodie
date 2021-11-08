@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/about-hoodie-kr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/quick-start-kr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/writing-guide-kr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/other-tips-kr/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/about-hoodie/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/quick-start/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/writing-guide/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/other-tips/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/series/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://devhudi.github.io/gatsby-starter-hoodie/gatsby-starter-hoodie/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
