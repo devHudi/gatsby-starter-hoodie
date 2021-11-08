@@ -10,6 +10,21 @@ import Divider from "components/Divider"
 
 import { description, siteUrl } from "../../blog-config"
 
+const Header = styled.div`
+  @media (max-width: 768px) {
+    padding: 0px 15px;
+  }
+`
+
+const Title = styled.h1`
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-size: 44.8px;
+  font-weight: bold;
+  color: ${props => props.theme.colors.text};
+  word-break: break-all;
+`
+
 const Subtitle = styled.h3`
   display: inline-block;
   padding: 2px 3px;
@@ -20,15 +35,6 @@ const Subtitle = styled.h3`
   background-color: ${props => props.theme.colors.text};
   color: ${props => props.theme.colors.bodyBackground};
   letter-spacing: -1px;
-`
-
-const Title = styled.h1`
-  margin-bottom: 15px;
-  line-height: 1.2;
-  font-size: 44.8px;
-  font-weight: bold;
-  color: ${props => props.theme.colors.text};
-  word-break: break-all;
 `
 
 const SeriesInform = styled.div`
@@ -59,16 +65,20 @@ const Series = ({ pathContext, data }) => {
         url={siteUrl}
       />
 
-      <Subtitle> SERIES </Subtitle>
-      <Title> {seriesName} </Title>
+      <Header>
+        <Subtitle> SERIES </Subtitle>
+        <Title> {seriesName} </Title>
 
-      <SeriesInform>
-        <span>{posts.length} Posts</span>
-        <span>·</span>
-        <Date>Last updated on {posts[posts.length - 1].frontmatter.date}</Date>
-      </SeriesInform>
+        <SeriesInform>
+          <span>{posts.length} Posts</span>
+          <span>·</span>
+          <Date>
+            Last updated on {posts[posts.length - 1].frontmatter.date}
+          </Date>
+        </SeriesInform>
 
-      <Divider />
+        <Divider />
+      </Header>
 
       <PostList postList={posts} />
     </Layout>
