@@ -1,5 +1,5 @@
 import React from "react"
-import { flow, map, groupBy, sortBy, filter } from "lodash/fp"
+import { flow, map, groupBy, sortBy, filter, reverse } from "lodash/fp"
 import styled from "styled-components"
 import SEO from "components/SEO"
 
@@ -32,10 +32,9 @@ const SeriesPage = ({ data }) => {
       lastUpdated: series[0].date,
     })),
     sortBy(series => new Date(series.lastUpdated)),
-    filter(series => series.name)
+    filter(series => series.name),
+    reverse
   )(posts)
-
-  console.log(series, posts)
 
   return (
     <Layout>
