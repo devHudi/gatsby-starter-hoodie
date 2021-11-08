@@ -25,15 +25,15 @@ const PostWrapper = styled.div`
 `
 
 const Date = styled.p`
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
+  margin-bottom: 16px;
+  font-size: 14.4px;
   color: ${props => props.theme.colors.tertiaryText};
 `
 
 const Excerpt = styled.p`
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   line-height: 1.7;
-  font-size: 1rem;
+  font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
 `
@@ -86,7 +86,7 @@ const PostList = ({ postList }) => {
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="3rem" mb="2rem" />
+              <Divider mt="48px" mb="32px" />
             )}
           </>
         )

@@ -14,8 +14,8 @@ Divider.propTypes = {
 }
 
 Divider.defaultProps = {
-  mt: "3rem",
-  mb: "3rem",
+  mt: "48px",
+  mb: "48px",
 }
 
 export default Divider

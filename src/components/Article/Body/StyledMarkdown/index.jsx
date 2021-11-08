@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 1.1rem;
+    font-size: 17.6px;
     color: ${props => props.theme.colors.text};
     line-height: 1.6;
     overflow: hidden;
@@ -17,7 +17,7 @@ const StyledMarkdown = styled.div`
   & img,
   & .katex-display {
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
 
   & p {
@@ -34,34 +34,34 @@ const StyledMarkdown = styled.div`
   & h4,
   & h5,
   & h6 {
-    margin: 0.7rem 0 0.3rem 0;
+    margin: 11.2px 0 4.8px 0;
     font-weight: 700;
   }
 
   & h2 {
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.75rem;
+    margin-top: 64px;
+    margin-bottom: 24px;
+    font-size: 28px;
   }
 
   & h3 {
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.4rem;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 22.4px;
   }
 
   & h4 {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 17.6px;
   }
 
   & h5 {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   & h6 {
-    font-size: 0.9rem;
+    font-size: 14.4px;
   }
 
   & strong {
@@ -73,13 +73,13 @@ const StyledMarkdown = styled.div`
   }
 
   & blockquote {
-    padding: 1.5rem;
+    padding: 24px;
     border-left: 5px solid ${props => props.theme.colors.border};
     background-color: ${props => props.theme.colors.background};
   }
 
   & blockquote blockquote {
-    margin-top: 1.5rem;
+    margin-top: 24px;
   }
 
   & table {
@@ -98,7 +98,7 @@ const StyledMarkdown = styled.div`
 
   & td,
   th {
-    padding: 0.5rem;
+    padding: 8px;
   }
 
   & tr:first-child td {
@@ -119,8 +119,8 @@ const StyledMarkdown = styled.div`
 
   & p > code.language-text,
   & li > code.language-text {
-    padding: 0.1rem 0.3rem;
-    font-size: 0.9rem;
+    padding: 1.6px 4.8px;
+    font-size: 14.4px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-weight: bold;
     color: ${props => props.theme.colors.text};
@@ -128,7 +128,7 @@ const StyledMarkdown = styled.div`
 
   & ul,
   & ol {
-    padding-left: 2rem;
+    padding-left: 32px;
   }
 
   & ol {
@@ -148,11 +148,11 @@ const StyledMarkdown = styled.div`
   }
 
   & li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 12.8px;
   }
 
   & li p {
-    margin-top: 0.5rem;
+    margin-top: 8px;
   }
 
   & pre {
@@ -169,7 +169,7 @@ const StyledMarkdown = styled.div`
   }
 
   & pre > code {
-    font-size: 0.9rem;
+    font-size: 14.4px;
   }
 
   & img {
@@ -185,7 +185,7 @@ const StyledMarkdown = styled.div`
   }
 
   & a {
-    padding: 0.1rem 0;
+    padding: 1.6px 0;
     color: ${props => props.theme.colors.text};
   }
 

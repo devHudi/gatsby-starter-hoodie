@@ -44,7 +44,7 @@ const Search = ({ data }) => {
           placeholder="Enter your search keyword"
         />
       </SearchWrapper>
-      <VerticalSpace size={2} />
+      <VerticalSpace size={32} />
       <PostList postList={filteredPosts} />
     </Layout>
   )

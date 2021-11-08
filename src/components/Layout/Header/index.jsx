@@ -20,7 +20,7 @@ const HeaderWrapper = styled.header`
   top: ${props => (props.isHidden ? -60 : 0)}px;
   left: 0;
   right: 0;
-  padding: 1rem;
+  padding: 16px;
   background-color: ${props => props.theme.colors.headerBackground};
   box-shadow: 0 0 8px ${props => props.theme.colors.headerShadow};
   backdrop-filter: blur(5px);
@@ -29,7 +29,7 @@ const HeaderWrapper = styled.header`
   z-index: 999;
 
   @media (max-width: 768px) {
-    padding: 1rem 0;
+    padding: 16px 0;
   }
 `
 
@@ -47,7 +47,7 @@ const BlogTitle = styled.span`
   letter-spacing: -1px;
   font-family: "Source Code Pro", sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: ${props => props.theme.colors.text};
 
   & > a {

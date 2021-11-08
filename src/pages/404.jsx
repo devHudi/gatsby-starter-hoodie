@@ -15,14 +15,14 @@ const NotFound = styled.div`
   color: ${props => props.theme.colors.tertiaryText};
 
   & > h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   & > h3 {
     font-weight: lighter;
-    font-size: 1.9rem;
+    font-size: 30.4px;
   }
 
   @media (max-width: 768px) {

@@ -15,15 +15,15 @@ import Bio from "components/Bio"
 const ArticleButtonContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 48px;
 
   @media (max-width: 768px) {
-    margin-bottom: 5rem;
-    padding: 0 0.8rem;
+    margin-bottom: 80px;
+    padding: 0 12.8px;
     flex-direction: column;
 
     & > div:first-child {
-      margin-bottom: 0.8rem;
+      margin-bottom: 12.8px;
     }
   }
 `
@@ -47,8 +47,8 @@ const Arrow = styled.div`
   left: 0;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  flex-basis: 1.5rem;
+  font-size: 24px;
+  flex-basis: 24px;
   transition: left 0.3s;
 `
 
@@ -56,10 +56,10 @@ const ArticleButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${props => (props.right ? "flex-end" : "flex-start")};
-  padding: 1.3rem 1rem;
+  padding: 20.8px 16px;
   max-width: 250px;
   flex-basis: 250px;
-  font-size: 1.1rem;
+  font-size: 17.6px;
   border-radius: 5px;
   background-color: ${props => props.theme.colors.nextPostButtonBackground};
   color: ${props => props.theme.colors.text};
@@ -80,7 +80,7 @@ const ArticleButtonWrapper = styled.div`
   }
 
   & ${Arrow} {
-    ${props => (props.right ? "margin-left: 1rem" : "margin-right: 1rem")};
+    ${props => (props.right ? "margin-left: 16px" : "margin-right: 16px")};
   }
 
   &:hover ${Arrow} {
@@ -94,8 +94,8 @@ const ArticleButtonWrapper = styled.div`
 `
 
 const ArticleButtonLabel = styled.div`
-  margin-bottom: 0.6rem;
-  font-size: 0.8rem;
+  margin-bottom: 9.6px;
+  font-size: 12.8px;
 `
 
 const ArticleButtonTitle = styled.div`
@@ -207,7 +207,7 @@ const Footer = ({ previous, next }) => {
       </ArticleButtonContainer>
       <Bio />
       <CommentWrapper>
-        <Divider mt="2rem" />
+        <Divider mt="32px" />
         <Comment />
       </CommentWrapper>
     </>

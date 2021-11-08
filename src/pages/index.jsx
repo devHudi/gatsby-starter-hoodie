@@ -13,7 +13,7 @@ import Divider from "components/Divider"
 import { title, description, siteUrl } from "../../blog-config"
 
 const Space = styled.div`
-  height: 3rem;
+  height: 48px;
 `
 
 const BlogIndex = ({ data }) => {
