@@ -1,4 +1,162 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of hoodie]]></title><description><![CDATA[Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 08 Nov 2021 03:08:32 GMT</lastBuildDate><item><title><![CDATA[🎇 1. About gatsby-starter-hoodie]]></title><description><![CDATA[About gatsby-starter-hoodie gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About gatsby-starter-hoodie&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of hoodie]]></title><description><![CDATA[Hello :) I'm Hudi who developed gatsby-starter-hoodie theme.]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 08 Nov 2021 03:44:50 GMT</lastBuildDate><item><title><![CDATA[🤩 4. Other Tips]]></title><description><![CDATA[How to change the favicon? The favicon is located in . If you replace that image, the favicon will change. If you want to change the name of…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/other-tips/</guid><pubDate>Tue, 04 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;How to change the favicon?&lt;/h2&gt;
+&lt;p&gt;The favicon is located in &lt;code class=&quot;language-text&quot;&gt;src/images/gatsby-icons.png&lt;/code&gt;. If you replace that image, the favicon will change.&lt;/p&gt;
+&lt;p&gt;If you want to change the name of the favicon, change the &lt;code class=&quot;language-text&quot;&gt;icon&lt;/code&gt; property of &lt;code class=&quot;language-text&quot;&gt;gatsby-plugin-manifest&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;Utterance is not working properly.&lt;/h2&gt;
+&lt;p&gt;In the http environment, utterance may not work properly. Host your blog with https.&lt;/p&gt;
+&lt;h2&gt;How to set OG Image?&lt;/h2&gt;
+&lt;p&gt;Replace the &lt;code class=&quot;language-text&quot;&gt;og-image.png&lt;/code&gt; file in the &lt;code class=&quot;language-text&quot;&gt;/static&lt;/code&gt; directory with your own image file.&lt;/p&gt;
+&lt;h2&gt;Do you have another question?&lt;/h2&gt;
+&lt;p&gt;Please comment on this article or &lt;a href=&quot;https://github.com/devHudi/gatsby-starter-hoodie/issues&quot;&gt;open an issue&lt;/a&gt; in the gatsby-starter-hoodie repository. Your participation advances gatsby-starter-hoodie. Thank you 😎.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🤔 3. Writing Guide]]></title><description><![CDATA[1. Add a post You can add posts by creating a new markdown document in the  path. 1-1. Post file structure There are two ways to add a new…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/writing-guide/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/writing-guide/</guid><pubDate>Mon, 03 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;1. Add a post&lt;/h2&gt;
+&lt;p&gt;You can add posts by creating a new markdown document in the &lt;code class=&quot;language-text&quot;&gt;contents/post&lt;/code&gt; path.&lt;/p&gt;
+&lt;h3&gt;1-1. Post file structure&lt;/h3&gt;
+&lt;p&gt;There are two ways to add a new document. The first is to create a markdown file for a single document without a directory. If you are writing about JavaScript, you can create a &lt;code class=&quot;language-text&quot;&gt;about-javascript.md&lt;/code&gt; file in the &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;The second is to create a directory and create an &lt;code class=&quot;language-text&quot;&gt;index.md&lt;/code&gt; file in it. This method is useful when the document contains several additional files such as picture files.&lt;/p&gt;
+&lt;p&gt;Each file name or directory name becomes a unique address of the document and can be accessed as follows. &lt;code class=&quot;language-text&quot;&gt;https://siteURL/about-javascript&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;1-2. Frontmatter&lt;/h3&gt;
+&lt;p&gt;The Markdown document you create contains the document&apos;s metadata called frontmatter.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;---
+title: &quot;🤔 3. Writing Guide&quot;
+description: &quot;How to write and add a post?&quot;
+date: 2021-05-03
+update: 2021-05-03
+tags:
+  - hoodie
+  - writing-guide
+series: &quot;Getting started your blog with gatsby-starter-hoodie&quot;
+---&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Above is the frontmatter of the document you are currently reading. Among them, title and date are required. It is recommended to enclose the string with spaces in quotation marks.&lt;/p&gt;
+&lt;h3&gt;1-3. Writing markdown&lt;/h3&gt;
+&lt;p&gt;If you have written a Frontmatter, you can write your markdown document under it. gatsby-starter-hoodie supports most Markdown syntax. To learn more about Markdown syntax, see the &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;Mastering Markdown&lt;/a&gt; documentation on GitHub.&lt;/p&gt;
+&lt;h2&gt;2. Syntax Highlighting &amp;#x26; Katex&lt;/h2&gt;
+&lt;h3&gt;2-1. Syntax Highlighting&lt;/h3&gt;
+&lt;p&gt;Syntax highlighting based on Prism.JS is supported.&lt;/p&gt;
+&lt;h4&gt;Examples&lt;/h4&gt;
+&lt;p&gt;Javascript&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;Hello, world!&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It supports a wider variety of other languages. Check it out on the &lt;a href=&quot;https://prismjs.com/&quot;&gt;Prism.js website&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;2-2. Katex&lt;/h3&gt;
+&lt;p&gt;It supports Katex syntax, you can easily express complex formulas.&lt;/p&gt;
+&lt;h4&gt;Inline mode&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;E&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;E = m c^{2}&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.68333em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.05764em;&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mrel&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.2777777777777778em;&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:0.8141079999999999em;vertical-align:0em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8141079999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4&gt;Block mode&lt;/h4&gt;
+&lt;span class=&quot;katex-display&quot;&gt;&lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;block&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msubsup&gt;&lt;mo&gt;∫&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mi mathvariant=&quot;normal&quot;&gt;∞&lt;/mi&gt;&lt;/msubsup&gt;&lt;mi&gt;f&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;\int_{0}^{\infty} f(x) dx&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:2.326242em;vertical-align:-0.9119499999999999em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mop&quot;&gt;&lt;span class=&quot;mop op-symbol large-op&quot; style=&quot;margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;&quot;&gt;∫&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t vlist-t2&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:1.414292em;&quot;&gt;&lt;span style=&quot;top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;top:-3.8129000000000004em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;&lt;span class=&quot;mord mtight&quot;&gt;∞&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-s&quot;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.9119499999999999em;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mspace&quot; style=&quot;margin-right:0.16666666666666666em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10764em;&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;mopen&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;mclose&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;x&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;h2&gt;3. Add images to a post&lt;/h2&gt;
+&lt;p&gt;You can easily embed images using relative paths. It is easy to manage documents containing images by creating a directory.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 61.1764705882353%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGTVASRyE//xAAbEAACAwADAAAAAAAAAAAAAAABAgADBBEiI//aAAgBAQABBQIFOW7ETHWtk0D2awqf/8QAFREBAQAAAAAAAAAAAAAAAAAAEEH/2gAIAQMBAT8Bh//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Bawh//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAEhEQIQ/9oACAEBAAY/AlpNa8fXdaeIkMh//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyEV1DoR9QwMeNhKDbo0Qg+hmvYtBQ6T/9oADAMBAAIAAwAAABBrH//EABcRAQADAAAAAAAAAAAAAAAAAAABESH/2gAIAQMBAT8QnCn/xAAXEQEAAwAAAAAAAAAAAAAAAAAAESFB/9oACAECAQE/EIC+v//EABoQAQEAAwEBAAAAAAAAAAAAAAERACExUUH/2gAIAQEAAT8QJ4pTaH7iSdBk0/bPfMk7cqENGF6ex6O893iIKtxrGP0g1c//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;sample image&apos; title=&apos;sample image&apos; src=&apos;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg&apos; srcset=&apos;/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/0b705/sample-image.jpg 170w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/31389/sample-image.jpg 340w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/a22ce/sample-image.jpg 680w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/29373/sample-image.jpg 1020w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/232dc/sample-image.jpg 1360w,
+/gatsby-starter-hoodie/static/69b244095d8c72158c9dd2d4ca59a7b1/aaf92/sample-image.jpg 1920w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Images are loaded with Lazy Loading, so you can secure fast document loading speed.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠ The extension of the file must be set to lowercase.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;4. Tagging&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; margin-bottom: 1rem;&apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 18.823529411764707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB36AH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hj//aAAwDAQACAAMAAAAQAA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABPxABf//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;tag example&apos; title=&apos;tag example&apos; src=&apos;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg&apos; srcset=&apos;/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/0b705/tag-example.jpg 170w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/31389/tag-example.jpg 340w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/a22ce/tag-example.jpg 680w,
+/gatsby-starter-hoodie/static/82ce4bec7f5360eef32a473171b181af/6031b/tag-example.jpg 737w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can classify and search documents by tag set in Frontmatter. All tags you set can be viewed and searched in &lt;code class=&quot;language-text&quot;&gt;https://siteUrl/tags&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;5. Series&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 677px; margin-bottom: 1rem;&apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 17.058823529411764%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAADABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwSD//xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAARD/2gAIAQEAAT8hF//aAAwDAQACAAMAAAAQ8A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACEQETH/2gAIAQEAAT8QJLNzlGP/2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;series example&apos; title=&apos;series example&apos; src=&apos;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg&apos; srcset=&apos;/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/0b705/series-example.jpg 170w,
+/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/31389/series-example.jpg 340w,
+/gatsby-starter-hoodie/static/1ea4e56966cb5fb6e110d32124fd883c/d1584/series-example.jpg 677w&apos; sizes=&apos;(max-width: 677px) 100vw, 677px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can publish multiple related documents in a series. The series set in Frontmatter is grouped together and shown at the top of the document. This can be useful for serialized documents with an order. Series documents are displayed in ascending order of creation date.&lt;/p&gt;
+&lt;p&gt;The current document is also set in a series called &lt;code class=&quot;language-text&quot;&gt;Getting started your blog with gatsby-starter-hoodie&lt;/code&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🚀 2. Quick Start]]></title><description><![CDATA[Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉. 1. Create a Gatsby site Make sure you have…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/quick-start/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/quick-start/</guid><pubDate>Sun, 02 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Getting started your blog with gatsby-starter-hoodie by following steps below. It&apos;s very easy 😉.&lt;/p&gt;
+&lt;h2&gt;1. Create a Gatsby site&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Make sure you have &lt;strong&gt;node.js&lt;/strong&gt; and &lt;strong&gt;gatsby-cli&lt;/strong&gt; installed on your computer.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2. Start dev server&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
+$ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can access to your blog at localhost:8000.&lt;/p&gt;
+&lt;h2&gt;3. Create your own Github repository&lt;/h2&gt;
+&lt;p&gt;Utterance comment widget is based on &lt;strong&gt;Github issue system&lt;/strong&gt;. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.&lt;/p&gt;
+&lt;p&gt;If you don&apos;t know how to create a GitHub repository, follow the &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;official GitHub documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Add remote repository&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ git init
+$ git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;4. Write blog-config.js&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MY BLOG&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello, This is my blog&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;YOUR NAME&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://myblog.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  links&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    github&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://github.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    facebook&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.facebook.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    instagram&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.instagram.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    etc&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.google.com/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  utterances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;pathname&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;gatsby-starter-hoodie provides a configuration file called &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt;. In this file, you can configure blog, biography (profile), and utterance. The website settings you are currently viewing are as above.&lt;/p&gt;
+&lt;p&gt;Configure &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; to suit your blog. However, it is recommended not to modify &lt;code class=&quot;language-text&quot;&gt;utterances.type&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Change profile image&lt;/h3&gt;
+&lt;p&gt;Replace &lt;code class=&quot;language-text&quot;&gt;src/images/profile.png&lt;/code&gt; with the image you want. To change the image file name, you need to change the source code of &lt;code class=&quot;language-text&quot;&gt;src/components/Bio.jsx&lt;/code&gt;.&lt;/p&gt;
+&lt;h2&gt;5. Add your content&lt;/h2&gt;
+&lt;p&gt;Markdown content is in &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt;. You can write and add your articles like the sample posts here. &lt;a href=&quot;/gatsby-starter-hoodie/writing-guide&quot;&gt;Click here&lt;/a&gt; to see the detail writing guide.&lt;/p&gt;
+&lt;h2&gt;6. Deploy your blog&lt;/h2&gt;
+&lt;h3&gt;6-1 via Netlify&lt;/h3&gt;
+&lt;p&gt;Follow the Connecting to Netlify steps in &lt;a href=&quot;https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/&quot;&gt;A Step-by-Step Guide: Gatsby on Netlify&lt;/a&gt;. It&apos;s not difficult.&lt;/p&gt;
+&lt;p&gt;If you connect the github repository using Netlify, it is automatically distributed whenever you push it, so it is convenient.&lt;/p&gt;
+&lt;h3&gt;6-2. via Github Pages&lt;/h3&gt;
+&lt;h4&gt;Case 1&lt;/h4&gt;
+&lt;p&gt;If the repository name is in the form of &lt;code class=&quot;language-text&quot;&gt;{YOUR_GITHUB_NAME} .github.io&lt;/code&gt;, run it below.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;Case 2&lt;/h4&gt;
+&lt;p&gt;If the repository name is not in the form of &lt;code class=&quot;language-text&quot;&gt;{YOUR_GITHUB_NAME} .github.io&lt;/code&gt;, run it below.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh-prefix-paths&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In the above case, you need to change &lt;code class=&quot;language-text&quot;&gt;pathPrefix&lt;/code&gt; in &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; to your repository name.&lt;/p&gt;
+&lt;h3&gt;6-3. other platforms&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can build the gatsby website with the command above. The build output is created in the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory. Deploy the &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; directory using the command for the platform you want to deploy.&lt;/p&gt;
+&lt;h2&gt;7. Cutomize&lt;/h2&gt;
+&lt;h3&gt;Project Structure&lt;/h3&gt;
+&lt;p&gt;You can customize your own gatsby-starter-hoodie by referring to the following file structure 🙊.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
+├── contents
+│   └── posts // your articles are here
+├── public // build outputs are here
+└── src
+    ├── assets
+    │   └── theme // theme config is here
+    ├── components
+    │   └── Article
+    │       └── Body
+    │           └── StyledMarkdown
+    │               └── index.jsx // markdown styles are here
+    │   ...
+    ├── fonts // webfonts are here
+    ├── hooks
+    ├── images
+    ├── pages // page components are here
+    ├── reducers
+    ├── templates // post components are here
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎇 1. About gatsby-starter-hoodie]]></title><description><![CDATA[About gatsby-starter-hoodie gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie/</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;About gatsby-starter-hoodie&lt;/h2&gt;
 &lt;p&gt;gatsby-starter-hoodie is a gatsby theme created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.&lt;/p&gt;
 &lt;p&gt;Start your blog with a neatly designed gatsby-starter-hoodie that supports dark mode.&lt;/p&gt;
 &lt;h2&gt;Features&lt;/h2&gt;
@@ -96,4 +254,92 @@ series: &quot;gatsby-starter-hoodie 로 블로그 시작하기&quot;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;여러분이 연관된 여러개의 문서를 작성할 때 시리즈를 사용할 수 있습니다. Frontmatter 에 작성된 시리즈가 같은 문서끼리 묶여 문서 상단에 리스트로 표시됩니다. 시리즈는 일련의 순서가 있는 문서들을 작성할 때 유용하게 사용할 수 있습니다. 시리즈는 문서의 작성 날짜 순서대로 정렬됩니다.&lt;/p&gt;
-&lt;p&gt;현재 문서는 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-hoodie 로 블로그 시작하기&lt;/code&gt; 라는 시리즈로 설정되어 있습니다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;현재 문서는 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-hoodie 로 블로그 시작하기&lt;/code&gt; 라는 시리즈로 설정되어 있습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[🚀 2. 빠르게 시작하기]]></title><description><![CDATA[아래 단계를 따라서 여러분의 블로그를 시작하세요. 굉장히 쉬워요 😉. 1. Gatsby 사이트 생성 컴퓨터에 node.js 와 gatsby-cli 가 설치되어 있어야합니다. 2. 개발 서버 시작 이제 localhost:800…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/quick-start-kr/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/quick-start-kr/</guid><pubDate>Fri, 02 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;아래 단계를 따라서 여러분의 블로그를 시작하세요. 굉장히 쉬워요 😉.&lt;/p&gt;
+&lt;h2&gt;1. Gatsby 사이트 생성&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;컴퓨터에 &lt;strong&gt;node.js&lt;/strong&gt; 와 &lt;strong&gt;gatsby-cli&lt;/strong&gt; 가 설치되어 있어야합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npx gatsby new my-hoodie-blog https://github.com/devHudi/gatsby-starter-hoodie&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;2. 개발 서버 시작&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ cd my-hoodie-blog
+$ npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이제 localhost:8000 으로 여러분의 블로그를 접속할 수 있습니다.&lt;/p&gt;
+&lt;h2&gt;3. Github 레포지토리 생성&lt;/h2&gt;
+&lt;p&gt;Utterance 댓글 위젯은 &lt;strong&gt;Github 이슈 시스템&lt;/strong&gt; 기반입니다. 따라서 각 블로그 별 Github 레포지토리가 필요합니다. 또한 여러분이 Github Pages 혹은 Netlify 로 블로그를 배포하길 원한다면, Github 레포지토리는 필수입니다.&lt;/p&gt;
+&lt;p&gt;만약 Github 레포지토리를 생성하는 법을 모른다면, &lt;a href=&quot;https://docs.github.com/en/github/getting-started-with-github/create-a-repo&quot;&gt;Github 공식 문서&lt;/a&gt; 를 참조하세요.&lt;/p&gt;
+&lt;h3&gt;원격 레포지토리 등록&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add origin https://github.com/{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;4. blog-config.js 작성&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  title&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MY BLOG&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  description&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hello, This is my blog&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  author&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;YOUR NAME&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  siteUrl&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://myblog.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  links&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    github&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://github.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    facebook&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.facebook.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    instagram&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.instagram.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    etc&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.google.com/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  utterances&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    repo&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;pathname&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;gatsby-starter-hoodie 는 &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; 라는 설정 파일을 제공합니다. 이 파일에서 블로그 정보, 작성자 프로필, Utterance 설정 등을 작성할 수 있습니다. 여러분 블로그 설정에 맞게 &lt;code class=&quot;language-text&quot;&gt;blog-config.js&lt;/code&gt; 를 설정하세요. 하지만, &lt;code class=&quot;language-text&quot;&gt;utterances.type&lt;/code&gt; 속성은 수정하지 않는 것을 권장합니다.&lt;/p&gt;
+&lt;h2&gt;5. 포스트 추가&lt;/h2&gt;
+&lt;p&gt;마크다운 포스트는 &lt;code class=&quot;language-text&quot;&gt;contents/posts&lt;/code&gt; 경로에 위치해있습니다. 해당 경로에서 글을 작성할 수 있습니다. &lt;a href=&quot;https://devHudi.github.io/gatsby-starter-hoodie/writing-guide&quot;&gt;여기를 클릭하여&lt;/a&gt; 더 자세한 글 작성 방법을 확인하세요.&lt;/p&gt;
+&lt;h2&gt;6. 블로그 배포하기&lt;/h2&gt;
+&lt;h3&gt;6-1 Netlify 를 통해&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/&quot;&gt;A Step-by-Step Guide: Gatsby on Netlify&lt;/a&gt; 문서를 참조하여, Netlify 를 Github 레포지토리와 연결할 수 있습니다. 이 과정은 어렵지 않습니다.&lt;/p&gt;
+&lt;p&gt;Github 레포지토리와 연결이 되었다면, Github 레포지토리에 변경사항이 발생할 때 마다 자동으로 여러분의 블로그에 배포됩니다.&lt;/p&gt;
+&lt;h3&gt;6-2. Github Pages 를 통해&lt;/h3&gt;
+&lt;h4&gt;상황 1&lt;/h4&gt;
+&lt;p&gt;레포지토리 이름이 &lt;code class=&quot;language-text&quot;&gt;{YOUR_GITHUB_NAME}.github.io&lt;/code&gt; 형태일 경우, 아래 명령어를 실행해주세요.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;상황 2&lt;/h4&gt;
+&lt;p&gt;레포지토리 이름이 &lt;code class=&quot;language-text&quot;&gt;{YOUR_GITHUB_NAME}.github.io&lt;/code&gt; 형태가 아닐 경우, 아래 명령어를 실행해주세요.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run deploy-gh-prefix-paths&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;만약 위와 같은 경우 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt; 에서 &lt;code class=&quot;language-text&quot;&gt;pathPrefix&lt;/code&gt; 를 여러분의 레포지토리 이름으로 바꿔야합니다.&lt;/p&gt;
+&lt;h3&gt;6-3. 다른 플랫폼&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ npm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위 명령어로 Gastby 웹사이트를 빌드할 수 있습니다. 빌드 결과물은 &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; 에 저장됩니다. &lt;code class=&quot;language-text&quot;&gt;/public&lt;/code&gt; 디렉토리를 여러분이 사용하는 플랫폼의 배포 명령을 통해 배포해주세요.&lt;/p&gt;
+&lt;h2&gt;7. 커스터마이징&lt;/h2&gt;
+&lt;h3&gt;프로젝트 구조&lt;/h3&gt;
+&lt;p&gt;아래 프로젝트 구조를 참고하여 커스터마이징 할 수 있습니다 🙊.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── node_modules
+├── contents
+│   └── posts // your articles are here
+├── public // build outputs are here
+└── src
+    ├── assets
+    │   └── theme // theme config is here
+    ├── components
+    │   └── Article
+    │       └── Body
+    │           └── StyledMarkdown
+    │               └── index.jsx // markdown styles are here
+    │   ...
+    ├── fonts // webfonts are here
+    ├── hooks
+    ├── images
+    ├── pages // page components are here
+    ├── reducers
+    ├── templates // post components are here
+    └── utils&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[🎇 1. gatsby-starter-hoodie 에 대하여]]></title><description><![CDATA[gatsby-starter-hoodie 에 대하여 gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gatsby 테마입니다. 마크다운과 많은 프로그래밍 언어의 코드 하이라이팅, 그리고 Katex…]]></description><link>https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie-kr/</link><guid isPermaLink="false">https://devhudi.github.io/gatsby-starter-hoodie/about-hoodie-kr/</guid><pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;gatsby-starter-hoodie 에 대하여&lt;/h2&gt;
+&lt;p&gt;gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gatsby 테마입니다. 마크다운과 많은 프로그래밍 언어의 코드 하이라이팅, 그리고 Katex 문법을 지원합니다. 또한 태그와 시리즈를 통하여 쉽게 게시물을 분류할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;다크모드를 지원하는 깔끔한 디자인의 gatsby-starter-hoodie 로 여러분의 블로그를 시작하세요.&lt;/p&gt;
+&lt;h2&gt;주요 기능&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;마크다운&lt;/li&gt;
+&lt;li&gt;코드 하이라이팅&lt;/li&gt;
+&lt;li&gt;Katex 문법&lt;/li&gt;
+&lt;li&gt;다크모드 (OS 환경설정과 연동)&lt;/li&gt;
+&lt;li&gt;태그 분류&lt;/li&gt;
+&lt;li&gt;시리즈 분류&lt;/li&gt;
+&lt;li&gt;반응형 웹&lt;/li&gt;
+&lt;li&gt;SEO&lt;/li&gt;
+&lt;li&gt;Utterance (댓글 위젯)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;시작&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;/gatsby-starter-hoodie/quick-start-kr&quot;&gt;빠르게 시작하기&lt;/a&gt; 문서에서 블로그를 세팅하세요.&lt;/p&gt;</content:encoded></item></channel></rss>
