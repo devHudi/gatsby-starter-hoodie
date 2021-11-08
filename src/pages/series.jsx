@@ -48,7 +48,7 @@ const SeriesPage = ({ data }) => {
 
       {series.length === 0 && <NoContent name="series" />}
 
-      <VerticleSpace size={2} />
+      <VerticleSpace size={32} />
 
       <SeriesList seriesList={series} />
     </Layout>
