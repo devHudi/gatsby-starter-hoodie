@@ -81,7 +81,7 @@ module.exports = {
             options: {
               maxWidth: 680,
               loading: "lazy",
-              wrapperStyle: "margin-bottom: 1rem;",
+              wrapperStyle: "margin-bottom: 16px;",
               quality: 100,
             },
           },

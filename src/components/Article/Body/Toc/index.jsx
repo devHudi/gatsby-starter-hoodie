@@ -18,10 +18,10 @@ const TocWrapper = styled.div`
 
   & > div {
     padding-right: 5px;
-    padding-left: 1rem;
-    margin-left: 3rem;
+    padding-left: 16px;
+    margin-left: 48px;
     position: relative;
-    width: 15rem;
+    width: 240px;
     max-height: 468px;
     overflow-y: auto;
 
@@ -50,9 +50,9 @@ const TocWrapper = styled.div`
 `
 
 const ParagraphTitle = styled.div`
-  margin-bottom: 0.5rem;
-  padding-left: ${props => (props.subtitle ? 1.2 : 0)}rem;
-  font-size: 0.9rem;
+  margin-bottom: 8px;
+  padding-left: ${props => (props.subtitle ? 19.2 : 0)}px;
+  font-size: 14.4px;
   color: ${props => props.theme.colors.mutedText};
   line-height: 1.3;
   transition: all 0.2s;
@@ -60,7 +60,7 @@ const ParagraphTitle = styled.div`
   ${props =>
     props.active &&
     css`
-      transform: translate(-0.7rem, 0);
+      transform: translate(-11.2px, 0);
       color: ${props => props.theme.colors.secondaryText};
     `}
 

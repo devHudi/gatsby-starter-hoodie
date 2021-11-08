@@ -82,7 +82,7 @@ const TagsPage = ({ data }) => {
         />
       </TagListWrapper>
 
-      <VerticleSpace size={2} />
+      <VerticleSpace size={32} />
 
       <PostList postList={filteredPosts} />
     </Layout>
