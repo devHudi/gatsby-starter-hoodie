@@ -1,9 +1,11 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require("lodash")
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const postTemplate = require.resolve(`./src/templates/Post.jsx`)
+  const seriesTemplate = require.resolve(`./src/templates/Series.jsx`)
 
   const result = await graphql(`
     {
@@ -38,6 +40,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.postsRemark.nodes
+  const series = _.reduce(
+    posts,
+    (acc, cur) => {
+      const seriesName = cur.frontmatter.series
+      if (!_.includes(acc, seriesName)) return [...acc, seriesName]
+      return acc
+    },
+    []
+  )
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
@@ -52,6 +63,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           series: post.frontmatter.series,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  if (series.length > 0) {
+    series.forEach(singleSeries => {
+      const path = `/series/${_.replace(singleSeries, /\s/g, "-")}`
+      createPage({
+        path,
+        component: seriesTemplate,
+        context: {
+          series: singleSeries,
         },
       })
     })

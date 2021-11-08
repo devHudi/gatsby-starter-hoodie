@@ -21,6 +21,15 @@ const SeriesHeader = styled.h2`
     font-weight: normal;
     color: ${props => props.theme.colors.tertiaryText};
   }
+
+  & > a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  & > a:hover {
+    text-decoration: underline;
+  }
 `
 
 const PostWrapper = styled.ul``
@@ -89,7 +98,10 @@ const Series = ({ header, series }) => {
   return (
     <SeriesWrapper>
       <SeriesHeader>
-        SERIES: {header} <span>({series.length})</span>
+        <Link to={`/series/${_.replace(header, /\s/g, "-")}`}>
+          SERIES: {header}
+        </Link>{" "}
+        <span>({series.length})</span>
       </SeriesHeader>
       <PostWrapper>
         {filteredPosts.map((post, i) => (

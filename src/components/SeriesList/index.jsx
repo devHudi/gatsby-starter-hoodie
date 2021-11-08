@@ -78,7 +78,7 @@ const SeriesList = ({ seriesList }) => {
           <>
             <SeriesWrapper>
               <Title size="bg">
-                <Link to={`${series.posts[series.posts.length - 1].slug}`}>
+                <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
                   {series.name}
                 </Link>
               </Title>
