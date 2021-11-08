@@ -44,7 +44,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     posts,
     (acc, cur) => {
       const seriesName = cur.frontmatter.series
-      if (!_.includes(acc, seriesName)) return [...acc, seriesName]
+      if (seriesName && !_.includes(acc, seriesName))
+        return [...acc, seriesName]
       return acc
     },
     []
