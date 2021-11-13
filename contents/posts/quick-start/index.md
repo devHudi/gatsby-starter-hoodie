@@ -68,7 +68,7 @@ Configure `blog-config.js` to suit your blog. However, it is recommended not to 
 
 ### Change profile image
 
-Replace `src/images/profile.png` with the image you want. To change the image file name, you need to change the source code of `src/components/Bio.jsx`.
+Replace `static/profile.png` with the image you want. To change the image file name, you need to change the source code of `src/components/Bio.jsx`.
 
 ## 5. Add your content
 
