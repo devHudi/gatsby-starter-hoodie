@@ -11,7 +11,8 @@ const Post = ({ data }) => {
   const post = data.markdownRemark
   const { previous, next, seriesList } = data
 
-  const { title, description, date, update, tags, series } = post.frontmatter
+  const { title, date, update, tags, series } = post.frontmatter
+  const { excerpt } = post
   const { readingTime, slug } = post.fields
 
   let filteredSeries = []
@@ -33,7 +34,7 @@ const Post = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={description} url={`${siteUrl}${slug}`} />
+      <SEO title={title} description={excerpt} url={`${siteUrl}${slug}`} />
       <Article>
         <Article.Header
           title={title}
