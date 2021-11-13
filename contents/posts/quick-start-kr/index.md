@@ -63,6 +63,10 @@ module.exports = {
 
 gatsby-starter-hoodie 는 `blog-config.js` 라는 설정 파일을 제공합니다. 이 파일에서 블로그 정보, 작성자 프로필, Utterance 설정 등을 작성할 수 있습니다. 여러분 블로그 설정에 맞게 `blog-config.js` 를 설정하세요. 하지만, `utterances.type` 속성은 수정하지 않는 것을 권장합니다.
 
+### 프로필 이미지 변경
+
+`static/profile.png` 에 위치한 이미지 파일을 원하는 이미지 파일로 교체하세요. 만약 파일명을 변경하고 싶다면, `src/components/Bio.jsx` 의 소스코드를 수정해야합니다.
+
 ## 5. 포스트 추가
 
 마크다운 포스트는 `contents/posts` 경로에 위치해있습니다. 해당 경로에서 글을 작성할 수 있습니다. [여기를 클릭하여](https://devHudi.github.io/gatsby-starter-hoodie/writing-guide) 더 자세한 글 작성 방법을 확인하세요.

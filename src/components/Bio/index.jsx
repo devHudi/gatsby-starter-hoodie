@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-import ProfileImage from "images/profile.png"
-
 import {
   FaGithub,
   FaKaggle,
@@ -13,7 +11,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa"
 
-import { description, author, links } from "../../../blog-config"
+import { siteUrl, description, author, links } from "../../../blog-config"
 
 const BioWrapper = styled.div`
   display: flex;
@@ -24,13 +22,18 @@ const BioWrapper = styled.div`
   }
 `
 
+const profileImageRoot =
+  typeof window !== "undefined" && window.location.host === "localhost:8000"
+    ? "http://localhost:8000"
+    : siteUrl
+
 const Profile = styled.div`
   flex: 0 0 auto;
   margin-right: 16px;
   width: 128px;
   height: 128px;
   border-radius: 999px;
-  background-image: url(${ProfileImage});
+  background-image: url(${profileImageRoot}/profile.png);
   background-size: cover;
   background-position: center;
 `
