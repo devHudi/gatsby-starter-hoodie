@@ -23,7 +23,9 @@ const BioWrapper = styled.div`
 `
 
 const profileImageRoot =
-  window.location.host === "localhost:8000" ? "http://localhost:8000" : siteUrl
+  typeof window !== "undefined" && window.location.host === "localhost:8000"
+    ? "http://localhost:8000"
+    : siteUrl
 
 const Profile = styled.div`
   flex: 0 0 auto;
