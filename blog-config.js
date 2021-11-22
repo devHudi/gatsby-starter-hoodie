@@ -5,6 +5,7 @@ module.exports = {
   siteUrl: "https://devhudi.github.io/gatsby-starter-hoodie/",
   links: {
     github: "https://github.com/devHudi",
+    kaggle: "https://kaggle.com",
     linkedIn: "https://linkedin.com",
     facebook: "https://www.facebook.com/profile.php?id=100057724153835",
     instagram: "https://www.instagram.com/dawn_fromeast/",
