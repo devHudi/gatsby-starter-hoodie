@@ -27,6 +27,8 @@ export const light = {
     spinner: "#495057",
     scrollTrack: "#f1f3f5",
     scrollHandle: "#ced4da",
+    blockQuoteBorder: "#ced4da",
+    blockQuoteBackground: "#f1f3f5",
   },
 }
 
@@ -59,5 +61,7 @@ export const dark = {
     spinner: "#f1f3f5",
     scrollTrack: "#343a40",
     scrollHandle: "#868e96",
+    blockQuoteBorder: "#495057",
+    blockQuoteBackground: "#343a40",
   },
 }
