@@ -1,5 +1,5 @@
 <h1 align="center">
-    Hoodie
+    gatsby-starter-hoodie
 </h1>
 
 <h4 align="center">
