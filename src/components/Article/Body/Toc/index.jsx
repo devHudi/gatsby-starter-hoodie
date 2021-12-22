@@ -17,16 +17,16 @@ const TocWrapper = styled.div`
   left: 100%;
 
   & > div {
-    padding-right: 5px;
+    padding-right: 20px;
     padding-left: 16px;
     margin-left: 48px;
     position: relative;
     width: 240px;
-    max-height: 468px;
+    max-height: calc(100% - 185px);
     overflow-y: auto;
 
     ::-webkit-scrollbar {
-      width: 5px;
+      width: 3px;
     }
     ::-webkit-scrollbar-track {
       background: ${props => props.theme.colors.scrollTrack};
