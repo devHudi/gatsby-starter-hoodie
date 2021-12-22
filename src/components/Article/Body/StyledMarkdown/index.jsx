@@ -73,9 +73,13 @@ const StyledMarkdown = styled.div`
   }
 
   & blockquote {
-    padding: 24px;
-    border-left: 5px solid ${props => props.theme.colors.border};
-    background-color: ${props => props.theme.colors.background};
+    padding: 18px 24px;
+    border-left: 4px solid ${props => props.theme.colors.blockQuoteBorder};
+    background-color: ${props => props.theme.colors.blockQuoteBackground};
+
+    & *:last-child {
+      margin-bottom: 0;
+    }
   }
 
   & blockquote blockquote {
