@@ -6,12 +6,13 @@ import { graphql } from "gatsby"
 import Layout from "components/Layout"
 import PostList from "components/PostList"
 import TextField from "components/TextField"
+import Title from "components/Title"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
 
 const SearchWrapper = styled.div`
-  margin-top: 15px;
+  margin-top: 20px;
   @media (max-width: 768px) {
     padding: 0 15px;
   }
@@ -39,12 +40,16 @@ const Search = ({ data }) => {
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
       <SearchWrapper>
+        <Title size="sm">
+          There are {filteredPosts.length} post{filteredPosts.length > 1 && "s"}
+          .
+        </Title>
         <TextField
           onChange={e => setQuery(e.target.value)}
-          placeholder="Enter your search keyword"
+          placeholder="Search"
         />
       </SearchWrapper>
-      <VerticalSpace size={32} />
+      <VerticalSpace size={70} />
       <PostList postList={filteredPosts} />
     </Layout>
   )

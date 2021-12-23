@@ -29,6 +29,8 @@ export const light = {
     scrollHandle: "#ced4da",
     blockQuoteBorder: "#ced4da",
     blockQuoteBackground: "#f1f3f5",
+    textFieldBorder: "#ced4da",
+    textFieldActivatedBorder: "#adb5bd",
   },
 }
 
@@ -63,5 +65,7 @@ export const dark = {
     scrollHandle: "#868e96",
     blockQuoteBorder: "#495057",
     blockQuoteBackground: "#343a40",
+    textFieldBorder: "#495057",
+    textFieldActivatedBorder: "#868e96",
   },
 }
