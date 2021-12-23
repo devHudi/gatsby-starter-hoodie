@@ -87,12 +87,12 @@ const ToggleWrapper = styled.div`
 `
 
 const IconRail = styled.div`
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 40px;
-  top: ${props => (props.theme === "light" ? "-3px" : "16px")};
+  top: ${props => (props.theme === "light" ? "-19px" : "0px")};
   transition: top 0.4s;
 
   & > svg {
