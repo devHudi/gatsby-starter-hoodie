@@ -19,7 +19,6 @@ const ArticleTitle = styled.h1`
   font-size: 44.8px;
   font-weight: 700;
   color: ${props => props.theme.colors.text};
-  word-break: break-all;
 `
 
 const Information = styled.div`
