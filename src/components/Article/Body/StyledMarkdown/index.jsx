@@ -110,7 +110,7 @@ const StyledMarkdown = styled.div`
   }
 
   & tr:nth-child(even) {
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.tableBackground};
   }
 
   & tr:last-child td {
