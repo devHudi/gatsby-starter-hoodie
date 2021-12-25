@@ -32,6 +32,7 @@ export const light = {
     blockQuoteBackground: "#f1f3f5",
     textFieldBorder: "#ced4da",
     textFieldActivatedBorder: "#adb5bd",
+    tableBackground: "#f1f3f5",
   },
 }
 
@@ -69,5 +70,6 @@ export const dark = {
     blockQuoteBackground: "#343a40",
     textFieldBorder: "#495057",
     textFieldActivatedBorder: "#868e96",
+    tableBackground: "#292e33",
   },
 }
