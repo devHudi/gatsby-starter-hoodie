@@ -122,12 +122,17 @@ const StyledMarkdown = styled.div`
   }
 
   & p > code.language-text,
-  & li > code.language-text {
+  & li > code.language-text,
+  & table code.language-text {
     padding: 1.6px 4.8px;
     font-size: 14.4px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-weight: bold;
     color: ${props => props.theme.colors.text};
+  }
+
+  & tr:nth-child(even) code.language-text {
+    background-color: ${props => props.theme.colors.inlineCodeBackgroundDarker};
   }
 
   & ul,
