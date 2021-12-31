@@ -11,7 +11,7 @@ series: "Getting started your blog with gatsby-starter-hoodie"
 
 ## How to change the favicon?
 
-The favicon is located in `src/images/gatsby-icons.png`. If you replace that image, the favicon will change.
+The favicon is located in `static/favicon.png`. If you replace that image, the favicon will change.
 
 If you want to change the name of the favicon, change the `icon` property of `gatsby-plugin-manifest` in `gatsby-config.js`.
 
