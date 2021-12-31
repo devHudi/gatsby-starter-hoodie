@@ -11,7 +11,7 @@ series: "gatsby-starter-hoodie 로 블로그 시작하기"
 
 ## 파비콘은 어떻게 변경하나요?
 
-`src/images/gatsby-icons.png` 에 파비콘 파일이 위치해 있습니다. 이미지 파일을 대체하면 파비콘을 변경할 수 있습니다.
+`static/favicon.png` 에 파비콘 파일이 위치해 있습니다. 이미지 파일을 대체하면 파비콘을 변경할 수 있습니다.
 
 만약 파비콘 파일의 이름을 변경하고 싶다면, `gatsby-config.js` 파일의 `gatsby-plugin-manifest` 에서 `icon` 속성을 변경하셔야합니다.
 
