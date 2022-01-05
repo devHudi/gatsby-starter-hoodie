@@ -81,7 +81,7 @@ const Toc = ({ items, articleOffset }) => {
     const bioElm = document.getElementById("bio")
 
     setRevealAt(
-      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height
+      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height - 400
     )
   }, [])
 
