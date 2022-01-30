@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  A gatsby starter developed for developers to write tech blogs.
+  A gatsby starter developed for developers to build tech blogs.
 </h4>
 
 ![](mockup.png)
