@@ -192,6 +192,14 @@ const StyledMarkdown = styled.div`
     max-width: 100%;
   }
 
+  & figcaption {
+    margin-top: 5px;
+    text-align: center;
+    color: #868e96;
+    font-size: 12px;
+    font-style: italic;
+  }
+
   & hr {
     border: none;
     border-bottom: 1px solid ${props => props.theme.colors.border};

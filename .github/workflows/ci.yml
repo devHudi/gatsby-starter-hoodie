@@ -7,44 +7,23 @@ on:
       - develop
 
 jobs:
-  eslint:
-    name: eslint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 10.x
-      - name: Install node packages
-        run: npm install
-      - name: Check eslint
-        run: npm run check:lint
-
-  prettier:
-    name: prettier
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 10.x
-      - name: Install node packages
-        run: npm install
-      - name: Check prettier
-        run: npm run check:prettier
-
   build:
-    name: build
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 10.x
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: 10.x
-      - name: Install node packages
-        run: npm install
+          node-version: '14'
+
+      - name: Install dependencies
+        run: yarn
+        
+      - name: Check lint
+        run: yarn check:lint
+        
       - name: Check prettier
-        run: npm run build
+        run: yarn check:prettier
+      
+      - name: Build
+        run: yarn build
