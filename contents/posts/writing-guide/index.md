@@ -84,7 +84,7 @@ $$
 
 You can easily embed images using relative paths. It is easy to manage documents containing images by creating a directory.
 
-![](sample-image.jpg)
+![Sample Image Caption](sample-image.jpg)
 
 Images are loaded with Lazy Loading, so you can secure fast document loading speed.
 
