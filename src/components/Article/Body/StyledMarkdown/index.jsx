@@ -125,6 +125,13 @@ const StyledMarkdown = styled.div`
     word-break: break-all;
   }
 
+  pre[class*="language-"] {
+    background-color: #1e1e1e;
+  }
+
+  & h2 > code.language-text,
+  & h3 > code.language-text,
+  & h4 > code.language-text,
   & p > code.language-text,
   & li > code.language-text,
   & table code.language-text {
@@ -133,6 +140,12 @@ const StyledMarkdown = styled.div`
     background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-weight: bold;
     color: ${props => props.theme.colors.text};
+  }
+
+  & h2 > code.language-text,
+  & h3 > code.language-text,
+  & h4 > code.language-text {
+    font-size: inherit;
   }
 
   & tr:nth-child(even) code.language-text {
