@@ -129,12 +129,7 @@ const StyledMarkdown = styled.div`
     background-color: #1e1e1e;
   }
 
-  & h2 > code.language-text,
-  & h3 > code.language-text,
-  & h4 > code.language-text,
-  & p > code.language-text,
-  & li > code.language-text,
-  & table code.language-text {
+  & *:not(pre) > code.language-text {
     padding: 1.6px 4.8px;
     font-size: 14.4px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
