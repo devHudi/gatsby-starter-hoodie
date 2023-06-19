@@ -81,10 +81,11 @@ const PostList = ({ postList }) => {
                 <Link to={slug}>{title}</Link>
               </Title>
               <Date>{date}</Date>
-              { description
-                  ? <Excerpt>{description}</Excerpt>
-                  : <Excerpt>{excerpt}</Excerpt>
-              }
+              {description ? (
+                <Excerpt>{description}</Excerpt>
+              ) : (
+                <Excerpt>{excerpt}</Excerpt>
+              )}
               <TagList tagList={tags} />
             </PostWrapper>
 
