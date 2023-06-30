@@ -53,8 +53,8 @@ const Date = styled.span`
   font-weight: lighter;
 `
 
-const Series = ({ pathContext, data }) => {
-  const seriesName = pathContext.series
+const Series = ({ pageContext, data }) => {
+  const seriesName = pageContext.series
   const posts = data.posts.nodes
 
   return (
