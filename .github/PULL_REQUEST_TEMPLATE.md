@@ -1,5 +1,3 @@
 ## What does this PR do?
 
-## Related Links
-
-- Issue : `none`
+closes #ISSUE_NUMBER
