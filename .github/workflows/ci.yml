@@ -16,13 +16,13 @@ jobs:
           node-version: 20.3.1
 
       - name: Install node packages
-        run: npm install
+        run: yarn
         
       - name: Check lint
-        run: npm run check:lint
+        run: yarn check:lint
         
       - name: Check prettier
-        run: npm run check:prettier
+        run: yarn check:prettier
       
       - name: Build
-        run: npm run build
+        run: yarn build
