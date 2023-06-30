@@ -8,6 +8,8 @@
 
 ![](mockup.png)
 
+> gatsby-starter-hoodie has been migrated to **Gatsby 5** as of 2023-06-30. gatsby-starter-hoodie is now available for **node.js 20**.
+
 ## 🚀 About gatsby-starter-hoodie
 
 [한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
