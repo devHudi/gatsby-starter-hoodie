@@ -1,5 +1,7 @@
 # gatsby-starter-hoodie
 
+> gatsby-starter-hoodie가 2023-06-30 부터 Gatsby 5로 마이그레이션 되었습니다. 이제 node.js 20 버전에서도 gatsby-starter-hoodie를 사용하실 수 있습니다.
+
 ## 🚀 gatsby-starter-hoodie 에 대하여
 
 gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gatsby 테마입니다. 마크다운과 많은 프로그래밍 언어의 코드 하이라이팅, 그리고 Katex 문법을 지원합니다. 또한 태그와 시리즈를 통하여 쉽게 게시물을 분류할 수 있습니다.
