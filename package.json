@@ -45,7 +45,7 @@
     "react-spring": "^9.7.2",
     "redux": "^4.2.1",
     "sharp": "^0.32.1",
-    "styled-components": "^6.0.1",
+    "styled-components": "^5.2.1",
     "styled-reset": "^4.4.7",
     "utterances-react-component": "^1.0.0"
   },
