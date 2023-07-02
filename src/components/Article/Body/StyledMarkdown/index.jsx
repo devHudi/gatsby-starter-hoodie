@@ -2,13 +2,16 @@ import styled from "styled-components"
 
 const StyledMarkdown = styled.div`
   & {
-    font-size: 17.6px;
+    font-size: 16.7px;
     color: ${props => props.theme.colors.text};
-    line-height: 1.7;
+    line-height: 1.73;
     overflow: hidden;
   }
 
-  & *:first-child {
+  & h1:first-child,
+  & h2:first-child,
+  & h3:first-child,
+  & h4:first-child {
     margin-top: 0;
   }
 
@@ -17,6 +20,7 @@ const StyledMarkdown = styled.div`
   & > ol,
   & table,
   & blockquote,
+  & pre,
   & img,
   & .katex-display {
     margin-top: 0;
@@ -42,20 +46,20 @@ const StyledMarkdown = styled.div`
   }
 
   & h2 {
-    margin-top: 64px;
+    margin-top: 100px;
     margin-bottom: 24px;
     font-size: 28px;
   }
 
   & h3 {
-    margin-top: 48px;
-    margin-bottom: 24px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     font-size: 22.4px;
   }
 
   & h4 {
-    margin-top: 32px;
-    margin-bottom: 24px;
+    margin-top: 70px;
+    margin-bottom: 15px;
     font-size: 17.6px;
   }
 
@@ -89,6 +93,10 @@ const StyledMarkdown = styled.div`
     margin-top: 24px;
   }
 
+  & blockquote > p > code.language-text {
+    background-color: ${props => props.theme.colors.inlineCodeBackgroundDarker};
+  }
+
   & table {
     border-collapse: collapse;
   }
@@ -120,13 +128,13 @@ const StyledMarkdown = styled.div`
     border-bottom: none;
   }
 
-  & p > code {
-    word-break: break-all;
-  }
-
-  & *:not(pre) > code.language-text {
-    padding: 1.6px 4.8px;
-    font-size: 14.4px;
+  & *:not(pre) > code.language-text,
+  & table code.language-text {
+    position: relative;
+    top: -1px;
+    margin-right: 3px;
+    padding: 3px 5px 3px 5px;
+    font-size: 13px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-weight: bold;
     color: ${props => props.theme.colors.text};
@@ -144,7 +152,7 @@ const StyledMarkdown = styled.div`
 
   & ul,
   & ol {
-    padding-left: 32px;
+    padding-left: 25px;
   }
 
   & ol {
@@ -164,16 +172,16 @@ const StyledMarkdown = styled.div`
   }
 
   & li {
-    margin-bottom: 12.8px;
+    margin-bottom: 15px;
   }
 
   & li p {
-    margin-top: 8px;
+    margin: 8px 0;
   }
 
   & pre {
     ::-webkit-scrollbar {
-      height: 12px;
+      height: 10px;
     }
     ::-webkit-scrollbar-track {
       background: ${props => props.theme.colors.scrollTrack};
@@ -184,8 +192,9 @@ const StyledMarkdown = styled.div`
     }
   }
 
-  & pre > code {
-    font-size: 14.4px;
+  & code[class*="language-"],
+  & pre[class*="language-"] {
+    font-size: 13.5px;
   }
 
   & img {
