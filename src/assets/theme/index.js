@@ -1,6 +1,6 @@
-const GRAY9 = "#212529"
-const GRAY8 = "#343a40"
-const GRAY7 = "#495057"
+const GRAY9 = "#191919"
+const GRAY8 = "#2D2D2D"
+const GRAY7 = "#404040"
 const GRAY6 = "#868e96"
 const GRAY5 = "#adb5bd"
 const GRAY4 = "#ced4da"
@@ -61,10 +61,10 @@ export const dark = {
     background: GRAY8,
     icon: GRAY5,
     divider: GRAY8,
-    headerBackground: "rgba(33, 37, 41, 0.85)",
-    headerShadow: "rgba(255, 255, 255, 0.08)",
-    inlineCodeBackground: GRAY7,
-    inlineCodeBackgroundDarker: GRAY8,
+    headerBackground: "rgba(25, 25, 25, 0.85)",
+    headerShadow: "rgba(150, 150, 150, 0.08)",
+    inlineCodeBackground: GRAY8,
+    inlineCodeBackgroundDarker: GRAY7,
     tagBackground: GRAY8,
     selectedTagBackground: GRAY2,
     hoveredTagBackground: GRAY7,
@@ -76,7 +76,7 @@ export const dark = {
     selectedTagText: GRAY9,
     spinner: GRAY1,
     scrollTrack: GRAY8,
-    scrollHandle: GRAY6,
+    scrollHandle: GRAY7,
     blockQuoteBorder: GRAY7,
     blockQuoteBackground: GRAY8,
     textFieldBorder: GRAY7,
