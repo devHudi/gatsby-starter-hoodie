@@ -17,7 +17,6 @@ const StyledMarkdown = styled.div`
   & > ol,
   & table,
   & blockquote,
-  & pre,
   & img,
   & .katex-display {
     margin-top: 0;
@@ -123,10 +122,6 @@ const StyledMarkdown = styled.div`
 
   & p > code {
     word-break: break-all;
-  }
-
-  pre[class*="language-"] {
-    background-color: #1e1e1e;
   }
 
   & *:not(pre) > code.language-text {
