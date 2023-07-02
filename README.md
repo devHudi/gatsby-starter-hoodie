@@ -20,7 +20,7 @@ Start your blog with a neatly designed gatsby-starter-hoodie that supports dark 
 
 This project inspired by [velog](https://velog.io).
 
-## [Live Demo](https://devHudi.github.io/gatsby-starter-hoodie)
+## [Live Demo](https://hoodie.gatsbyjs.io)
 
 ## Features
 
@@ -92,7 +92,7 @@ Configure `blog-config.js` to suit your blog. However, it is recommended not to 
 
 ## 5. Add your content
 
-Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://devHudi.github.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
+Markdown content is in `contents/posts`. You can write and add your articles. [Click here](https://hoodie.gatsbyjs.io/gatsby-starter-hoodie/writing-guide) to see the detail writing guide.
 
 ## 6. Deploy your blog
 
