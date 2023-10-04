@@ -12,7 +12,7 @@
 
 ## 🚀 About gatsby-starter-hoodie
 
-[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/develop/README-kr.md)
+[한국어 문서 바로가기](https://github.com/devHudi/gatsby-starter-hoodie/blob/main/README-kr.md)
 
 gatsby-starter-hoodie is a gatsby starter created for writing tech blogs. Markdown, Code Highlighting in various programming languages, and Katex syntax are supported. Also, you can easily categorize articles into tags and series.
 
