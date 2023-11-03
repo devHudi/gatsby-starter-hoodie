@@ -160,3 +160,7 @@ You can customize your own gatsby-starter-hoodie by referring to the following f
     ├── templates // post components are here
     └── utils
 ```
+
+## Star History 🌟
+
+[![Star History Chart](https://api.star-history.com/svg?repos=devHudi/gatsby-starter-hoodie&type=Date)](https://star-history.com/#devHudi/gatsby-starter-hoodie&Date)
