@@ -20,7 +20,7 @@ Start your blog with a neatly designed gatsby-starter-hoodie that supports dark 
 
 This project inspired by [velog](https://velog.io).
 
-## [Live Demo](https://hoodie.gatsbyjs.io)
+## [Live Demo](https://gatsby-starter-hoodie.netlify.app)
 
 ## Features
 

@@ -10,7 +10,7 @@ gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gats
 
 이 프로젝트는 [벨로그](https://velog.io)에서 영감을 얻었습니다.
 
-## [라이브 데모](https://hoodie.gatsbyjs.io)
+## [라이브 데모](https://gatsby-starter-hoodie.netlify.app)
 
 ## 주요 기능
 
