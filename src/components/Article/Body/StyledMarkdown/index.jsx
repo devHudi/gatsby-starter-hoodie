@@ -5,7 +5,7 @@ const StyledMarkdown = styled.div`
     font-size: 15px;
     color: ${props => props.theme.colors.text};
     line-height: 1.73;
-    overflow: hidden;
+    overflow: visible;
   }
 
   & h1:first-child,
@@ -42,6 +42,7 @@ const StyledMarkdown = styled.div`
   & h6 {
     margin: 11.2px 0 4.8px 0;
     font-weight: 700;
+    overflow: visible;
   }
 
   & h2 {
@@ -59,6 +60,18 @@ const StyledMarkdown = styled.div`
   & h6 {
     margin-top: 30px;
     font-size: 16px;
+  }
+
+  & .heading-anchor {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 100%;
+    font-weight: 400;
+  }
+
+  & .heading-anchor svg {
+    fill: ${props => props.theme.colors.text};
   }
 
   & strong {
@@ -215,7 +228,7 @@ const StyledMarkdown = styled.div`
     color: ${props => props.theme.colors.text};
   }
 
-  & a:hover {
+  & a:hover:not(.heading-anchor) {
     background-color: ${props => props.theme.colors.text};
     color: ${props => props.theme.colors.hoveredLinkText};
   }
