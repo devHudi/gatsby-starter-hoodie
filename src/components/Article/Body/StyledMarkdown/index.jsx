@@ -70,6 +70,12 @@ const StyledMarkdown = styled.div`
     font-weight: 400;
   }
 
+  @media (max-width: 768px) {
+    & .heading-anchor {
+      display: none;
+    }
+  }
+
   & .heading-anchor svg {
     fill: ${props => props.theme.colors.text};
   }
