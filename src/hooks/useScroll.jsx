@@ -15,6 +15,10 @@ const useScroll = () => {
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
 
+  useEffect(() => {
+    setScroll({ y: window.scrollY, x: window.scrollX })
+  }, [])
+
   return scroll
 }
 

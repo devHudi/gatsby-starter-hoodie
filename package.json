@@ -22,6 +22,7 @@
     "gatsby-plugin-sharp": "^5.11.0",
     "gatsby-plugin-sitemap": "^6.11.0",
     "gatsby-plugin-styled-components": "^6.11.0",
+    "gatsby-remark-autolink-headers": "^6.13.1",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-katex": "^3.5.0",
     "gatsby-remark-prismjs": "^7.11.0",

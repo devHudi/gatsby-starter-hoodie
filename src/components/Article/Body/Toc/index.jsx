@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styled, { css } from "styled-components"
 
-import { animateScroll } from "react-scroll"
-
 import useScroll from "hooks/useScroll"
 
 import getElementOffset from "utils/getElmentOffset"
@@ -60,7 +58,7 @@ const ParagraphTitle = styled.div`
   ${props =>
     props.active &&
     css`
-      transform: translate(-11.2px, 0);
+      transform: translate(-10px, 0);
       color: ${props => props.theme.colors.secondaryText};
     `}
 
@@ -81,7 +79,7 @@ const Toc = ({ items, articleOffset }) => {
     const bioElm = document.getElementById("bio")
 
     setRevealAt(
-      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height - 400
+      getElementOffset(bioElm).top - bioElm.getBoundingClientRect().height
     )
   }, [])
 
@@ -95,15 +93,16 @@ const Toc = ({ items, articleOffset }) => {
 
   useEffect(() => {
     headers.forEach((header, i) => {
-      if (header - 300 < y) {
+      if (header < y + 1) {
         setActive(i)
         return
       }
     })
   }, [y])
 
-  const handleClickTitle = index => {
-    animateScroll.scrollTo(headers[index] - 100)
+  const handleClickTitle = item => {
+    window.location.hash = null
+    window.location.hash = item.id
   }
 
   return (
@@ -115,7 +114,7 @@ const Toc = ({ items, articleOffset }) => {
               key={i}
               subtitle={item.tagName === "H3"}
               active={i === active}
-              onClick={() => handleClickTitle(i)}
+              onClick={() => handleClickTitle(item)}
             >
               {item.innerText}
             </ParagraphTitle>
