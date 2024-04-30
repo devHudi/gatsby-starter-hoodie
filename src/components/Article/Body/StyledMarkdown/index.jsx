@@ -238,6 +238,23 @@ const StyledMarkdown = styled.div`
     background-color: ${props => props.theme.colors.text};
     color: ${props => props.theme.colors.hoveredLinkText};
   }
+
+  & sup {
+    margin-left: 2px;
+    font-size: 13px;
+    vertical-align: super;
+  }
+
+  & sup > a {
+    padding: 0 1px;
+  }
+
+  & .footnotes {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid ${props => props.theme.colors.border};
+    font-size: 14px;
+  }
 `
 
 export default StyledMarkdown

@@ -128,6 +128,17 @@ module.exports = {
           {
             resolve: "gatsby-remark-static-images",
           },
+          {
+            resolve: `gatsby-remark-footnotes`,
+            options: {
+              footnoteBackRefPreviousElementDisplay: "inline",
+              footnoteBackRefDisplay: "inline",
+              footnoteBackRefAnchorStyle: `text-decoration: none;`,
+              footnoteBackRefInnerTextStartPosition: "rear",
+              useFootnoteMarkerText: false,
+              useCustomDivider: "",
+            },
+          },
         ],
       },
     },
