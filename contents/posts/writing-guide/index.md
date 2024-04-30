@@ -42,7 +42,7 @@ Above is the frontmatter of the document you are currently reading. Among them, 
 
 ### 1-3. Writing markdown
 
-If you have written a Frontmatter, you can write your markdown document under it. gatsby-starter-hoodie supports most Markdown syntax. To learn more about Markdown syntax, see the [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) documentation on GitHub.
+If you have written a Frontmatter, you can write your markdown document under it. gatsby-starter-hoodie supports most Markdown syntax. To learn more about Markdown syntax, see the Mastering Markdown[^1] documentation on GitHub.
 
 ## 2. Syntax Highlighting & Katex
 
@@ -103,3 +103,5 @@ You can classify and search documents by tag set in Frontmatter. All tags you se
 You can publish multiple related documents in a series. The series set in Frontmatter is grouped together and shown at the top of the document. This can be useful for serialized documents with an order. Series documents are displayed in ascending order of creation date.
 
 The current document is also set in a series called `Getting started your blog with gatsby-starter-hoodie`.
+
+[^1]: https://guides.github.com/features/mastering-markdown/

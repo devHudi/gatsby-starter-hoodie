@@ -42,7 +42,7 @@ series: "gatsby-starter-hoodie 로 블로그 시작하기"
 
 ### 1-3. 마크다운 작성하기
 
-만약 Frontmatter 까지 작성했다면, 여러분은 그 아래에 마크다운 문서를 작성하면 됩니다. gatsby-starter-hoodie 는 대부분의 마크다운 문법을 지원합니다. 마크다운 작성 방법을 알고 싶다면, Github 의 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) 문서를 참고하세요.
+만약 Frontmatter 까지 작성했다면, 여러분은 그 아래에 마크다운 문서를 작성하면 됩니다. gatsby-starter-hoodie 는 대부분의 마크다운 문법을 지원합니다. 마크다운 작성 방법을 알고 싶다면, Github 의 Mastering Markdown[^1] 문서를 참고하세요.
 
 ## 2. 코드 하이라이팅 & Katex
 
@@ -103,3 +103,5 @@ Frontmatter 의 태그를 통해 쉽게 문서를 분류하고 검색할 수 있
 여러분이 연관된 여러개의 문서를 작성할 때 시리즈를 사용할 수 있습니다. Frontmatter 에 작성된 시리즈가 같은 문서끼리 묶여 문서 상단에 리스트로 표시됩니다. 시리즈는 일련의 순서가 있는 문서들을 작성할 때 유용하게 사용할 수 있습니다. 시리즈는 문서의 작성 날짜 순서대로 정렬됩니다.
 
 현재 문서는 `gatsby-starter-hoodie 로 블로그 시작하기` 라는 시리즈로 설정되어 있습니다.
+
+[^1]: https://guides.github.com/features/mastering-markdown/
