@@ -16,8 +16,16 @@ module.exports = {
     resume: "https://hudi.blog",
     link: "https://hudi.blog",
   },
-  utterances: {
+  // See https://giscus.app/
+  giscus: {
     repo: "devHudi/gatsby-starter-hoodie",
-    type: "pathname",
+    repoId: "MDEwOlJlcG9zaXRvcnkzNjk4NjMzNTg=",
+    category: "Comments",
+    categoryId: "DIC_kwDOFguqvs4ChwGy",
+    mapping: "pathname",
+    strict: "0",
+    reactionsEnabled: "1",
+    inputPosition: "bottom",
+    lang: "en",
   },
 }

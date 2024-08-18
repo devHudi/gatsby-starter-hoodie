@@ -6,6 +6,7 @@
   "version": "0.2.0",
   "author": "Hudi",
   "dependencies": {
+    "@giscus/react": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.11.0",

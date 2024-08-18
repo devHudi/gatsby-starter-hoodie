@@ -1282,6 +1282,13 @@
     html-entities "^2.3.3"
     strip-ansi "^6.0.0"
 
+"@giscus/react@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@giscus/react/-/react-3.0.0.tgz#fdadce2c7e4023eb4fdbcc219cdd97f6d7aa17f0"
+  integrity sha512-hgCjLpg3Wgh8VbTF5p8ZLcIHI74wvDk1VIFv12+eKhenNVUDjgwNg2B1aq/3puyHOad47u/ZSyqiMtohjy/OOA==
+  dependencies:
+    giscus "^1.5.0"
+
 "@graphql-codegen/add@^3.2.3":
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/add/-/add-3.2.3.tgz#f1ecee085987e7c21841edc4b1fd48877c663e1a"
@@ -1569,6 +1576,18 @@
   integrity sha512-bM6oE6VQZ6hIFxDNKk8bKPa14hqFrV07J/vHGOeiAbJReIaQXmkVb6xQu4MR+JBTLa5arGRyAAjJe1qaQt3Uvg==
   dependencies:
     "@lezer/common" "^0.15.0"
+
+"@lit-labs/ssr-dom-shim@^1.2.0":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.2.1.tgz#2f3a8f1d688935c704dbc89132394a41029acbb8"
+  integrity sha512-wx4aBmgeGvFmOKucFKY+8VFJSYZxs9poN3SDNQFF6lT6NrQUnHiPB2PWz2sc4ieEcAaYYzN+1uWahEeTq2aRIQ==
+
+"@lit/reactive-element@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-2.0.4.tgz#8f2ed950a848016383894a26180ff06c56ae001b"
+  integrity sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.2.0"
 
 "@lmdb/lmdb-darwin-arm64@2.5.2":
   version "2.5.2"
@@ -2498,6 +2517,11 @@
   version "0.0.33"
   resolved "https://registry.yarnpkg.com/@types/tmp/-/tmp-0.0.33.tgz#1073c4bc824754ae3d10cfab88ab0237ba964e4d"
   integrity sha512-gVC1InwyVrO326wbBZw+AO3u2vRXz/iRWq9jYhpG4W8LXyIgDv3ZmcLQ5Q4Gs+gFMyqx+viFoFT+l3p61QFCmQ==
+
+"@types/trusted-types@^2.0.2":
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/@types/trusted-types/-/trusted-types-2.0.7.tgz#baccb07a970b91707df3a3e8ba6896c57ead2d11"
+  integrity sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==
 
 "@types/unist@*", "@types/unist@^2.0.0", "@types/unist@^2.0.3":
   version "2.0.3"
@@ -6409,6 +6433,13 @@ gh-pages@^5.0.0:
     fs-extra "^8.1.0"
     globby "^6.1.0"
 
+giscus@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/giscus/-/giscus-1.5.0.tgz#8299fa056b2ed31ec8b05d4645871e016982b4b2"
+  integrity sha512-t3LL0qbSO3JXq3uyQeKpF5CegstGfKX/0gI6eDe1cmnI7D56R7j52yLdzw4pdKrg3VnufwCgCM3FDz7G1Qr6lg==
+  dependencies:
+    lit "^3.1.2"
+
 git-up@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/git-up/-/git-up-7.0.0.tgz#bace30786e36f56ea341b6f69adfd83286337467"
@@ -7665,6 +7696,31 @@ lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+
+lit-element@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-4.1.0.tgz#cea3eb25f15091e3fade07c4d917fa6aaf56ba7d"
+  integrity sha512-gSejRUQJuMQjV2Z59KAS/D4iElUhwKpIyJvZ9w+DIagIQjfJnhR20h2Q5ddpzXGS+fF0tMZ/xEYGMnKmaI/iww==
+  dependencies:
+    "@lit-labs/ssr-dom-shim" "^1.2.0"
+    "@lit/reactive-element" "^2.0.4"
+    lit-html "^3.2.0"
+
+lit-html@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-3.2.0.tgz#cb09071a8a1f5f0850873f9143f18f0260be1fda"
+  integrity sha512-pwT/HwoxqI9FggTrYVarkBKFN9MlTUpLrDHubTmW4SrkL3kkqW5gxwbxMMUnbbRHBC0WTZnYHcjDSCM559VyfA==
+  dependencies:
+    "@types/trusted-types" "^2.0.2"
+
+lit@^3.1.2:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/lit/-/lit-3.2.0.tgz#2189d72bccbc335f733a67bfbbd295f015e68e05"
+  integrity sha512-s6tI33Lf6VpDu7u4YqsSX78D28bYQulM+VAzsGch4fx2H0eLZnJsUBsPWmGYSGoKDNbjtRv02rio1o+UdPVwvw==
+  dependencies:
+    "@lit/reactive-element" "^2.0.4"
+    lit-element "^4.1.0"
+    lit-html "^3.2.0"
 
 lmdb@2.5.2:
   version "2.5.2"
