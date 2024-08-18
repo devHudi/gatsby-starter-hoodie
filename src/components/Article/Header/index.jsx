@@ -5,6 +5,7 @@ import { author } from "../../../../blog-config"
 
 import Divider from "components/Divider"
 import TagList from "components/TagList"
+import { Link } from "gatsby"
 
 const Wrapper = styled.div`
   margin-top: 32px;
@@ -27,8 +28,15 @@ const Information = styled.div`
 `
 
 const Author = styled.span`
-  font-weight: 700;
-  color: ${props => props.theme.colors.text};
+  & > a {
+    font-weight: 700;
+    color: ${props => props.theme.colors.text};
+    text-decoration: none;
+  }
+
+  & > a:hover {
+    text-decoration: underline;
+  }
 `
 
 const Date = styled.span`
@@ -41,7 +49,9 @@ const Header = ({ title, date, tags, minToRead }) => {
     <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>
       <Information>
-        <Author> @{author} </Author>
+        <Author>
+          <Link to="/about">@{author}</Link>
+        </Author>
         <Date>· {date} </Date>
         <Date>· {minToRead} min read </Date>
       </Information>

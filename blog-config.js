@@ -16,6 +16,7 @@ module.exports = {
     resume: "https://hudi.blog",
     link: "https://hudi.blog",
   },
+  useAbout: true,
   // See https://giscus.app/
   giscus: {
     repo: "devHudi/gatsby-starter-hoodie",
