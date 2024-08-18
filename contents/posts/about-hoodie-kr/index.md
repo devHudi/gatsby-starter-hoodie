@@ -25,7 +25,7 @@ gatsby-starter-hoodie 는 기술 블로그를 작성하기 위해 개발된 Gats
 - 시리즈 분류
 - 반응형 웹
 - SEO
-- Utterance (댓글 위젯)
+- Giscus
 
 ## 시작
 

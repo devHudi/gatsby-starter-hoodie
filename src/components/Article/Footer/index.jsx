@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { navigate } from "gatsby"
-import { useSelector } from "react-redux"
-import styled, { useTheme } from "styled-components"
+import styled from "styled-components"
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi"
-import { Utterances } from "utterances-react-component"
-
-import { utterances } from "../../../../blog-config"
-
-import MDSpinner from "react-md-spinner"
 
 import Divider from "components/Divider"
 import Bio from "components/Bio"
+import Comment from "./Comment"
 
 const ArticleButtonContainer = styled.div`
   display: flex;
@@ -111,18 +106,6 @@ const CommentWrapper = styled.div`
   }
 `
 
-const SpinnerWrapper = styled.div`
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-const HiddenWrapper = styled.div`
-  height: ${props => (props.isHidden ? "0px" : "auto")};
-  overflow: ${props => (props.isHidden ? "hidden" : "auto")};
-`
-
 const ArticleButton = ({ right, children, onClick }) => {
   return (
     <ArticleButtonWrapper right={right} onClick={onClick}>
@@ -136,49 +119,6 @@ const ArticleButton = ({ right, children, onClick }) => {
         </ArticleButtonTextWrapper>
       </ArrowFlexWrapper>
     </ArticleButtonWrapper>
-  )
-}
-
-const Spinner = () => {
-  const theme = useTheme()
-  return (
-    <SpinnerWrapper>
-      <MDSpinner singleColor={theme.colors.spinner} />
-    </SpinnerWrapper>
-  )
-}
-
-const Comment = () => {
-  const { theme } = useSelector(state => state.theme)
-  const [spinner, setSpinner] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setSpinner(false)
-    }, 1500)
-  }, [])
-
-  return (
-    <>
-      {spinner && <Spinner />}
-
-      <HiddenWrapper isHidden={spinner}>
-        <HiddenWrapper isHidden={theme === "light"}>
-          <Utterances
-            repo={utterances.repo}
-            theme={`github-dark`}
-            issueTerm={utterances.type}
-          />
-        </HiddenWrapper>
-        <HiddenWrapper isHidden={theme === "dark"}>
-          <Utterances
-            repo={utterances.repo}
-            theme={`github-light`}
-            issueTerm={utterances.type}
-          />
-        </HiddenWrapper>
-      </HiddenWrapper>
-    </>
   )
 }
 
@@ -199,9 +139,11 @@ const Footer = ({ previous, next }) => {
           </ArticleButton>
         )}
       </ArticleButtonContainer>
+
       <Bio />
       <CommentWrapper>
         <Divider mt="32px" />
+
         <Comment />
       </CommentWrapper>
     </>

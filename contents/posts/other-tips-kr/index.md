@@ -15,10 +15,6 @@ series: "gatsby-starter-hoodie 로 블로그 시작하기"
 
 만약 파비콘 파일의 이름을 변경하고 싶다면, `gatsby-config.js` 파일의 `gatsby-plugin-manifest` 에서 `icon` 속성을 변경하셔야합니다.
 
-## Utterance 가 제대로 작동하지 않아요.
-
-http 환경에서는 Utterance 가 제대로 작동하지 않을 수 있습니다. 여러분의 웹사이트를 https 환경으로 제공하세요.
-
 ## OG Image 를 설정하고 싶어요.
 
 `/static` 디렉토리의 `og-image.png` 파일을 여러분이 원하는 이미지 파일로 대체하세요.

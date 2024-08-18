@@ -25,7 +25,7 @@ Start your blog with a neatly designed gatsby-starter-hoodie that supports dark 
 - Series Categorization
 - Responsive Web
 - SEO
-- Utterance (Comment widget)
+- Giscus
 
 ## Let's get started
 
