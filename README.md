@@ -32,7 +32,7 @@ This project inspired by [velog](https://velog.io).
 - Series Categorization
 - Responsive Web
 - SEO
-- Utterance (Comment widget)
+- Giscus
 
 Getting started your blog with gatsby-starter-hoodie by following steps below. It's very easy 😉.
 
@@ -55,7 +55,7 @@ Now you can access to your blog at localhost:8000.
 
 ## 3. Create your own Github repository
 
-Utterance comment widget is based on **Github issue system**. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.
+Giscus comment widget is based on **Github Discuss system**. So you need your own GitHub repository. Also, if you want to publish your blog through Github Pages or Netlify, the Github Repository is a necessary.
 
 If you don't know how to create a GitHub repository, follow the [official GitHub documentation](https://docs.github.com/en/github/getting-started-with-github/create-a-repo).
 
@@ -79,16 +79,21 @@ module.exports = {
     instagram: "https://www.instagram.com",
     etc: "https://www.google.com/",
   },
-  utterances: {
+  giscus: {
     repo: "{YOUR_GITHUB_NAME}/{YOUR_REPOSITORY_NAME}",
-    type: "pathname",
+    repoId: "{YOUR_GITHUB_REPOSITORY_ID}",
+    category: "{YOUR_GITHUB_REPOSITORY_CATEGORY}",
+    categoryId: "{YOUR_GITHUB_REPOSITORY_CATEGORY_ID}",
+    mapping: "pathname",
+    strict: "0",
+    reactionsEnabled: "1",
+    inputPosition: "bottom",
+    lang: "en",
   },
 }
 ```
 
-gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and utterance.
-
-Configure `blog-config.js` to suit your blog. However, it is recommended not to modify `utterances.type`.
+gatsby-starter-hoodie provides a configuration file called `blog-config.js`. In this file, you can configure blog, biography (profile), and giscus. Configure `blog-config.js` to suit your blog.
 
 ## 5. Add your content
 

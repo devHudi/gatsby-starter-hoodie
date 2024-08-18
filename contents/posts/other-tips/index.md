@@ -15,10 +15,6 @@ The favicon is located in `static/favicon.png`. If you replace that image, the f
 
 If you want to change the name of the favicon, change the `icon` property of `gatsby-plugin-manifest` in `gatsby-config.js`.
 
-## Utterance is not working properly.
-
-In the http environment, utterance may not work properly. Host your blog with https.
-
 ## How to set OG Image?
 
 Replace the `og-image.png` file in the `/static` directory with your own image file.
