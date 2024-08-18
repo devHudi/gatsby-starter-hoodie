@@ -11557,11 +11557,6 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
 
-utterances-react-component@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/utterances-react-component/-/utterances-react-component-1.0.0.tgz#18d1af7264ded1d07690bc68b1ed91c7cdef98ac"
-  integrity sha512-ouHYHpFtAzGBTm4imUK23dwbuSg7//XsR+lcZ3F9xFm7kBNb0FsKRHTfC+FKUQCWPdIbbgfFsygYWKsbdq1OVA==
-
 uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
