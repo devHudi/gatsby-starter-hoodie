@@ -52,7 +52,7 @@ const SideTagList = ({ tags, postCount }) => {
             <Link to="/tags">all ({postCount})</Link>
           </Tag>
           {_.map(tags, tag => (
-            <Tag>
+            <Tag key={tag.fieldValue}>
               <Link to={`/tags?q=${tag.fieldValue}`}>
                 {tag.fieldValue} ({tag.totalCount})
               </Link>
