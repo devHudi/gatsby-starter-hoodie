@@ -75,7 +75,7 @@ const SeriesList = ({ seriesList }) => {
     <SeriesListWrapper>
       {seriesList.slice(0, seriesCount).map((series, i) => {
         return (
-          <>
+          <React.Fragment key={series.name}>
             <SeriesWrapper>
               <Title size="bg">
                 <Link to={`/series/${_.replace(series.name, /\s/g, "-")}`}>
@@ -92,7 +92,7 @@ const SeriesList = ({ seriesList }) => {
             {seriesCount - 1 !== i && seriesList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </React.Fragment>
         )
       })}
     </SeriesListWrapper>
