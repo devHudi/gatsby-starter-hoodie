@@ -9,11 +9,9 @@ import Article from "components/Article"
 import Comment from "components/Article/Footer/Comment"
 import Tab from "components/Tab"
 
-import NotFoundPage from "pages/404"
-
 import styled from "styled-components"
 
-import { title, description, siteUrl, useAbout } from "../../blog-config"
+import { title, description, siteUrl } from "../../blog-config"
 import Divider from "components/Divider"
 
 const ArticleTitle = styled.h1`
@@ -33,8 +31,6 @@ const Wrapper = styled.div`
 const BlogIndex = ({ data }) => {
   const aboutPost = data.markdownRemark
   const postsCount = data.allMarkdownRemark.totalCount
-
-  if (!useAbout) return <NotFoundPage />
 
   return (
     <Layout>
