@@ -1,5 +1,14 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const _ = require("lodash")
+const { useAbout } = require("./blog-config")
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { deletePage } = actions
+
+  if (!useAbout && page.path === "/about/") {
+    deletePage(page)
+  }
+}
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions

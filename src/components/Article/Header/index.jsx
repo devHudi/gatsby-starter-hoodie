@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { author } from "../../../../blog-config"
+import { author, useAbout } from "../../../../blog-config"
 
 import Divider from "components/Divider"
 import TagList from "components/TagList"
@@ -28,9 +28,10 @@ const Information = styled.div`
 `
 
 const Author = styled.span`
+  font-weight: 700;
+  color: ${props => props.theme.colors.text};
+
   & > a {
-    font-weight: 700;
-    color: ${props => props.theme.colors.text};
     text-decoration: none;
   }
 
@@ -50,7 +51,7 @@ const Header = ({ title, date, tags, minToRead }) => {
       <ArticleTitle> {title} </ArticleTitle>
       <Information>
         <Author>
-          <Link to="/about">@{author}</Link>
+          {useAbout ? <Link to="/about">@{author}</Link> : `@${author}`}
         </Author>
         <Date>· {date} </Date>
         <Date>· {minToRead} min read </Date>
