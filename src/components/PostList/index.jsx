@@ -75,7 +75,7 @@ const PostList = ({ postList }) => {
         const { slug } = post.fields
 
         return (
-          <>
+          <React.Fragment key={JSON.stringify({ slug, date })}>
             <PostWrapper>
               <Title size="bg">
                 <Link to={slug}>{title}</Link>
@@ -88,7 +88,7 @@ const PostList = ({ postList }) => {
             {postCount - 1 !== i && postList.length - 1 !== i && (
               <Divider mt="48px" mb="32px" />
             )}
-          </>
+          </React.Fragment>
         )
       })}
     </PostListWrapper>
